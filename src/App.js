@@ -5,6 +5,7 @@ import styles from "./css/App.module.css"
 const App = () => {
   return (
     <div id={styles.app}>
+      <p style={{ font: "var(--font-title)" }}>Test</p>
       <Router>
         <Switch>
           {/* <Route path="/path">
