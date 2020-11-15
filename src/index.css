@@ -5,6 +5,7 @@
   --color-text-body: #282828;
   --color-text-header: #5a60f3;
   --color-date-header: #a1abff;
+  --color-footer: #5a60f3;
   --color-scroll: #f0f0f0;
   --color-scroll-arrows: #c4c4c4;
   --color-lines: #d3d3d3;
@@ -39,6 +40,7 @@
   --color-text-body: var(--color-text-white);
   --color-text-body: #f4f4f4;
   --color-text-header: #f5b523;
+  --color-footer: #282828;
   --color-date-header: #f4f4f4;
   --color-scroll: #5a5b62;
   --color-scroll-arrows: #f4f4f4;
