@@ -29,4 +29,5 @@
     padding-left: 2.9%;
     padding-right: 11.5%;
     background-color: var(--color-scroll);
+    color: var(--color-text-body);
 }
