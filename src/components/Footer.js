@@ -7,10 +7,10 @@ const Footer = props => {
             <div id = {styles.logoPad}></div>
             <div className={styles.innerContainer}>
                 <div className = {styles.hyperLinks}>
-                    <a className = {styles.hyperLinks} href="https://www.facebook.com/sfusurge">
+                    <a className = {styles.hyperLinks} href="">
                         <p>MLH Code Of Product</p>
                     </a>
-                    <a className = {styles.hyperLinks} href="https://www.facebook.com/sfusurge">
+                    <a className = {styles.hyperLinks} href="">
                         <p> Meet the Team Behind StormHacks</p>
                     </a>
                 </div>
