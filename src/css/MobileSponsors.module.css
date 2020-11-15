@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   width: 82%;
-  margin: 80px auto 0;
+  margin-top: 80px;
 }
 
 .heading {
