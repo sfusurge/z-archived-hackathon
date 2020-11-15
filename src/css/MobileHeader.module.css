@@ -1,7 +1,3 @@
-.container {
-  background-color: var(--color-background-main);
-}
-
 .backgroundContainer {
   background-image: url("../assets/light/background-mobile-light.svg");
   background-size: cover;
