@@ -1,7 +1,7 @@
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 
 import HomeToggle from './components/HomeToggle'
-import styles from "./css/App.module.css"
+import styles from './css/App.module.css'
 
 const App = () => {
   return (
@@ -14,7 +14,7 @@ const App = () => {
         </Switch>
       </Router>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
