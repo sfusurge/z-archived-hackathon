@@ -1,4 +1,4 @@
-.container{
+.container {
   background-color: var(--color-background-popup);
   padding-top: 21px;
   width: 963px;
@@ -8,24 +8,29 @@
   flex-wrap: wrap;
 }
 
-.columns{
+.heading {
+  font: var(--font-header);
+  color: var(--color-text-body);
+}
+
+.columns {
   display: flex;
   width: 45%;
   flex-direction: column;
 }
 
-.question{
+.question {
   margin-bottom: 26px;
   /* margin-left: 2.5%; */
 }
 
-@media only screen and (max-width: 700px){
-  .container{
-    width: 100%
+@media only screen and (max-width: 700px) {
+  .container {
+    width: 100%;
+    background-color: var(--color-background-main);
   }
 
-  .columns{
+  .columns {
     width: 82%;
   }
-
 }
