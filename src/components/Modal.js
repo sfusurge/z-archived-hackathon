@@ -10,8 +10,8 @@ import { ReactComponent as ScrollUp } from "../assets/scroll/scroll-up.svg"
 import { ReactComponent as ScrollDown } from "../assets/scroll/scroll-down.svg"
 
 
-const Modal = ({ children, title }) => {
-  const [nodeLocation, setNodeLocation] = useState({ x: 0, y: 0 })
+const Modal = ({ children, origin, title }) => {
+  const [nodeLocation, setNodeLocation] = useState({ x: origin?.x ?? 0, y: origin?.y ?? 0 })
   const [mouseLocation, setMouseLocation] = useState({ x: 0, y: 0 })
   const [dragging, setDragging] = useState(false)
 
