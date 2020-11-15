@@ -6,12 +6,12 @@ const Footer = props => {
         <div className={styles.container}>
             <div id = {styles.logoPad}></div>
             <div className={styles.innerContainer}>
-                <div className = {styles.hyperLinks}>
+                <div>
                     <a className = {styles.hyperLinks} href="">
-                        <p>MLH Code Of Product</p>
+                        MLH Code Of Product
                     </a>
                     <a className = {styles.hyperLinks} href="">
-                        <p> Meet the Team Behind StormHacks</p>
+                        Meet the Team Behind StormHacks
                     </a>
                 </div>
                 <button className = {styles.themeButton} onClick = {toggleTheme}>

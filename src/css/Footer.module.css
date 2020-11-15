@@ -29,6 +29,8 @@
 }
 
 .hyperLinks{
+    padding: 5px;
+    display: block;
     text-align: right;
     font: var(--font-body);
     color: #F4F4F4
