@@ -1,8 +1,9 @@
 .container{
     display: flex;
     height: 108px;
-    background-color: var(--color-text-header);
+    background-color: var(--color-footer);
     justify-content: space-between;
+    align-items: center;
 }
 
 .innerContainer{
@@ -14,6 +15,13 @@
 
 #logoPad{
     margin-left: 3%;
+    height: 34px;
+    width: 34px;
+    background-image: url('../assets/light/surgeIcon-light.svg');
+}
+
+[data-theme="dark"] #logoPad{ 
+    background-image: url('../assets/dark/surgeIcon-dark.svg');
 }
 
 #packageLinks{
@@ -24,4 +32,36 @@
     text-align: right;
     font: var(--font-body);
     color: #F4F4F4
+}
+
+.themeButton {
+    border: none;
+    background: transparent;
+    margin: 0;
+    padding: 0;
+}
+
+.themeToggle {
+    height: 34px;
+    width: 34px;
+    margin: 10px 15px;
+    background-image: url('../assets/light/lightmodeIcon-desktop.svg');
+}
+
+[data-theme="dark"] .themeToggle {
+    background-image: url('../assets/dark/darkmodeIcon-desktop.svg');
+}
+
+.notificationButton{
+    border: none;
+    background: transparent;
+    margin: 0;
+    padding: 0;
+}
+
+.notificationIcon{
+    height: 34px;
+    width: 36px;
+    margin: 10px 15px;
+    background-image: url('../assets/notifications-icon.svg');
 }

@@ -3,6 +3,7 @@
   --color-background-popup: #FFFFFF;
   --color-text-body: #282828;
   --color-text-header: #5A60F3;
+  --color-footer: #5A60F3;
   --color-scroll: #F0F0F0;
   --color-scroll-arrows: #C4C4C4;
   --color-lines: #D3D3D3;
@@ -35,6 +36,7 @@
   --color-background-popup: #424349;
   --color-text-body: #F4F4F4;
   --color-text-header: #F5B523;
+  --color-footer: #282828;
   --color-scroll: #5A5B62;
   --color-scroll-arrows: #F4F4F4;
   --color-lines: #616161;
