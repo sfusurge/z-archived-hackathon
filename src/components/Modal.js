@@ -10,7 +10,7 @@ import { ReactComponent as ScrollUp } from "../assets/scroll/scroll-up.svg"
 import { ReactComponent as ScrollDown } from "../assets/scroll/scroll-down.svg"
 
 
-const Modal = ({ children, origin, title }) => {
+const Modal = ({ children, origin, title, onClose }) => {
   const [nodeLocation, setNodeLocation] = useState({ x: origin?.x ?? 0, y: origin?.y ?? 0 })
   const [mouseLocation, setMouseLocation] = useState({ x: 0, y: 0 })
   const [dragging, setDragging] = useState(false)
@@ -69,8 +69,8 @@ const Modal = ({ children, origin, title }) => {
       <div className={styles.main}>
         {children}
         <div className={styles.scroll}>
-          <ScrollUp className={styles.scrollUp} />
-          <ScrollDown className={styles.scrollDown} />
+          <ScrollUp />
+          <ScrollDown />
         </div>
       </div>
       <div className={styles.topBar} onMouseDown={registerMouse}>
@@ -78,7 +78,7 @@ const Modal = ({ children, origin, title }) => {
         <div className={styles.topButtons} >
           <Minimize className={styles.minimize} />
           <Maximize className={styles.maximize} />
-          <Close className={styles.close} />
+          <Close className={styles.close} onClick={onClose} />
         </div>
       </div>
     </div>
