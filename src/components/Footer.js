@@ -1,7 +1,4 @@
 import toggleTheme from "../utils/toggleTheme";
-import surgeIcon from '../assets/light/surgeIcon-light.svg'
-import lightModeIcon from '../assets/light/lightmodeIcon-desktop.svg'
-import notificationsIcon from '../assets/notifications-icon.svg'
 import styles from "../css/Footer.module.css"
 
 const Footer = props => {

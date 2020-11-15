@@ -62,6 +62,5 @@
 .notificationIcon{
     height: 34px;
     width: 36px;
-    margin: 10px 15px;
     background-image: url('../assets/notifications-icon.svg');
 }
