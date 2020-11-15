@@ -15,9 +15,9 @@ const FaqQuestions = props => {
   return (
     <div className={styles.container}>
       <div className={styles.question} onClick={toggleDropDown}>
-        <div className={styles.text}>
-          <p>{props.question}</p>
-        </div>
+        <p className={styles.text}>
+          {props.question}
+        </p>
         <div className={styles.arrow}>
           <img src={downArrow} alt="Drop Down"/>
         </div>
