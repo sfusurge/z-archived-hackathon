@@ -13,8 +13,8 @@ const FaqQuestions = props => {
   }
     
   return (
-    <div className={styles.container} onClick={toggleDropDown}>
-      <div className={styles.question}>
+    <div className={styles.container}>
+      <div className={styles.question} onClick={toggleDropDown}>
         <div className={styles.text}>
           <p>{props.question}</p>
         </div>
