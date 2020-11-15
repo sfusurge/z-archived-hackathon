@@ -11,3 +11,10 @@
     margin-bottom: 26px;
     width: 45%;
 }
+
+@media only screen and (max-width: 700px){
+    .question{
+        width: 82%;
+        margin-left: 8%;
+    }
+}
