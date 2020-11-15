@@ -2,3 +2,21 @@
   display: flex;
   flex-direction: column;
 }
+
+.headingContainer {
+  text-align: center;
+}
+
+.heading {
+  font: var(--font-header);
+  color: var(--color-text-body);
+  margin: 0;
+  line-height: 40px;
+}
+
+.subheading {
+  font: var(--font-sub-header);
+  color: var(--color-text-header);
+  margin: 0 0 20px;
+  line-height: 35px;
+}

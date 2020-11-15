@@ -9,6 +9,11 @@
   align-items: center;
 }
 
+.trackContainer svg {
+  width: 25%;
+  height: 25%;
+}
+
 .trackContainer svg path,
 .trackContainer svg rect {
   fill: var(--color-text-header);

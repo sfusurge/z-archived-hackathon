@@ -9,6 +9,10 @@ import { ReactComponent as HealthIcon } from '../assets/light/healthTrack-light.
 const MobileTracks = props => {
   return (
     <div className={styles.container}>
+      <div className={styles.headingContainer}>
+        <p className={styles.heading}>Stuck on a creative block?</p>
+        <p className={styles.subheading}>Event Tracks are here to help!</p>
+      </div>
       <MobileTrack
         trackTitle={
           <>
