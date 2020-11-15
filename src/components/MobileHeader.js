@@ -1,10 +1,10 @@
-import toggleTheme from "../utils/toggleTheme";
+import toggleTheme from '../utils/toggleTheme'
 
-import styles from "../css/MobileHeader.module.css";
+import styles from '../css/MobileHeader.module.css'
 
-import Banner from "../components/Banner";
+import Banner from '../components/Banner'
 
-const MobileHeader = (props) => {
+const MobileHeader = props => {
   return (
     <div className={styles.backgroundContainer}>
       <div className={styles.headerContainer}>
@@ -27,7 +27,7 @@ const MobileHeader = (props) => {
         <button className={styles.applyButton}>APPLY NOW</button>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default MobileHeader;
+export default MobileHeader
