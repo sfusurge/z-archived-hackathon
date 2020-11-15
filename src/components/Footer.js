@@ -1,4 +1,4 @@
-import toggleTheme from "../utils/toggleTheme";
+import toggleTheme from "../utils/toggleTheme"
 import styles from "../css/Footer.module.css"
 
 const Footer = props => {
