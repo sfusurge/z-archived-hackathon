@@ -1,0 +1,74 @@
+.container {
+  background-color: var(--color-background-main);
+}
+
+.backgroundContainer {
+  background-image: url("../assets/light/background-mobile-light.svg");
+  background-size: cover;
+  height: 624px;
+}
+
+[data-theme="dark"] .backgroundContainer {
+  background-image: url("../assets/dark/background-mobile-dark.svg");
+}
+
+.headerContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.themeButton {
+  border: none;
+  background: transparent;
+  margin: 0;
+  padding: 0;
+}
+
+.themeToggle {
+  height: 34px;
+  width: 34px;
+  margin: 10px 15px;
+  background-repeat: no-repeat;
+  background-image: url("../assets/light/lightmodeIcon-mobile.svg");
+}
+
+[data-theme="dark"] .themeToggle {
+  background-image: url("../assets/dark/darkmodeIcon-mobile.svg");
+}
+
+.headingContainer {
+  display: flex;
+}
+
+.stormhacksLogo {
+  width: 85px;
+  height: 88px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url("../assets/light/stormhacksLogo-light.svg");
+}
+
+[data-theme="dark"] .stormhacksLogo {
+  background-image: url("../assets/dark/stormhacksLogo-dark.svg");
+}
+
+.titleContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+}
+
+.headingText {
+  font: var(--font-title);
+  color: var(--color-text-header);
+  line-height: 45px;
+  margin: 0;
+}
+
+.dateText {
+  font: var(--font-date-header);
+  color: var(--color-date-header);
+  margin-top: 4px;
+}
