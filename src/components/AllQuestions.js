@@ -1,6 +1,6 @@
 import FAQ from "./FaqQuestions"
-import styles from "../css/AllQuestions.module.css";
-import {useState} from 'react';
+import styles from "../css/AllQuestions.module.css"
+import {useState} from 'react'
 
 const FAQs = [{question: "What is a hackathon?", answer: "This is about the length of a sentence. We want to include about 3 sentences worth of stuff to answer questions. Butter is a healthy and nutritious snack."},
               {question: "Will the hackathon happen virtually or in person?", answer: ":3"},

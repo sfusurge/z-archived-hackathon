@@ -1,4 +1,4 @@
-import styles from "../css/FaqQuestions.module.css";
+import styles from "../css/FaqQuestions.module.css"
 import downArrow from "../assets/faqDropDownIcon.svg"
 
 const FaqQuestions = props => {
