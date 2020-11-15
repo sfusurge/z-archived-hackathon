@@ -1,0 +1,32 @@
+.container {
+  width: 80%;
+  margin: 0 auto 42px;
+}
+
+.trackContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.trackContainer svg path,
+.trackContainer svg rect {
+  fill: var(--color-text-header);
+}
+
+.trackContainer svg * {
+  stroke: var(--color-text-header);
+}
+
+.trackTitle {
+  font: var(--font-sub-header);
+  color: var(--color-text-body);
+  line-height: 22px;
+}
+
+.description {
+  font: var(--font-body);
+  color: var(--color-text-body);
+  margin: 26px 0 0;
+  line-height: 25px;
+}
