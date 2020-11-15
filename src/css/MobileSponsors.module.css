@@ -1,0 +1,18 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 82%;
+  margin: 80px auto 0;
+}
+
+.heading {
+  font: var(--font-header);
+  color: var(--color-text-body);
+  margin: 0 0 45px 0;
+}
+
+.sponsorContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
