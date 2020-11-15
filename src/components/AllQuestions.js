@@ -23,14 +23,14 @@ const AllQuestions = props => {
     <div className={styles.container}>
       <div className={styles.columns} >
         {FAQs1.map((faq, i) => {
-          return <div key={faq.question}>
+          return <div className={styles.question} key={faq.question}>
             <FAQ question={faq.question} answer={faq.answer} 
             isOpen={currentlyOpen===i} id={i} setOpen={setOpen} /></div>
         })}
       </div>
       <div className={styles.columns} >
         {FAQs2.map((faq, i) => {
-          return <div key={faq.question}><FAQ question={faq.question} answer={faq.answer} 
+          return <div className={styles.question} key={faq.question}><FAQ question={faq.question} answer={faq.answer} 
           isOpen={currentlyOpen===i+6} id={i+6} setOpen={setOpen} /></div>
         })}
       </div>
