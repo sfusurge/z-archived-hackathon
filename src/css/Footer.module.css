@@ -37,6 +37,7 @@
 }
 
 .themeButton {
+    outline: none;
     border: none;
     background: transparent;
     margin: 0;
@@ -55,6 +56,7 @@
 }
 
 .notificationButton{
+    outline: none;
     border: none;
     background: transparent;
     margin: 0;
