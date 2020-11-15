@@ -20,6 +20,10 @@
   padding: 0;
 }
 
+.themeButton:focus {
+  outline: none;
+}
+
 .themeToggle {
   height: 34px;
   width: 34px;
