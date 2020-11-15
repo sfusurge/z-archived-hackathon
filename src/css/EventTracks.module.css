@@ -1,4 +1,5 @@
 .container{
+    width: 611px;
     padding-left: 5%;
     padding-right: 5%;
 }
@@ -10,7 +11,7 @@
 }
 
 .titleContainer {
-    width: 65%;
+    width: 60%;
 }
 
 .headerFont {
