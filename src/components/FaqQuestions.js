@@ -25,7 +25,7 @@ const FaqQuestions = props => {
      
       
       {props.isOpen && <div className={styles.answer}>
-        <p>{props.answer}</p>
+        {props.answer}
       </div>}
     </div>
     )
