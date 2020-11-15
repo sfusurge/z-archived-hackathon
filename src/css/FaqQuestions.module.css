@@ -1,0 +1,32 @@
+.container{
+    background-color: var(--color-text-header);
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    margin-left: 2.5%;
+    font: var(--font-body);
+}
+
+.question{
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.text{
+    color: white;
+    width: 85%;
+    margin-left: 2.9%;
+}
+
+.arrow{
+    margin-right: 4.5%;
+}
+
+.answer{
+    padding-left: 2.9%;
+    padding-right: 11.5%;
+    background-color: var(--color-scroll);
+}
