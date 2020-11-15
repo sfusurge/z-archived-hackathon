@@ -37,11 +37,14 @@
 }
 
 .themeButton {
-    outline: none;
     border: none;
     background: transparent;
     margin: 0;
     padding: 0;
+}
+
+.themeButton:focus {
+    outline: none;
 }
 
 .themeToggle {
@@ -61,6 +64,10 @@
     background: transparent;
     margin: 0;
     padding: 0;
+}
+
+.notificationButton:focus {
+    outline: none;
 }
 
 .notificationIcon{
