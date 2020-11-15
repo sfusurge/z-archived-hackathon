@@ -36,6 +36,7 @@
 [data-theme="dark"] {
   --color-background-main: #323232;
   --color-background-popup: #424349;
+  --color-text-body: var(--color-text-white);
   --color-text-body: #f4f4f4;
   --color-text-header: #f5b523;
   --color-date-header: #f4f4f4;
