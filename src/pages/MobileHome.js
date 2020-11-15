@@ -1,11 +1,7 @@
 import MobileHeader from "../components/MobileHeader";
 
 const MobileHome = (props) => {
-  return (
-    <>
-      <MobileHeader />
-    </>
-  );
+  return <>Mobile</>;
 };
 
 export default MobileHome;
