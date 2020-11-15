@@ -1,6 +1,6 @@
 .container{
     display: flex;
-    height: 108px;
+    height: 70px;
     background-color: var(--color-footer);
     justify-content: space-between;
     align-items: center;
