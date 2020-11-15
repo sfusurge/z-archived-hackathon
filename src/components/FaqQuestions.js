@@ -1,13 +1,14 @@
 import styles from "../css/FaqQuestions.module.css";
 import downArrow from "../assets/faqDropDownIcon.svg"
-import React, {useState} from 'react'
 
 const FaqQuestions = props => {
-  const [dropDown, setDropDownState] = useState(false);
-
+ 
   const toggleDropDown = () => {
+    if (props.isOpen){
+      return props.setOpen(-1)
+    }
     return(
-        setDropDownState(!dropDown)
+        props.setOpen(props.id)
     )
   }
     
@@ -23,7 +24,7 @@ const FaqQuestions = props => {
       </div>
      
       
-      {dropDown && <div className={styles.answer}>
+      {props.isOpen && <div className={styles.answer}>
         <p>{props.answer}</p>
       </div>}
     </div>

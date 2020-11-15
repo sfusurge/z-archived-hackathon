@@ -2,7 +2,6 @@
     background-color: var(--color-text-header);
     display: flex;
     flex-direction: column;
-    width: 45%;
     margin-left: 2.5%;
     font: var(--font-body);
 }
