@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
 
 import HomeToggle from './components/HomeToggle'
-
+import Footer from './components/Footer'
 import styles from "./css/App.module.css"
 
 const App = () => {
@@ -10,7 +10,7 @@ const App = () => {
       <Router>
         <Switch>
           <Route path="/">
-            <HomeToggle />
+            <Footer />
           </Route>
         </Switch>
       </Router>

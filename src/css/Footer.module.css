@@ -1,0 +1,27 @@
+.container{
+    display: flex;
+    height: 108px;
+    background-color: var(--color-text-header);
+    justify-content: space-between;
+}
+
+.innerContainer{
+    width: 400px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#logoPad{
+    margin-left: 3%;
+}
+
+#packageLinks{
+    display: flex;
+}
+
+.hyperLinks{
+    text-align: right;
+    font: var(--font-body);
+    color: #F4F4F4
+}
