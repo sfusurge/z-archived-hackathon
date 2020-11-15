@@ -1,9 +1,6 @@
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 
 import HomeToggle from './components/HomeToggle'
-
-import Modal from './components/Modal'
-
 import styles from './css/App.module.css'
 
 const App = () => {

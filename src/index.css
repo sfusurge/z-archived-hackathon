@@ -5,6 +5,7 @@
   --color-lines: #d3d3d3;
   --color-modal: #ffffff;
   --color-modal-accent: #f0f0f0;
+  --color-footer: #5a60f3;
   --color-scroll: #f0f0f0;
   --color-scroll-arrows: #c4c4c4;
   --color-text-body: #282828;
@@ -39,6 +40,7 @@
   --color-background-main: #323232;
   --color-background-popup: #424349;
   --color-date-header: #f4f4f4;
+  --color-footer: #282828;
   --color-lines: #616161;
   --color-modal: #212121;
   --color-modal-accent: #212121;
