@@ -7,7 +7,7 @@ const Footer = props => {
             <div id = {styles.logoPad}></div>
             <div className={styles.innerContainer}>
                 <div>
-                    <a className = {styles.hyperLinks} href="">
+                    <a className = {styles.hyperLinks} href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf">
                         MLH Code Of Product
                     </a>
                     <a className = {styles.hyperLinks} href="">
