@@ -1,0 +1,19 @@
+.headingContainer {
+  text-align: left;
+  width: 86%;
+  margin-left: 9%;
+}
+
+.heading {
+  font: var(--font-header);
+  color: var(--color-text-body);
+  margin: 0;
+  line-height: 40px;
+}
+
+.subheading {
+  font: var(--font-sub-header);
+  color: var(--color-text-header);
+  margin: 0 0 20px;
+  line-height: 35px;
+}
