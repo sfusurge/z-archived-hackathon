@@ -1,7 +1,7 @@
 .container{
     background-color: var(--color-background-popup);
-    margin-top: 2%;
-    width: 100%;
+    padding-top: 21px;
+    width: 963px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -10,6 +10,7 @@
 .question{
     margin-bottom: 26px;
     width: 45%;
+    margin-left: 2.5%;
 }
 
 @media only screen and (max-width: 700px){

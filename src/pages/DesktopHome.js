@@ -1,7 +1,8 @@
+import FAQ from "../components/AllQuestions"
 const DesktopHome = props => {
   return (
     <>
-      Desktop
+      <FAQ/>
     </>
   )
 }
