@@ -1,6 +1,6 @@
 import EventTracksHeader from './EventTracksHeader.js'
 import EventTracksDescriptions from './EventTracksDescriptions.js'
-import styles from "../css/EventTracks.module.css";
+import styles from "../css/EventTracks.module.css"
 
 const EventTracks = props => {
     const description1 = 'Hacks focused on creating tools to build community and cultivate relationships in a digital environment.'

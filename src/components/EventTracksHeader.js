@@ -1,4 +1,4 @@
-import styles from "../css/EventTracksHeader.module.css";
+import styles from "../css/EventTracksHeader.module.css"
 
 
 const EventTracksHeader = props => {
