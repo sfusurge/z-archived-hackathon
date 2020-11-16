@@ -19,7 +19,6 @@ const Modal = ({ children, origin, title, onClose }) => {
   const container = useRef(null)
 
   const registerMouse = event => {
-    console.log("test")
     if (event.button !== 0) return
     event.preventDefault()
     event.stopPropagation()
@@ -54,8 +53,6 @@ const Modal = ({ children, origin, title, onClose }) => {
       right: node.offsetWidth + nodeLocation.x + mouseDelta.x,
       bottom: node.offsetHeight + nodeLocation.y + mouseDelta.y
     }
-
-    console.log(deltaBox)
 
     const newLoc = { ...nodeLocation }
 
