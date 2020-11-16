@@ -3,6 +3,8 @@ import toggleTheme from '../utils/toggleTheme'
 import styles from '../css/MobileHeader.module.css'
 
 import Banner from '../components/Banner'
+import surgeBanner from '../assets/surge-banner.png'
+import mlhBanner from '../assets/mlh-banner.png'
 
 const MobileHeader = props => {
   return (
@@ -11,7 +13,21 @@ const MobileHeader = props => {
         <button className={styles.themeButton} onClick={toggleTheme}>
           <div className={styles.themeToggle} />
         </button>
-        <Banner width="110" />
+        <Banner
+          width="110"
+          surge={{
+            src: surgeBanner,
+            alt: 'Surge Banner',
+            width: '45px',
+            height: '87px'
+          }}
+          mlh={{
+            src: mlhBanner,
+            alt: 'MLH Banner',
+            width: '50px',
+            height: '87px'
+          }}
+        />
       </div>
       <div className={styles.headingContainer}>
         <div className={styles.titleContainer}>
