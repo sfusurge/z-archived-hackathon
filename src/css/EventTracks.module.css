@@ -1,80 +1,72 @@
-.container{
+.container {
+  width: 62%;
+  margin-left: 17%;
+  margin-right: 17%;
+}
+
+@media only screen and (min-width: 900px) {
+  .container {
     width: 594px;
     padding-top: 29px;
     padding-bottom: 72px;
     padding-left: 30px;
     padding-right: 38px;
+  }
 }
 
-.container{
-    padding-left: 17%;
-    padding-right: 17%;
-}
-
-@media only screen and (min-width: 900px) {
-    .container{
-        width: 594px;
-        padding-top: 29px;
-        padding-bottom: 72px;
-        padding-left: 30px;
-        padding-right: 38px;
-    }
-}
-
-.descriptionsContainer{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 50px;
+.descriptionsContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
 }
 
 .titleContainer {
-    width: 60%;
+  width: 71%;
 }
 
 .headerFont {
-    font: var(--font-sub-header);
-    margin: 0;
+  font: var(--font-sub-header);
+  margin: 0;
 }
 
 .paragraph {
-    font: var(--font-body);
-    line-height: 25px;
-    margin: 0;
-   
+  font: var(--font-body);
+  line-height: 25px;
+  margin: 0;
 }
 
-.connectionsTrackImg{
-    width: 98px;
-    height: 101px;
-    background-image: url('../assets/light/connections-track-light.svg');
+.connectionsTrackImg {
+  width: 98px;
+  height: 101px;
+  background-image: url('../assets/light/connections-track-light.svg');
 }
 
-[data-theme="dark"] .connectionsTrackImg{
-    width: 98px;
-    height: 101px;
-    background-image: url('../assets/dark/connectionsTrack-dark.svg');
+[data-theme='dark'] .connectionsTrackImg {
+  width: 98px;
+  height: 101px;
+  background-image: url('../assets/dark/connectionsTrack-dark.svg');
 }
 
-.environmentImg{
-    width: 90px;
-    height: 90px;
-    background-image: url('../assets/light/environmentTrack-light.svg');
+.environmentImg {
+  width: 90px;
+  height: 90px;
+  background-image: url('../assets/light/environmentTrack-light.svg');
 }
 
-[data-theme="dark"] .environmentImg{
-    width: 90px;
-    height: 90px;
-    background-image: url('../assets/dark/environmentTrack-dark.svg');
+[data-theme='dark'] .environmentImg {
+  width: 90px;
+  height: 90px;
+  background-image: url('../assets/dark/environmentTrack-dark.svg');
 }
 
-.healthImg{
-    width: 98px;
-    height: 86px; 
-    background-image: url('../assets/light/healthTrack-light.svg');
+.healthImg {
+  width: 98px;
+  height: 86px;
+  background-image: url('../assets/light/healthTrack-light.svg');
 }
 
-[data-theme="dark"] .healthImg{
-    width: 98px;
-    height: 86px; 
-    background-image: url('../assets/dark/healthTrack-dark.svg');
+[data-theme='dark'] .healthImg {
+  width: 98px;
+  height: 86px;
+  background-image: url('../assets/dark/healthTrack-dark.svg');
 }
