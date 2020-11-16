@@ -16,8 +16,12 @@
 .themeButton {
   border: none;
   background: transparent;
-  margin: 0;
+  height: 0;
   padding: 0;
+}
+
+.themeButton:focus {
+  outline: none;
 }
 
 .themeToggle {
@@ -82,7 +86,7 @@
 }
 
 .applyButton {
-  width: 80%;
+  width: 100%;
   display: block;
   margin: 33px auto 0;
   height: 50px;

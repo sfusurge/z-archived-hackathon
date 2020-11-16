@@ -1,0 +1,11 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 200px 9% 0;
+}
+
+.link {
+  font: var(--font-body);
+  color: var(--color-text-body);
+  line-height: 30px;
+}
