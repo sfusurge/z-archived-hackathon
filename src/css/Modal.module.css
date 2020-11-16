@@ -1,6 +1,5 @@
 .container {
-  position: absolute;
-  z-index: 1;
+  position: fixed;
   background-color: var(--color-modal);
   display: flex;
   flex-direction: column-reverse;
@@ -33,6 +32,10 @@
   stroke: var(--color-text-body);
 }
 
+.close {
+  cursor: pointer;
+}
+
 .maximize rect {
   stroke: var(--color-text-body);
 }
@@ -47,6 +50,9 @@
   flex-direction: row;
   padding: 0 0 26px 0;
   background-color: var(--color-modal-accent);
+  max-width: 80vw;
+  max-height: 80vh;
+  overflow: scroll;
 }
 
 .scroll{

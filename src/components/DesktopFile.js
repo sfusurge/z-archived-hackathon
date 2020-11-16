@@ -1,11 +1,30 @@
+import { useState } from "react"
+
+import Modal from "../components/Modal"
+
 import styles from '../css/DesktopFile.module.css'
 
-const DesktopFile = props => {
+const DesktopFile = ({ Content, ...props }) => {
+  const [isOpen, setIsOpen] = useState(false)
+
+  const openFile = () => {
+    setIsOpen(!!Content)
+  }
+
+  const closeFile = () => {
+    setIsOpen(false)
+  }
+
   return (
-    <div className={styles.container}>
-      <img src={props.icon} alt="File icon" />
-      <p className = {styles.text}>{props.text}</p>
-    </div>
+    <>
+      {isOpen && <Modal title={props.text} onClose={closeFile}>
+        <Content />
+      </Modal>}
+      <div className={styles.container} onClick={openFile}>
+        <img src={props.icon} alt="File icon" />
+        <p className={styles.text}>{props.text}</p>
+      </div>
+    </>
   )
 }
 

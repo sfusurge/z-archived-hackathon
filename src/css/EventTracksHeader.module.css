@@ -1,6 +1,7 @@
 .headerFont {
   font: var(--font-header);
   margin: 0;
+  color: var(--color-text-body);
 }
 
 .subHeaderFont {
@@ -13,4 +14,5 @@
   font: var(--font-body);
   line-height: 25px;
   margin-top: 30px;
+  color: var(--color-text-body);
 }

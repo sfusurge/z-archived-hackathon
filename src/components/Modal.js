@@ -1,5 +1,6 @@
 import { useEffect, useState, useRef } from "react"
 import _ from "lodash"
+import getIndex from "../utils/indexManager"
 
 import styles from "../css/Modal.module.css"
 
@@ -14,6 +15,7 @@ const Modal = ({ children, origin, title, onClose }) => {
   const [nodeLocation, setNodeLocation] = useState({ x: origin?.x ?? 0, y: origin?.y ?? 0 })
   const [mouseLocation, setMouseLocation] = useState({ x: 0, y: 0 })
   const [dragging, setDragging] = useState(false)
+  const [index, setIndex] = useState(1)
   const container = useRef(null)
 
   const registerMouse = event => {
@@ -25,6 +27,7 @@ const Modal = ({ children, origin, title, onClose }) => {
       x: event.clientX,
       y: event.clientY
     })
+    setIndex(getIndex())
   }
 
   const unRegisterMouse = event => {
@@ -105,21 +108,26 @@ const Modal = ({ children, origin, title, onClose }) => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [dragging])
 
+  useEffect(() => {
+    setIndex(getIndex())
+  }, [])
+
   return (
     <div
       className={styles.container}
       style={{
         left: `${nodeLocation.x}px`,
-        top: `${nodeLocation.y}px`
+        top: `${nodeLocation.y}px`,
+        zIndex: index
       }}
       ref={container}
     >
       <div className={styles.main}>
         {children}
-        <div className={styles.scroll}>
+        {/* <div className={styles.scroll}>
           <ScrollUp />
           <ScrollDown />
-        </div>
+        </div> */}
       </div>
       <div className={styles.topBar} onMouseDown={registerMouse}>
         <p className={styles.title}>{title}</p>
