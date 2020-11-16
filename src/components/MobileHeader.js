@@ -3,8 +3,8 @@ import toggleTheme from '../utils/toggleTheme'
 import styles from '../css/MobileHeader.module.css'
 
 import Banner from '../components/Banner'
-import surgeBanner from '../assets/surge-banner.png'
-import mlhBanner from '../assets/mlh-banner.png'
+import surgeBanner from '../assets/surge-banner.svg'
+import mlhBanner from '../assets/mlh-banner.svg'
 
 const MobileHeader = props => {
   return (

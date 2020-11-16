@@ -6,11 +6,12 @@ const FAQs1 = [
   {
     question: 'What is a hackathon?',
     answer:
-      'This is about the length of a sentence. We want to include about 3 sentences worth of stuff to answer questions. Butter is a healthy and nutritious snack.'
+      'A hackathon is an event where people collaborate intensively to build a project from scratch in a short amount of time.'
   },
   {
-    question: 'Will the hackathon happen virtually or in-person?',
-    answer: 'We are excited to be hosting our first virtual hackathon!'
+    question: 'Can I work on a previous project?',
+    answer:
+      'No, all projects must be built from scratch during StormHacks. However, you are welcome to brainstorm project ideas before the event.'
   },
   {
     question: 'What if I’ve never been to a hackathon?',
@@ -20,9 +21,14 @@ const FAQs1 = [
   { question: 'What kind of activities will there be?', answer: '' },
   {
     question: 'What platform will you be using to host the event?',
-    answer: ''
+    answer:
+      'We will be hosting the event on Discord. Opening/closing ceremnies and workshops will take place on Youtube Premiere or Zoom.'
   },
-  { question: 'How will we recieve swag?', answer: '' }
+  {
+    question: 'How will we recieve swag?',
+    answer:
+      'Swag will be shipped out to the address you provide during registration!'
+  }
 ]
 
 const FAQs2 = [
@@ -44,10 +50,18 @@ const FAQs2 = [
   {
     question: 'How will communication work during the event?',
     answer:
-      'All pre-event communications will occur via email, so sign up for the Hack the North 2020++ mailing list! During the event, we’ll be using a mix of our Discord platform and other tools to engage and communicate important information with all attendees'
+      'All pre-event communications will occur via email, so sign up for the StormHacks mailing list! During the event, we’ll be using our Discord server to communicate important information and updates to all attendees'
   },
-  { question: 'When do hacker applications open?', answer: '' },
-  { question: '404: Questions not found?', answer: '' }
+  {
+    question: 'When do hacker applications open?',
+    answer:
+      'Hacker applications will open on December 28th! Stay tuned for more information.'
+  },
+  {
+    question: '404: Questions not found?',
+    answer:
+      "Contact us at <placeholder>@stormhacks.com with your question and we'll get back to you as soon as we can!"
+  }
 ]
 
 const AllQuestions = props => {
