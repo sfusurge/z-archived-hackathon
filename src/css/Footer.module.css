@@ -1,0 +1,76 @@
+.container{
+    display: flex;
+    height: 70px;
+    background-color: var(--color-footer);
+    justify-content: space-between;
+    align-items: center;
+}
+
+.innerContainer{
+    width: 400px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#logoPad{
+    margin-left: 3%;
+    height: 34px;
+    width: 34px;
+    background-image: url('../assets/light/surgeIcon-light.svg');
+}
+
+[data-theme="dark"] #logoPad{ 
+    background-image: url('../assets/dark/surgeIcon-dark.svg');
+}
+
+#packageLinks{
+    display: flex;
+}
+
+.hyperLinks{
+    padding: 5px;
+    display: block;
+    text-align: right;
+    font: var(--font-body);
+    color: #F4F4F4
+}
+
+.themeButton {
+    border: none;
+    background: transparent;
+    margin: 0;
+    padding: 0;
+}
+
+.themeButton:focus {
+    outline: none;
+}
+
+.themeToggle {
+    height: 34px;
+    width: 34px;
+    margin: 10px 15px;
+    background-image: url('../assets/light/lightmodeIcon-desktop.svg');
+}
+
+[data-theme="dark"] .themeToggle {
+    background-image: url('../assets/dark/darkmodeIcon-desktop.svg');
+}
+
+.notificationButton{
+    border: none;
+    background: transparent;
+    margin: 0;
+    padding: 0;
+}
+
+.notificationButton:focus {
+    outline: none;
+}
+
+.notificationIcon{
+    height: 34px;
+    width: 36px;
+    background-image: url('../assets/notifications-icon.svg');
+}

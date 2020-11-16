@@ -1,9 +1,5 @@
 const DesktopHome = props => {
-  return (
-    <>
-      Desktop
-    </>
-  )
+  return <>Desktop</>
 }
 
 export default DesktopHome
