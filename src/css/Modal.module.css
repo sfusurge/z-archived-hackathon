@@ -50,6 +50,9 @@
   flex-direction: row;
   padding: 0 0 26px 0;
   background-color: var(--color-modal-accent);
+  max-width: 80vw;
+  max-height: 80vh;
+  overflow: scroll;
 }
 
 .scroll{

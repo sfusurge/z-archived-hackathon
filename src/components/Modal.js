@@ -124,10 +124,10 @@ const Modal = ({ children, origin, title, onClose }) => {
     >
       <div className={styles.main}>
         {children}
-        <div className={styles.scroll}>
+        {/* <div className={styles.scroll}>
           <ScrollUp />
           <ScrollDown />
-        </div>
+        </div> */}
       </div>
       <div className={styles.topBar} onMouseDown={registerMouse}>
         <p className={styles.title}>{title}</p>
