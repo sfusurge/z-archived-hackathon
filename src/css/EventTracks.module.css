@@ -1,6 +1,24 @@
 .container{
-    padding-left: 5%;
-    padding-right: 5%;
+    width: 594px;
+    padding-top: 29px;
+    padding-bottom: 72px;
+    padding-left: 30px;
+    padding-right: 38px;
+}
+
+.container{
+    padding-left: 17%;
+    padding-right: 17%;
+}
+
+@media only screen and (min-width: 900px) {
+    .container{
+        width: 594px;
+        padding-top: 29px;
+        padding-bottom: 72px;
+        padding-left: 30px;
+        padding-right: 38px;
+    }
 }
 
 .descriptionsContainer{
