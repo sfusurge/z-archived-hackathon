@@ -33,7 +33,7 @@
   display: block;
   text-align: right;
   font: var(--font-body);
-  color: #f4f4f4;
+  color: var(--color-text-white);
 }
 
 .themeButton {
