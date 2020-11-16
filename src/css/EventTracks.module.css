@@ -6,11 +6,12 @@
 
 @media only screen and (min-width: 900px) {
   .container {
-    width: 594px;
+    width: 564px;
     padding-top: 29px;
     padding-bottom: 72px;
     padding-left: 30px;
-    padding-right: 38px;
+    padding-right: 30px;
+    margin: 0;
   }
 }
 
