@@ -6,14 +6,14 @@ import Terminal from '../assets/terminalFileIcon.svg'
 import Faq from '../assets/faqFileIcon.svg'
 
 const FileIconGroup = () => {
-    return(
-        <div>
-            <DesktopFile icon = {About} text = "What is StormHacks"/>
-            <DesktopFile icon = {Tracks} text = "Event Tracks"/>
-            <DesktopFile icon = {Sponsors} text = "Sponsors"/>
-            <DesktopFile icon = {Terminal} text = "Apply.exe"/>
-            <DesktopFile icon = {Faq} text = "FAQ"/>
-        </div>
-    )
+  return (
+    <>
+      <DesktopFile icon={About} text="What is StormHacks" />
+      <DesktopFile icon={Tracks} text="Event Tracks" />
+      <DesktopFile icon={Sponsors} text="Sponsors" />
+      <DesktopFile icon={Terminal} text="Apply.exe" />
+      <DesktopFile icon={Faq} text="FAQ" />
+    </>
+  )
 }
 export default FileIconGroup
