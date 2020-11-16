@@ -1,50 +1,54 @@
 :root {
-  --color-text-white: #f4f4f4;
   --color-background-main: #f8f8f8;
   --color-background-popup: #ffffff;
-  --color-text-body: #282828;
-  --color-text-header: #5a60f3;
   --color-date-header: #a1abff;
   --color-footer: #5a60f3;
+  --color-lines: #d3d3d3;
+  --color-modal: #ffffff;
+  --color-modal-accent: #f0f0f0;
   --color-scroll: #f0f0f0;
   --color-scroll-arrows: #c4c4c4;
-  --color-lines: #d3d3d3;
-  --font-title: 700 54px Poppins;
-  --font-header: 600 24px Poppins;
-  --font-sub-header: 700 20px Poppins;
-  --font-date-header: 600 16px Poppins;
+  --color-text-body: #282828;
+  --color-text-header: #5a60f3;
+  --color-text-white: #f4f4f4;
   --font-body: 500 16px Barlow;
   --font-body-bold: 700 16px Barlow;
+  --font-date-header: 600 16px Poppins;
   --font-email-header: 600 24px Poppins;
   --font-email-sub-header: 400 20px Poppins;
   --font-email-placeholder: 500 12px Barlow;
+  --font-header: 600 24px Poppins;
+  --font-sub-header: 700 20px Poppins;
+  --font-title: 700 54px Poppins;
 }
 
 @media only screen and (min-width: 500px) {
   :root {
-    --font-title: 700 136px Poppins;
-    --font-subtitle: 600 36px Poppins;
-    --font-header: 600 25px Poppins;
-    --font-sub-header: 700 20px Poppins;
-    --font-body: 500 15px Barlow;
     --font-body-bold: 700 15px Barlow;
     --font-email-header: 600 50px Poppins;
     --font-email-sub-header: 400 36px Poppins;
     --font-email-placeholder: 500 18px Barlow;
+    --font-header: 600 25px Poppins;
+    --font-sub-header: 700 20px Poppins;
+    --font-subtitle: 600 36px Poppins;
+    --font-title: 700 136px Poppins;
+    --font-body: 500 15px Barlow;
   }
 }
 
 [data-theme='dark'] {
   --color-background-main: #323232;
   --color-background-popup: #424349;
-  --color-text-body: var(--color-text-white);
-  --color-text-header: #f5b523;
-  --color-footer: #282828;
   --color-date-header: #f4f4f4;
+  --color-footer: #282828;
+  --color-lines: #616161;
+  --color-modal: #212121;
+  --color-modal-accent: #212121;
+  --color-mobile-gears: #3c3c3c;
   --color-scroll: #5a5b62;
   --color-scroll-arrows: #f4f4f4;
-  --color-lines: #616161;
-  --color-mobile-gears: #3c3c3c;
+  --color-text-body: var(--color-text-white);
+  --color-text-header: #f5b523;
 }
 
 body {

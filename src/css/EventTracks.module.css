@@ -2,6 +2,7 @@
   width: 62%;
   margin-left: 17%;
   margin-right: 17%;
+  background-color: var(--color-background-popup);
 }
 
 @media only screen and (min-width: 900px) {
@@ -27,6 +28,7 @@
 
 .headerFont {
   font: var(--font-sub-header);
+  color: var(--color-text-body);
   margin: 0;
 }
 
@@ -34,6 +36,7 @@
   font: var(--font-body);
   line-height: 25px;
   margin: 0;
+  color: var(--color-text-body);
 }
 
 .connectionsTrackImg {

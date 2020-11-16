@@ -1,0 +1,29 @@
+.container {
+  width: 884px;
+  height: 748px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--color-background-popup);
+}
+
+.heading{
+  color: var(--color-text-body);
+  font: var(--font-sub-header);
+  margin: 30px 0 38px;
+  width: 95%;
+}
+
+.line {
+  background-color: var(--color-lines);
+  height: 1px;
+  width: 95%;
+}
+
+.sponsors {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 92%;
+  height: 152px;
+}

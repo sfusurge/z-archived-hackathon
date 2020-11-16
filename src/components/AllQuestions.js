@@ -16,7 +16,7 @@ const FAQs1 = [
   {
     question: 'What if I’ve never been to a hackathon?',
     answer:
-      'Stormhacks welcomes students of all skill levels. Whether you’re a newcomer or a hackathon veteran, we’ll have talks, workshops and mentors to help you with your project throughout the event. By the end of the hackathon, you will have new skills, new friends and a project. All you need to bring is your eagerness to learn and meet awesome people.'
+      'Stormhacks welcomes students of all skill levels. Whether you’re a newcomer or a hackathon veteran, we’ll have talks, workshops and mentors to help you with your project throughout the event. All you need to bring is your eagerness to learn.'
   },
   { question: 'What kind of activities will there be?', answer: '' },
   {

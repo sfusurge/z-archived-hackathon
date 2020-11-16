@@ -37,3 +37,8 @@
   bottom: 0;
   width: 100%;
 }
+
+.files {
+  position: absolute;
+  left: 3%;
+}

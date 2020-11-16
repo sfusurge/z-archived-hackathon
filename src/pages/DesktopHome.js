@@ -1,7 +1,7 @@
 import Banner from "../components/Banner"
 import Footer from "../components/Footer"
-
 import FileIconGroup from '../components/FileIconGroup.js'
+
 
 import styles from "../css/DesktopHome.module.css"
 
@@ -33,6 +33,9 @@ const DesktopHome = props => {
       </div>
       <div className={styles.footer}>
         <Footer />
+      </div>
+      <div className={styles.files}>
+        <FileIconGroup />
       </div>
     </div>
   )
