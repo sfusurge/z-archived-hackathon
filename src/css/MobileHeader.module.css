@@ -36,6 +36,10 @@
   background-image: url('../assets/dark/darkmodeIcon-mobile.svg');
 }
 
+.banners {
+  margin-right: 30px;
+}
+
 .headingContainer {
   width: 300px;
   margin: 100px auto 0;

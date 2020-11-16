@@ -13,21 +13,23 @@ const MobileHeader = props => {
         <button className={styles.themeButton} onClick={toggleTheme}>
           <div className={styles.themeToggle} />
         </button>
-        <Banner
-          width="110"
-          surge={{
-            src: surgeBanner,
-            alt: 'Surge Banner',
-            width: '45px',
-            height: '87px'
-          }}
-          mlh={{
-            src: mlhBanner,
-            alt: 'MLH Banner',
-            width: '50px',
-            height: '87px'
-          }}
-        />
+        <div className={styles.banners}>
+          <Banner
+            width="110"
+            surge={{
+              src: surgeBanner,
+              alt: 'Surge Banner',
+              width: '45px',
+              height: '87px'
+            }}
+            mlh={{
+              src: mlhBanner,
+              alt: 'MLH Banner',
+              width: '50px',
+              height: '87px'
+            }}
+          />
+        </div>
       </div>
       <div className={styles.headingContainer}>
         <div className={styles.titleContainer}>
