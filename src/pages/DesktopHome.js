@@ -1,6 +1,8 @@
 import Banner from "../components/Banner"
 import Footer from "../components/Footer"
 
+import FileIconGroup from '../components/FileIconGroup.js'
+
 import styles from "../css/DesktopHome.module.css"
 
 import surgeBanner from "../assets/surge-banner.svg"

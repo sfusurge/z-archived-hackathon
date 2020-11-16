@@ -4,7 +4,7 @@ const DesktopFile = props => {
   return (
     <div className={styles.container}>
       <img src={props.icon} alt="File icon" />
-      <p>{props.text}</p>
+      <p className = {styles.text}>{props.text}</p>
     </div>
   )
 }

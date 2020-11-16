@@ -4,7 +4,7 @@ import _ from 'lodash'
 import MobileHome from '../pages/MobileHome'
 import DesktopHome from '../pages/DesktopHome'
 
-const breakpoint = 700
+const breakpoint = 500
 const Home = props => {
   const [isMobile, setMobile] = useState(window.innerWidth < breakpoint)
 

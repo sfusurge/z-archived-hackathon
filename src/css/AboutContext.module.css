@@ -1,0 +1,61 @@
+.container{
+  width: 594px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 6%;
+  margin-right: 6%;
+  margin-top: 32px;
+  justify-content: flex-start;
+  background-color: var(--color-background-popup);
+}
+
+.otter{
+  width: 522px;
+  height: 138px;
+  background-image: url("../assets/about-otters.svg"); 
+}
+
+[data-theme='dark'] .otter{
+  background-image: url("../assets/about-otters-dark.svg");
+}
+.header{
+  font: var(--font-header);
+  color: var(--color-text-body);
+  margin: 0;
+  margin-top: 42.6px;
+  /* line-height: 40px; */
+}
+
+.subheader{
+  font: var(--font-sub-header);
+  color: var(--color-text-header);
+  margin: 0;
+  margin-top: 7px;
+  /* line-height: 35px; */
+}
+
+.body1{
+  color: var(--color-text-body);
+  font: var(--font-body);
+  width: 81%;
+  margin: 0;
+  margin-top: 33px;
+  line-height: 25px;
+}
+
+.body2{
+  color: var(--color-text-body);
+  font: var(--font-body);
+  margin: 0;
+  width: 89.8%;
+  margin-top: 15px;
+  line-height: 25px;
+}
+.footer{
+  color: var(--color-text-body);
+  font: var(--font-body-bold);
+  margin: 0;
+  margin-top: 24px;
+  line-height: 35px;
+  margin-bottom: 18px;
+}
