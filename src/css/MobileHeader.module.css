@@ -99,3 +99,24 @@
   font: var(--font-sub-header);
   border: none;
 }
+
+@media only screen and (min-width: 600px) {
+  .headingContainer{
+    width: 74%;
+    margin: 0 0 0 10%;
+  }
+
+  .title{
+    line-height: 92px;
+    width: 50%;
+  }
+
+  .date {
+    font: var(--font-email-sub-header);
+  }
+
+  .stormhacksLogo {
+    width: 175px;
+    height: 180px;
+  }
+}
