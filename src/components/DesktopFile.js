@@ -20,7 +20,7 @@ const DesktopFile = ({ Content, ...props }) => {
       {isOpen && <Modal title={props.text} onClose={closeFile}>
         <Content />
       </Modal>}
-      <div className={styles.container} onDoubleClick={openFile}>
+      <div className={styles.container} onClick={openFile}>
         <img src={props.icon} alt="File icon" />
         <p className={styles.text}>{props.text}</p>
       </div>
