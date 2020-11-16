@@ -14,6 +14,7 @@ const Modal = ({ children, origin, title, onClose }) => {
   const [nodeLocation, setNodeLocation] = useState({ x: origin?.x ?? 0, y: origin?.y ?? 0 })
   const [mouseLocation, setMouseLocation] = useState({ x: 0, y: 0 })
   const [dragging, setDragging] = useState(false)
+  const container = useRef(null)
 
   const registerMouse = event => {
     if (event.button !== 0) return
@@ -35,14 +36,60 @@ const Modal = ({ children, origin, title, onClose }) => {
   const mouseMoveHandler = _.throttle(event => {
     event.preventDefault()
     event.stopPropagation()
+
+    const { current: node } = container
+
+    const mouseDelta = {
+      x: (event.clientX - mouseLocation.x),
+      y: (event.clientY - mouseLocation.y)
+    }
+
+    const deltaBox = {
+      left: nodeLocation.x + mouseDelta.x,
+      top: nodeLocation.y + mouseDelta.y,
+      right: node.offsetWidth + nodeLocation.x + mouseDelta.x,
+      bottom: node.offsetHeight + nodeLocation.y + mouseDelta.y
+    }
+
+    const newLoc = { ...nodeLocation }
+
+    if (mouseDelta.x > 0) {
+      // move right && less than width
+      if (deltaBox.right < window.innerWidth) {
+        newLoc.x = deltaBox.left
+      } else {
+        newLoc.x = window.innerWidth - node.offsetWidth
+      }
+    } else if (mouseDelta.x < 0) {
+      // move left && greater than 0
+      if (deltaBox.left > 0) {
+        newLoc.x = deltaBox.left
+      } else {
+        newLoc.x = 0
+      }
+    }
+
+    if (mouseDelta.y > 0) {
+      // move down && less than height
+      if (deltaBox.bottom < window.innerHeight) {
+        newLoc.y = deltaBox.top
+      } else {
+        newLoc.y = window.innerHeight - node.offsetHeight
+      }
+    } else if (mouseDelta.y < 0) {
+      // move up && greater tahn 0
+      if (deltaBox.top > 0) {
+        newLoc.y = deltaBox.top
+      } else {
+        newLoc.y = 0
+      }
+    }
+
     setMouseLocation({
       x: event.clientX,
       y: event.clientY
     })
-    setNodeLocation({
-      x: nodeLocation.x - (mouseLocation.x - event.clientX),
-      y: nodeLocation.y - (mouseLocation.y - event.clientY)
-    })
+    setNodeLocation(newLoc)
   }, 15)
 
 
@@ -65,6 +112,7 @@ const Modal = ({ children, origin, title, onClose }) => {
         left: `${nodeLocation.x}px`,
         top: `${nodeLocation.y}px`
       }}
+      ref={container}
     >
       <div className={styles.main}>
         {children}
