@@ -8,11 +8,6 @@
   flex-wrap: wrap;
 }
 
-.heading {
-  font: var(--font-header);
-  color: var(--color-text-body);
-}
-
 .columns {
   display: flex;
   width: 45%;

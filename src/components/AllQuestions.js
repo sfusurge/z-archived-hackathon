@@ -56,7 +56,6 @@ const AllQuestions = props => {
   return (
     <div className={styles.container}>
       <div className={styles.columns}>
-        <p className={styles.heading}>FAQs</p>
         {FAQs1.map((faq, i) => {
           return (
             <div className={styles.question} key={faq.question}>

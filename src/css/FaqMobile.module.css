@@ -1,0 +1,5 @@
+.heading {
+  margin: 82px 9% 15px;
+  font: var(--font-header);
+  color: var(--color-text-body);
+}
