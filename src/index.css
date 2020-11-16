@@ -1,14 +1,18 @@
 :root {
-  --color-background-main: #F8F8F8;
-  --color-background-popup: #FFFFFF;
+  --color-text-white: #f4f4f4;
+  --color-background-main: #f8f8f8;
+  --color-background-popup: #ffffff;
   --color-text-body: #282828;
-  --color-text-header: #5A60F3;
-  --color-scroll: #F0F0F0;
-  --color-scroll-arrows: #C4C4C4;
-  --color-lines: #D3D3D3;
+  --color-text-header: #5a60f3;
+  --color-date-header: #a1abff;
+  --color-footer: #5a60f3;
+  --color-scroll: #f0f0f0;
+  --color-scroll-arrows: #c4c4c4;
+  --color-lines: #d3d3d3;
   --font-title: 700 54px Poppins;
   --font-header: 600 24px Poppins;
   --font-sub-header: 700 20px Poppins;
+  --font-date-header: 600 16px Poppins;
   --font-body: 500 16px Barlow;
   --font-body-bold: 700 16px Barlow;
   --font-email-header: 600 24px Poppins;
@@ -17,7 +21,7 @@
 }
 
 @media only screen and (min-width: 700px) {
-  :root{
+  :root {
     --font-title: 700 136px Poppins;
     --font-subtitle: 600 36px Poppins;
     --font-header: 600 25px Poppins;
@@ -26,18 +30,22 @@
     --font-body-bold: 700 15px Barlow;
     --font-email-header: 600 50px Poppins;
     --font-email-sub-header: 400 36px Poppins;
-    --font-email-placeholder: 500 18px Barlow; 
+    --font-email-placeholder: 500 18px Barlow;
   }
 }
 
 [data-theme='dark'] {
   --color-background-main: #323232;
   --color-background-popup: #424349;
-  --color-text-body: #F4F4F4;
-  --color-text-header: #F5B523;
-  --color-scroll: #5A5B62;
-  --color-scroll-arrows: #F4F4F4;
+  --color-text-body: var(--color-text-white);
+  --color-text-body: #f4f4f4;
+  --color-text-header: #f5b523;
+  --color-footer: #282828;
+  --color-date-header: #f4f4f4;
+  --color-scroll: #5a5b62;
+  --color-scroll-arrows: #f4f4f4;
   --color-lines: #616161;
+  --color-mobile-gears: #3c3c3c;
 }
 
 body {
