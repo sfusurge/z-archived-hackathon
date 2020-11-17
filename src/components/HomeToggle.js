@@ -8,16 +8,19 @@ import TabletHome from '../pages/TabletHome'
 const tabletbreakpoint = 600
 const desktopBreakpoint = 900
 const Home = props => {
-  const [mode, setMode] = useState("desktop")
+  const [mode, setMode] = useState('desktop')
 
   const findMode = () => {
-    console.log(window.innerWidth)
-    if (window.innerWidth <= tabletbreakpoint && mode !== "mobile") {
-      setMode("mobile")
-    } else if (window.innerWidth > tabletbreakpoint && window.innerWidth <= desktopBreakpoint && mode !== "tablet") {
-      setMode("tablet")
-    } else if (window.innerWidth > desktopBreakpoint && mode !== "desktop") {
-      setMode("desktop")
+    if (window.innerWidth <= tabletbreakpoint && mode !== 'mobile') {
+      setMode('mobile')
+    } else if (
+      window.innerWidth > tabletbreakpoint &&
+      window.innerWidth <= desktopBreakpoint &&
+      mode !== 'tablet'
+    ) {
+      setMode('tablet')
+    } else if (window.innerWidth > desktopBreakpoint && mode !== 'desktop') {
+      setMode('desktop')
     }
   }
 
@@ -36,9 +39,9 @@ const Home = props => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
-  if (mode === "mobile") {
+  if (mode === 'mobile') {
     return <MobileHome {...props} />
-  } else if (mode === "tablet") {
+  } else if (mode === 'tablet') {
     return <TabletHome {...props} />
   } else {
     return <DesktopHome {...props} />

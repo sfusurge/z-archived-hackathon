@@ -3,3 +3,10 @@
   font: var(--font-header);
   color: var(--color-text-body);
 }
+
+@media only screen and (max-width: 900px) {
+  .heading {
+    width: 550px;
+    margin: 95px auto 18px;
+  }
+}

@@ -75,3 +75,11 @@
   height: 86px;
   background-image: url('../assets/dark/healthTrack-dark.svg');
 }
+
+@media only screen and (min-width: 600px) {
+  .container {
+    width: 550px;
+    margin: 80px auto 0;
+    background-color: transparent;
+  }
+}
