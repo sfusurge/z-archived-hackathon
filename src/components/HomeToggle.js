@@ -3,6 +3,7 @@ import _ from 'lodash'
 
 import MobileHome from '../pages/MobileHome'
 import DesktopHome from '../pages/DesktopHome'
+import DesktopPromo from '../pages/DesktopPromo'
 
 const breakpoint = 500
 const Home = props => {

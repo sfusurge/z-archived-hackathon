@@ -1,0 +1,51 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: var(--color-background-main);
+}
+
+.banners {
+  position: absolute;
+  right: 0;
+}
+
+.contentContainer {
+  display: flex;
+}
+
+.contentContainer {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.logo {
+  min-width: 200px;
+  height: 210px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('../assets/light/stormhacksLogo-light.svg');
+  margin-right: 40px;
+}
+
+[data-theme='dark'] .logo {
+  background-image: url('../assets/dark/stormhacksLogo-dark.svg');
+}
+
+.textContainer {
+  width: 588px;
+}
+
+.title {
+  font: var(--font-email-header);
+  color: var(--color-text-header);
+  margin: 0;
+}
+
+.date {
+  font: var(--font-email-sub-header);
+  color: var(--color-date-header);
+  margin: 0;
+}
