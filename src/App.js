@@ -1,6 +1,7 @@
 import { useEffect } from 'react'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import toggleTheme from './utils/toggleTheme'
+import DesktopHome from "./pages/DesktopHome"
 
 import HomeToggle from './components/HomeToggle'
 import styles from './css/App.module.css'
@@ -16,6 +17,9 @@ const App = () => {
     <div id={styles.app}>
       <Router>
         <Switch>
+          <Route path="/20210221" >
+            <DesktopHome />
+          </Route>
           <Route path="/">
             <HomeToggle />
           </Route>

@@ -6,7 +6,7 @@ import FileIconGroup from '../components/FileIconGroup.js'
 import styles from "../css/DesktopHome.module.css"
 
 import surgeBanner from "../assets/surge-banner.svg"
-import mlhBanner from "../assets/mlh-banner.svg"
+// import mlhBanner from "../assets/mlh-banner.svg"
 
 const DesktopHome = props => {
   return (
@@ -20,12 +20,12 @@ const DesktopHome = props => {
             width: '84px',
             height: '164px'
           }}
-          mlh={{
-            src: mlhBanner,
-            alt: 'MLH Banner',
-            width: '93px',
-            height: '163px'
-          }}
+          // mlh={{
+          //   src: mlhBanner,
+          //   alt: 'MLH Banner',
+          //   width: '93px',
+          //   height: '163px'
+          // }}
         />
       </div>
       <div className={styles.splash}>
