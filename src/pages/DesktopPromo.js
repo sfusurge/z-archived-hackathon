@@ -4,6 +4,9 @@ import styles from '../css/DesktopPromo.module.css'
 
 import surgeBanner from '../assets/surge-banner.svg'
 import mlhBanner from '../assets/mlh-banner.svg'
+import signUp from '../assets/sign-up-button.svg'
+import sparky from '../assets/sparky-wave.svg'
+import stormy from '../assets/stormy-laying.svg'
 
 const DesktopPromo = props => {
   return (
@@ -24,6 +27,42 @@ const DesktopPromo = props => {
         <div className={styles.textContainer}>
           <p className={styles.title}>Planning StormHacks...</p>
           <p className={styles.date}>February 20-21, 2021</p>
+          <div className={styles.otters}>
+            <img className={styles.sparky} src={sparky} alt="Sparky" />
+            <img className={styles.stormy} src={stormy} alt="Stormy" />
+          </div>
+          <form
+            className={styles.signUpForm}
+            action="https://gmail.us4.list-manage.com/subscribe/post?u=33345c9bc17f10bac6afdd0ac&amp;id=736d801cb8"
+            method="post"
+            name="mc-embedded-subscribe-form"
+            target="_blank"
+            novalidate
+          >
+            <input
+              className={styles.signUpInput}
+              type="email"
+              name="EMAIL"
+              placeholder="Enter your email address to stay up to date!"
+              required
+            />
+            <div style={{ display: 'none', tabindex: '-1' }} aria-hidden="true">
+              <input
+                type="text"
+                name="b_33345c9bc17f10bac6afdd0ac_736d801cb8"
+                value=""
+              />
+              <input value="Subscribe" name="subscribe" />
+              <input value="StormHacks" name="MMERGE3" />
+            </div>
+            <button className={styles.signUpButton} type-="submit">
+              <img
+                className={styles.signUpIcon}
+                src={signUp}
+                alt="Sign Up Button"
+              />
+            </button>
+          </form>
         </div>
       </div>
     </div>

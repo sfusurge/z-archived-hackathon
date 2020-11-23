@@ -27,7 +27,7 @@ const Home = props => {
   if (isMobile) {
     return <MobileHome {...props} />
   } else {
-    return <DesktopHome {...props} />
+    return <DesktopPromo {...props} />
   }
 }
 

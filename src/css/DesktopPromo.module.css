@@ -49,3 +49,55 @@
   color: var(--color-date-header);
   margin: 0;
 }
+
+.otters {
+  display: flex;
+}
+
+.sparky {
+  position: absolute;
+  height: 120px;
+  top: 100px;
+  left: 620px;
+  z-index: -1;
+}
+
+.stormy {
+  position: absolute;
+  top: 114px;
+  left: 700px;
+}
+
+.signUpForm {
+  display: flex;
+  align-items: center;
+  border: 3px solid var(--color-sign-up);
+  background-color: var(--color-sign-up-background);
+  height: 77px;
+  margin-top: 35px;
+}
+
+.signUpInput {
+  font: var(--font-email-placeholder);
+  border: none;
+  width: 583px;
+  padding: 24px;
+  background-color: transparent;
+  color: var(--color-text-body);
+}
+
+.signUpInput:focus {
+  outline: none;
+}
+
+::placeholder {
+  font: var(--font-email-placeholder);
+  color: var(--color-text-body);
+}
+
+.signUpButton {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  margin-right: 10px;
+}
