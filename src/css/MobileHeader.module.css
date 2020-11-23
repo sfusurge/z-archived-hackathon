@@ -140,6 +140,10 @@
     margin: 0;
   }
 
+  .breakLine {
+    display: none;
+  }
+
   .applyButton {
     height: 94px;
     margin-top: 66px;

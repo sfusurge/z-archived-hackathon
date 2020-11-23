@@ -38,16 +38,10 @@ const MobileHeader = props => {
         </div>
         <p className={styles.date}>FEBRUARY 20 - 21, 2021</p>
         <p className={styles.subheading}>24 hours. 300+ Hackers.</p>
-        {props.tabletMode ? (
-          <p className={styles.subheader}>
-            Are you ready to learn, create, and inspire?
-          </p>
-        ) : (
-          <p className={styles.subheader}>
-            Are you ready <br />
-            to learn, create, and inspire?
-          </p>
-        )}
+        <p className={styles.subheader}>
+          Are you ready <br className={styles.breakLine} />
+          to learn, create, and inspire?
+        </p>
         <button className={styles.applyButton}>APPLY NOW</button>
       </div>
     </div>

@@ -4,16 +4,12 @@ const AboutContext = props => {
   return (
     <div className={styles.container}>
       <div className={styles.otter}></div>
-      {props.tabletMode ? (
-        ''
-      ) : (
-        <>
-          <p className={styles.header}>24 hours. 300+ Hackers. </p>
-          <p className={styles.subheader}>
-            Are you ready to learn, create, and inspire?{' '}
-          </p>
-        </>
-      )}
+      <div className={styles.textContainer}>
+        <p className={styles.header}>24 hours. 300+ Hackers. </p>
+        <p className={styles.subheader}>
+          Are you ready to learn, create, and inspire?
+        </p>
+      </div>
       <p className={styles.body1}>
         With interactive workshops, cross-team bonding activities, and a bounty
         of company swag, StormHacks is ready to welcome hackers, designers,

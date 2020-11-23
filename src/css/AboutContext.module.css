@@ -15,6 +15,7 @@
 [data-theme='dark'] .otter {
   background-image: url('../assets/about-otters-dark.svg');
 }
+
 .header {
   font: var(--font-header);
   color: var(--color-text-body);
@@ -70,11 +71,21 @@
   }
 }
 
+@media only screen and (min-width: 600px) {
+  .textContainer {
+    display: none;
+  }
+}
+
 @media only screen and (min-width: 900px) {
   .container {
     width: 594px;
     padding-left: 6%;
     padding-right: 6%;
     padding-top: 32px;
+  }
+
+  .textContainer {
+    display: block;
   }
 }

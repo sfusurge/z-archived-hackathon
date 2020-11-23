@@ -10,8 +10,8 @@ import styles from '../css/TabletHome.module.css'
 const TabletHome = props => {
   return (
     <div className={styles.container}>
-      <MobileHeader tabletMode />
-      <AboutContext tabletMode />
+      <MobileHeader />
+      <AboutContext />
       <EventTracks />
       <FaqMobile />
       <MobileSponsors />
