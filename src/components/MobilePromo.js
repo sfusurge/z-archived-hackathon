@@ -36,8 +36,31 @@ const MobilePromo = props => {
         </div>
         <div className={styles.otter}/>
         <div className={styles.input}>
-          <input className={styles.textBox} placeholder="Enter your email address to stay up to date!"/>
-          <button className={styles.button} >{">"}</button>
+        <form className={styles.input}
+          action="https://gmail.us4.list-manage.com/subscribe/post?u=33345c9bc17f10bac6afdd0ac&amp;id=736d801cb8"
+          method="post"
+          name="mc-embedded-subscribe-form"
+          target="_blank"
+          novalidate>
+          <input
+            className={styles.textBox}
+            type="email"
+            name="EMAIL"
+            placeholder="Enter your email address to stay up to date!"
+            required/>
+            <div style={{ display: 'none', tabindex: '-1' }} aria-hidden="true">
+              <input
+                type="text"
+                name="b_33345c9bc17f10bac6afdd0ac_736d801cb8"
+                value=""
+              />
+              <input value="Subscribe" name="subscribe" />
+              <input value="StormHacks" name="MMERGE3" />
+            </div>
+            <button className={styles.button} type-="submit">
+              {">"}
+            </button>
+          </form>
         </div>
         
       </div>
