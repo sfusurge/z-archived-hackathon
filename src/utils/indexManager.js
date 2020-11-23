@@ -1,4 +1,4 @@
-let index = 1
+let index = 10
 
 const getIndex = () => index++
 
