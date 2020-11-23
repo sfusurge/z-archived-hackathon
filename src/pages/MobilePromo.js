@@ -1,46 +1,50 @@
 import Banner from '../components/Banner'
-
-import styles from '../css/DesktopPromo.module.css'
-
+import toggleTheme from '../utils/toggleTheme'
 import surgeBanner from '../assets/surge-banner.svg'
-import mlhBanner from '../assets/mlh-banner.svg'
 import signUp from '../assets/sign-up-button.svg'
-import sparky from '../assets/sparky-wave.svg'
-import stormy from '../assets/stormy-laying.svg'
+// import mlhBanner from '../assets/mlh-banner.svg'
+import styles from '../css/MobilePromo.module.css'
 
-const DesktopPromo = props => {
+const MobilePromo = props => {
   return (
     <div className={styles.container}>
+      <button className={styles.themeButton} onClick={toggleTheme}>
+        <div className={styles.themeToggle} />
+      </button>
       <div className={styles.banners}>
         <Banner
-          width="207"
+          width="110"
           surge={{
             src: surgeBanner,
             alt: 'Surge Banner',
-            width: '84px',
-            height: '164px'
+            width: '45px',
+            height: '87px'
           }}
+        // mlh={{
+        //   src: mlhBanner,
+        //   alt: 'MLH Banner',
+        //   width: '50px',
+        //   height: '87px'
+        // }}
         />
       </div>
-      <div className={styles.contentContainer}>
-        <div className={styles.logo}></div>
-        <div className={styles.textContainer}>
-          <p className={styles.title}>Planning StormHacks...</p>
-          <p className={styles.date}>February 20-21, 2021</p>
-          <div className={styles.otters}>
-            <img className={styles.sparky} src={sparky} alt="Sparky" />
-            <img className={styles.stormy} src={stormy} alt="Stormy" />
-          </div>
-          <form
-            className={styles.signUpForm}
+      <div className={styles.box}>
+        <div className={styles.title}>
+          {"Planning StormHacks..."}
+        </div>
+        <div className={styles.subtitle}>
+          {"February 20 - 21, 2021"}
+        </div>
+        <div className={styles.otter} />
+        <div className={styles.input}>
+          <form className={styles.input}
             action="https://gmail.us4.list-manage.com/subscribe/post?u=33345c9bc17f10bac6afdd0ac&amp;id=736d801cb8"
             method="post"
             name="mc-embedded-subscribe-form"
             target="_blank"
-            noValidate
-          >
+            novalidate>
             <input
-              className={styles.signUpInput}
+              className={styles.textBox}
               type="email"
               name="EMAIL"
               placeholder="Enter your email address to stay up to date!"
@@ -50,12 +54,12 @@ const DesktopPromo = props => {
               <input
                 type="text"
                 name="b_33345c9bc17f10bac6afdd0ac_736d801cb8"
-                defaultValue=""
+                value=""
               />
-              <input defaultValue="Subscribe" name="subscribe" />
-              <input defaultValue="StormHacks" name="MMERGE3" />
+              <input value="Subscribe" name="subscribe" />
+              <input value="StormHacks" name="MMERGE3" />
             </div>
-            <button className={styles.signUpButton} type-="submit">
+            <button className={styles.button} type-="submit">
               <img
                 className={styles.signUpIcon}
                 src={signUp}
@@ -64,9 +68,13 @@ const DesktopPromo = props => {
             </button>
           </form>
         </div>
+
       </div>
+
+      <div className={styles.logo} />
+
     </div>
   )
 }
 
-export default DesktopPromo
+export default MobilePromo
