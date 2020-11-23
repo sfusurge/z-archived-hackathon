@@ -3,8 +3,6 @@ import _ from 'lodash'
 
 import MobileHome from '../pages/MobileHome'
 import DesktopHome from '../pages/DesktopHome'
-import DesktopPromo from '../pages/DesktopPromo'
-import MobilePromo from "../pages/MobilePromo"
 import TabletHome from '../pages/TabletHome'
 
 const tabletbreakpoint = 600
@@ -41,13 +39,12 @@ const Home = props => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
-  if (mode === 'mobile' || mode === "tablet") {
-    return <MobilePromo {...props} />
-    // return <MobileHome {...props} />
-    // } else if (mode === 'tablet') {
-    //   return <TabletHome {...props} />
+  if (mode === 'mobile') {
+    return <MobileHome {...props} />
+  } else if (mode === 'tablet') {
+    return <TabletHome {...props} />
   } else {
-    return <DesktopPromo {...props} />
+    return <DesktopHome {...props} />
   }
 }
 
