@@ -107,10 +107,11 @@
 
 .logo{
   position: absolute;
-  left: 37%;
-  top: 74%;
-  min-width: 85px;
-  height: 88px;
+  left: 50vw;
+  transform: translateX(-50%);
+  top: 65%;
+  width: clamp(95px, 25vw, 150px);
+  height: clamp(98px, 25vw, 150px);
   background-size: contain;
   background-repeat: no-repeat;
   background-image: url('../assets/light/stormhacksLogo-light.svg');
