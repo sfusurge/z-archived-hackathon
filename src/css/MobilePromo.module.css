@@ -1,0 +1,121 @@
+.container{
+  background-color: var(--color-background-main);
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.themeButton {
+  border: none;
+  background: transparent;
+  height: 0;
+  padding: 0;
+}
+
+.themeToggle {
+  height: 34px;
+  width: 34px;
+  margin: 16px 21px;
+  background-repeat: no-repeat;
+  background-image: url('../assets/light/lightmodeIcon-mobile.svg');
+}
+
+[data-theme='dark'] .themeToggle {
+  background-image: url('../assets/dark/darkmodeIcon-mobile.svg');
+}
+
+.banners {
+  position: absolute;
+  right: 28px;
+}
+
+.box{
+  position: absolute;
+  top: 30vh;
+  left: 9%;
+  width: 82%;
+  
+}
+.title{
+  width: 260px;
+  color: var(--color-text-header);
+  font: var(--font-header); 
+  line-height: 36px;
+}
+
+.subtitle{
+  position: relative;
+  color: var(--color-date-header);
+  font: var(--font-email-sub-header); 
+  line-height: 30px;
+  z-index: 1;
+
+}
+
+.otter{
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  width: 125px;
+  height: 146px;
+  z-index: 0;
+
+  background-image: url("../assets/stormy-wave.svg");
+}
+[data-theme='dark'] .otter {
+  background-image: url("../assets/sparky-wave.svg");
+}
+
+.textBox{
+  position: relative;
+  background-color: var(--color-scroll);
+  border: 1.5px solid;
+  border-color: var(--color-footer);
+  width: calc(100% - 46px);
+  z-index: 5;
+  height: 100%;
+  padding-left: 12px;
+  padding-right: 34px;
+
+}
+
+.input{
+  width: 100%;
+  height: 40px;
+  margin-top: 16px;
+  position: relative;
+  display: block;
+}
+.button{
+  position: absolute;
+  top: 5px;
+  right: 6px;
+  background-color: #F5B523;
+  width: 34px;
+  height: 34px;
+  color: white;
+  z-index: 6;
+  font: var(--font-header); 
+  text-align: center;
+  border: none;
+}
+
+.textBox::placeholder{
+  color: var(--color-text-body);
+  
+}
+
+.logo{
+  position: absolute;
+  left: 37%;
+  top: 74%;
+  min-width: 85px;
+  height: 88px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url('../assets/light/stormhacksLogo-light.svg');
+}
+[data-theme='dark'] .logo {
+  background-image: url("../assets/dark/stormhacksLogo-dark.svg");
+}
+
