@@ -3,30 +3,49 @@ import _ from 'lodash'
 
 import MobileHome from '../pages/MobileHome'
 import DesktopHome from '../pages/DesktopHome'
+import DesktopPromo from '../pages/DesktopPromo'
+import TabletHome from '../pages/TabletHome'
 
-const breakpoint = 500
+const tabletbreakpoint = 600
+const desktopBreakpoint = 900
 const Home = props => {
-  const [isMobile, setMobile] = useState(window.innerWidth < breakpoint)
+  const [mode, setMode] = useState('desktop')
+
+  const findMode = () => {
+    if (window.innerWidth <= tabletbreakpoint && mode !== 'mobile') {
+      setMode('mobile')
+    } else if (
+      window.innerWidth > tabletbreakpoint &&
+      window.innerWidth <= desktopBreakpoint &&
+      mode !== 'tablet'
+    ) {
+      setMode('tablet')
+    } else if (window.innerWidth > desktopBreakpoint && mode !== 'desktop') {
+      setMode('desktop')
+    }
+  }
 
   useEffect(() => {
-    const handleResize = _.throttle(() => {
-      if (isMobile && window.innerWidth >= breakpoint) {
-        setMobile(false)
-      } else if (!isMobile && window.innerWidth < breakpoint) {
-        setMobile(true)
-      }
-    }, 15)
+    const handleResize = _.throttle(findMode, 15)
 
     window.addEventListener('resize', handleResize)
     return () => {
       window.removeEventListener('resize', handleResize)
     }
-  }, [isMobile])
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [mode])
 
-  if (isMobile) {
+  useEffect(() => {
+    findMode()
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
+
+  if (mode === 'mobile') {
     return <MobileHome {...props} />
+  } else if (mode === 'tablet') {
+    return <TabletHome {...props} />
   } else {
-    return <DesktopHome {...props} />
+    return <DesktopPromo {...props} />
   }
 }
 

@@ -9,3 +9,11 @@
   color: var(--color-text-body);
   line-height: 30px;
 }
+
+@media only screen and (min-width: 600px) {
+  .container {
+    width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

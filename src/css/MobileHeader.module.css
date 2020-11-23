@@ -99,3 +99,53 @@
   font: var(--font-sub-header);
   border: none;
 }
+
+@media only screen and (min-width: 600px) {
+  .backgroundContainer {
+    height: 705px;
+  }
+
+  .headingContainer {
+    width: 600px;
+  }
+
+  .title {
+    line-height: 92px;
+    width: 50%;
+  }
+
+  .titleContainer {
+    margin: auto;
+  }
+
+  .date {
+    font: var(--font-email-sub-header);
+    margin: 8px 22px 0 0;
+  }
+
+  .stormhacksLogo {
+    width: 175px;
+    height: 180px;
+  }
+
+  .subheading {
+    font: var(--font-subtitle);
+    color: var(--color-text-header);
+    padding-top: 44px;
+  }
+
+  .subheader {
+    font: var(--font-header);
+    color: var(--color-text-body);
+    margin: 0;
+  }
+
+  .breakLine {
+    display: none;
+  }
+
+  .applyButton {
+    height: 94px;
+    margin-top: 66px;
+  }
+}

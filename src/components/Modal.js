@@ -7,8 +7,6 @@ import styles from "../css/Modal.module.css"
 import { ReactComponent as Close } from "../assets/modal/close.svg"
 import { ReactComponent as Maximize } from "../assets/modal/maximize.svg"
 import { ReactComponent as Minimize } from "../assets/modal/minimize.svg"
-import { ReactComponent as ScrollUp } from "../assets/scroll/scroll-up.svg"
-import { ReactComponent as ScrollDown } from "../assets/scroll/scroll-down.svg"
 
 
 const Modal = ({ children, origin, title, onClose }) => {
@@ -124,10 +122,6 @@ const Modal = ({ children, origin, title, onClose }) => {
     >
       <div className={styles.main}>
         {children}
-        {/* <div className={styles.scroll}>
-          <ScrollUp />
-          <ScrollDown />
-        </div> */}
       </div>
       <div className={styles.topBar} onMouseDown={registerMouse}>
         <p className={styles.title}>{title}</p>
