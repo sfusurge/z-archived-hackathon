@@ -1,14 +1,13 @@
 import { useEffect } from 'react'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
-import toggleTheme from "./utils/toggleTheme"
+import toggleTheme from './utils/toggleTheme'
 
 import HomeToggle from './components/HomeToggle'
 import styles from './css/App.module.css'
 
 const App = () => {
-
   useEffect(() => {
-    if (localStorage.theme === "dark") {
+    if (localStorage.theme === 'dark') {
       toggleTheme()
     }
   }, [])

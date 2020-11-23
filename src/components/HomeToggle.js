@@ -3,6 +3,7 @@ import _ from 'lodash'
 
 import MobileHome from '../pages/MobileHome'
 import DesktopHome from '../pages/DesktopHome'
+import DesktopPromo from '../pages/DesktopPromo'
 import TabletHome from '../pages/TabletHome'
 
 const tabletbreakpoint = 600
@@ -44,7 +45,7 @@ const Home = props => {
   } else if (mode === 'tablet') {
     return <TabletHome {...props} />
   } else {
-    return <DesktopHome {...props} />
+    return <DesktopPromo {...props} />
   }
 }
 
