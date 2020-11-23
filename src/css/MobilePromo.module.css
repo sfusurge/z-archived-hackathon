@@ -86,18 +86,23 @@
   position: relative;
   display: block;
 }
+
 .button{
   position: absolute;
   top: 5px;
   right: 6px;
-  background-color: #F5B523;
-  width: 34px;
-  height: 34px;
-  color: white;
   z-index: 6;
-  font: var(--font-header); 
   text-align: center;
   border: none;
+}
+
+.button:focus, .textBox:focus{
+  outline: none;
+}
+
+.signUpIcon{
+  width: 34px;
+  height: 34px;
 }
 
 .textBox::placeholder{

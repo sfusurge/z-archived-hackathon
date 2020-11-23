@@ -4,7 +4,7 @@ import _ from 'lodash'
 import MobileHome from '../pages/MobileHome'
 import DesktopHome from '../pages/DesktopHome'
 import DesktopPromo from '../pages/DesktopPromo'
-import MobilePromo from "../components/MobilePromo"
+import MobilePromo from "../pages/MobilePromo"
 import TabletHome from '../pages/TabletHome'
 
 const tabletbreakpoint = 600

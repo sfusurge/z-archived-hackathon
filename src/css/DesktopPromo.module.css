@@ -86,11 +86,11 @@
   color: var(--color-text-body);
 }
 
-.signUpInput:focus {
+.signUpInput:focus, .signUpButton:focus {
   outline: none;
 }
 
-::placeholder {
+.signUpInput::placeholder {
   font: var(--font-email-placeholder);
   color: var(--color-text-body);
 }
@@ -100,4 +100,5 @@
   border: none;
   background-color: transparent;
   margin-right: 10px;
+  cursor: pointer;
 }

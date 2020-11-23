@@ -44,7 +44,7 @@ const DesktopPromo = props => {
               type="email"
               name="EMAIL"
               placeholder="Enter your email address to stay up to date!"
-              required
+              noValidate
             />
             <div style={{ display: 'none', tabindex: '-1' }} aria-hidden="true">
               <input
