@@ -101,3 +101,10 @@
   background-color: transparent;
   margin-right: 10px;
 }
+
+
+.toggleWrapper {
+  position: absolute;
+  right: 2vw;
+  bottom: 3vh;
+}
