@@ -1,4 +1,4 @@
-import toggleTheme from '../utils/toggleTheme'
+import ToggleButton from "./ToggleButton"
 
 import styles from '../css/MobileHeader.module.css'
 
@@ -10,9 +10,7 @@ const MobileHeader = props => {
   return (
     <div className={styles.backgroundContainer}>
       <div className={styles.headerContainer}>
-        <button className={styles.themeButton} onClick={toggleTheme}>
-          <div className={styles.themeToggle} />
-        </button>
+        <ToggleButton/>
         <div className={styles.banners}>
           <Banner
             width="110"

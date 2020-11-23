@@ -58,7 +58,7 @@
   margin-bottom: 18px;
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 600px) and (max-width: 899px) {
   .container {
     width: 550px;
     background-color: transparent;
@@ -81,6 +81,10 @@
     padding-left: 6%;
     padding-right: 6%;
     padding-top: 32px;
+  }
+
+  .otter {
+    height: 146px;
   }
 
   .textContainer {

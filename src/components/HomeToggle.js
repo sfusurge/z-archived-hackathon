@@ -11,15 +11,15 @@ const Home = props => {
   const [mode, setMode] = useState('desktop')
 
   const findMode = () => {
-    if (window.innerWidth <= tabletbreakpoint && mode !== 'mobile') {
+    if (window.innerWidth < tabletbreakpoint && mode !== 'mobile') {
       setMode('mobile')
     } else if (
-      window.innerWidth > tabletbreakpoint &&
-      window.innerWidth <= desktopBreakpoint &&
+      window.innerWidth >= tabletbreakpoint &&
+      window.innerWidth < desktopBreakpoint &&
       mode !== 'tablet'
     ) {
       setMode('tablet')
-    } else if (window.innerWidth > desktopBreakpoint && mode !== 'desktop') {
+    } else if (window.innerWidth >= desktopBreakpoint && mode !== 'desktop') {
       setMode('desktop')
     }
   }

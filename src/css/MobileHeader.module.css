@@ -13,29 +13,6 @@
   justify-content: space-between;
 }
 
-.themeButton {
-  border: none;
-  background: transparent;
-  height: 0;
-  padding: 0;
-}
-
-.themeButton:focus {
-  outline: none;
-}
-
-.themeToggle {
-  height: 34px;
-  width: 34px;
-  margin: 10px 15px;
-  background-repeat: no-repeat;
-  background-image: url('../assets/light/lightmodeIcon-mobile.svg');
-}
-
-[data-theme='dark'] .themeToggle {
-  background-image: url('../assets/dark/darkmodeIcon-mobile.svg');
-}
-
 .banners {
   margin-right: 30px;
 }
@@ -106,7 +83,7 @@
   }
 
   .headingContainer {
-    width: 600px;
+    width: 583px;
   }
 
   .title {
