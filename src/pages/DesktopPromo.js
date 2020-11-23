@@ -37,7 +37,7 @@ const DesktopPromo = props => {
             method="post"
             name="mc-embedded-subscribe-form"
             target="_blank"
-            novalidate
+            noValidate
           >
             <input
               className={styles.signUpInput}
@@ -50,10 +50,10 @@ const DesktopPromo = props => {
               <input
                 type="text"
                 name="b_33345c9bc17f10bac6afdd0ac_736d801cb8"
-                value=""
+                defaultValue=""
               />
-              <input value="Subscribe" name="subscribe" />
-              <input value="StormHacks" name="MMERGE3" />
+              <input defaultValue="Subscribe" name="subscribe" />
+              <input defaultValue="StormHacks" name="MMERGE3" />
             </div>
             <button className={styles.signUpButton} type-="submit">
               <img
