@@ -5,18 +5,6 @@
   background-color: var(--color-background-popup);
 }
 
-@media only screen and (min-width: 900px) {
-  .container {
-    width: 564px;
-    padding-top: 29px;
-    padding-bottom: 72px;
-    padding-left: 30px;
-    padding-right: 30px;
-    margin: 0;
-    height: 100%;
-  }
-}
-
 .descriptionsContainer {
   display: flex;
   justify-content: space-between;
@@ -74,4 +62,24 @@
   width: 98px;
   height: 86px;
   background-image: url('../assets/dark/healthTrack-dark.svg');
+}
+
+@media only screen and (min-width: 600px) {
+  .container {
+    width: 550px;
+    margin: 80px auto 0;
+    background-color: transparent;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .container {
+    width: 564px;
+    padding-top: 29px;
+    padding-bottom: 72px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin: 0;
+    height: 100%;
+  }
 }
