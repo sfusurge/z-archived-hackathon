@@ -69,9 +69,7 @@
   .otter {
     height: 146px;
   }
-}
 
-@media only screen and (min-width: 600px) {
   .textContainer {
     display: none;
   }
