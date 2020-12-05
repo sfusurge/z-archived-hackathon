@@ -34,139 +34,38 @@ const execs = [
   },
   { src: grace, width: '100px', height: '100px', name: 'GraceLuo.gif' },
   { src: noble, width: '100px', height: '100px', name: 'NobleTan.gif' },
-  {
-    src: vivian,
-    width: '100px',
-    height: '100px',
-    name: 'VivianWong.tiff'
-  },
-  {
-    src: naomi,
-    width: '100px',
-    height: '100px',
-    name: 'NaomiTran.gif'
-  },
-  {
-    src: isshan,
-    width: '100px',
-    height: '100px',
-    name: 'IshaanBedi.png'
-  },
-  {
-    src: david,
-    width: '100px',
-    height: '100px',
-    name: 'DavidLowe.jpeg'
-  },
-  {
-    src: revika,
-    width: '100px',
-    height: '100px',
-    name: 'RevikaJain.png'
-  },
-  {
-    src: nargis,
-    width: '100px',
-    height: '100px',
-    name: 'NargisGhiasi.tiff'
-  },
-  {
-    src: harry,
-    width: '100px',
-    height: '100px',
-    name: 'HarryPreetSingh.png'
-  },
-  {
-    src: shubham,
-    width: '100px',
-    height: '100px',
-    name: 'ShubhamNegi.png'
-  },
-  {
-    src: emma,
-    width: '100px',
-    height: '100px',
-    name: 'EmmaWu.jpeg'
-  },
-  {
-    src: ali,
-    width: '100px',
-    height: '100px',
-    name: 'AliKhamesy.png'
-  },
-  {
-    src: fiona,
-    width: '100px',
-    height: '100px',
-    name: 'FionaWu.png'
-  },
-  {
-    src: steven,
-    width: '100px',
-    height: '100px',
-    name: 'StevenZhu.jpg'
-  },
-  {
-    src: jocelyn,
-    width: '100px',
-    height: '100px',
-    name: 'JocelynGau.png'
-  },
+  { src: vivian, width: '100px', height: '100px', name: 'VivianWong.tiff' },
+  { src: naomi, width: '100px', height: '100px', name: 'NaomiTran.gif' },
+  { src: isshan, width: '100px', height: '100px', name: 'IshaanBedi.png' },
+  { src: david, width: '100px', height: '100px', name: 'DavidLowe.jpeg' },
+  { src: revika, width: '100px', height: '100px', name: 'RevikaJain.png' },
+  { src: nargis, width: '100px', height: '100px', name: 'NargisGhiasi.tiff' },
+  { src: harry, width: '100px', height: '100px', name: 'HarryPreetSingh.png' },
+  { src: shubham, width: '100px', height: '100px', name: 'ShubhamNegi.png' },
+  { src: emma, width: '100px', height: '100px', name: 'EmmaWu.jpeg' },
+  { src: ali, width: '100px', height: '100px', name: 'AliKhamesy.png' },
+  { src: fiona, width: '100px', height: '100px', name: 'FionaWu.png' },
+  { src: steven, width: '100px', height: '100px', name: 'StevenZhu.jpg' },
+  { src: jocelyn, width: '100px', height: '100px', name: 'JocelynGau.png' },
   {
     src: michelle,
     width: '100px',
     height: '100px',
     name: 'MichelleSwolfs.svg'
   },
-  {
-    src: lauren,
-    width: '100px',
-    height: '100px',
-    name: 'LaurenMok.svg'
-  },
-  {
-    src: nathan,
-    width: '100px',
-    height: '100px',
-    name: 'NathanLew.svg'
-  },
-  {
-    src: karren,
-    width: '100px',
-    height: '100px',
-    name: 'KarrenSusanto.png'
-  },
-  {
-    src: art,
-    width: '100px',
-    height: '100px',
-    name: 'ArtYang.jpeg'
-  },
-  {
-    src: josh,
-    width: '100px',
-    height: '100px',
-    name: 'JoshPeng.png'
-  },
-  {
-    src: jeffrey,
-    width: '100px',
-    height: '100px',
-    name: 'JeffreyLeung.pdf'
-  },
-  {
-    src: hilal,
-    width: '100px',
-    height: '100px',
-    name: 'HilalAsmat.png'
-  }
+  { src: lauren, width: '100px', height: '100px', name: 'LaurenMok.svg' },
+  { src: nathan, width: '100px', height: '100px', name: 'NathanLew.svg' },
+  { src: karren, width: '100px', height: '100px', name: 'KarrenSusanto.png' },
+  { src: art, width: '100px', height: '100px', name: 'ArtYang.jpeg' },
+  { src: josh, width: '100px', height: '100px', name: 'JoshPeng.png' },
+  { src: jeffrey, width: '100px', height: '100px', name: 'JeffreyLeung.pdf' },
+  { src: hilal, width: '100px', height: '100px', name: 'HilalAsmat.png' }
 ]
 
 const MobileExecs = props => {
   return (
     <div className={styles.container}>
       <p className={styles.heading}>Meet The Execs</p>
-
       <div className={styles.execContainer}>
         {execs.map((exec, i) => (
           <div className={styles.execs}>

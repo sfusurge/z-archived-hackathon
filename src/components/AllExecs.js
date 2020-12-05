@@ -34,87 +34,22 @@ const execs = [
   },
   { src: grace, width: '100px', height: '100px', name: 'GraceLuo.gif' },
   { src: noble, width: '100px', height: '100px', name: 'NobleTan.gif' },
-  {
-    src: vivian,
-    width: '100px',
-    height: '100px',
-    name: 'VivianWong.tiff'
-  },
+  { src: vivian, width: '100px', height: '100px', name: 'VivianWong.tiff' },
   {},
-  {
-    src: naomi,
-    width: '100px',
-    height: '100px',
-    name: 'NaomiTran.gif'
-  },
-  {
-    src: isshan,
-    width: '100px',
-    height: '100px',
-    name: 'IshaanBedi.png'
-  },
-  {
-    src: david,
-    width: '100px',
-    height: '100px',
-    name: 'DavidLowe.jpeg'
-  },
-  {
-    src: revika,
-    width: '100px',
-    height: '100px',
-    name: 'RevikaJain.png'
-  },
+  { src: naomi, width: '100px', height: '100px', name: 'NaomiTran.gif' },
+  { src: isshan, width: '100px', height: '100px', name: 'IshaanBedi.png' },
+  { src: david, width: '100px', height: '100px', name: 'DavidLowe.jpeg' },
+  { src: revika, width: '100px', height: '100px', name: 'RevikaJain.png' },
   {},
-  {
-    src: nargis,
-    width: '100px',
-    height: '100px',
-    name: 'NargisGhiasi.tiff'
-  },
-  {
-    src: harry,
-    width: '100px',
-    height: '100px',
-    name: 'HarryPreetSingh.png'
-  },
-  {
-    src: shubham,
-    width: '100px',
-    height: '100px',
-    name: 'ShubhamNegi.png'
-  },
-  {
-    src: emma,
-    width: '100px',
-    height: '100px',
-    name: 'EmmaWu.jpeg'
-  },
+  { src: nargis, width: '100px', height: '100px', name: 'NargisGhiasi.tiff' },
+  { src: harry, width: '100px', height: '100px', name: 'HarryPreetSingh.png' },
+  { src: shubham, width: '100px', height: '100px', name: 'ShubhamNegi.png' },
+  { src: emma, width: '100px', height: '100px', name: 'EmmaWu.jpeg' },
   {},
-  {
-    src: ali,
-    width: '100px',
-    height: '100px',
-    name: 'AliKhamesy.png'
-  },
-  {
-    src: fiona,
-    width: '100px',
-    height: '100px',
-    name: 'FionaWu.png'
-  },
-  {
-    src: steven,
-    width: '100px',
-    height: '100px',
-    name: 'StevenZhu.jpg'
-  },
-  {
-    src: jocelyn,
-    width: '100px',
-    height: '100px',
-    name: 'JocelynGau.png'
-  },
+  { src: ali, width: '100px', height: '100px', name: 'AliKhamesy.png' },
+  { src: fiona, width: '100px', height: '100px', name: 'FionaWu.png' },
+  { src: steven, width: '100px', height: '100px', name: 'StevenZhu.jpg' },
+  { src: jocelyn, width: '100px', height: '100px', name: 'JocelynGau.png' },
   {},
   {
     src: michelle,
@@ -122,49 +57,14 @@ const execs = [
     height: '100px',
     name: 'MichelleSwolfs.svg'
   },
-  {
-    src: lauren,
-    width: '100px',
-    height: '100px',
-    name: 'LaurenMok.svg'
-  },
-  {
-    src: nathan,
-    width: '100px',
-    height: '100px',
-    name: 'NathanLew.svg'
-  },
-  {
-    src: karren,
-    width: '100px',
-    height: '100px',
-    name: 'KarrenSusanto.png'
-  },
+  { src: lauren, width: '100px', height: '100px', name: 'LaurenMok.svg' },
+  { src: nathan, width: '100px', height: '100px', name: 'NathanLew.svg' },
+  { src: karren, width: '100px', height: '100px', name: 'KarrenSusanto.png' },
   {},
-  {
-    src: art,
-    width: '100px',
-    height: '100px',
-    name: 'ArtYang.jpeg'
-  },
-  {
-    src: josh,
-    width: '100px',
-    height: '100px',
-    name: 'JoshPeng.png'
-  },
-  {
-    src: jeffrey,
-    width: '100px',
-    height: '100px',
-    name: 'JeffreyLeung.pdf'
-  },
-  {
-    src: hilal,
-    width: '100px',
-    height: '100px',
-    name: 'HilalAsmat.png'
-  }
+  { src: art, width: '100px', height: '100px', name: 'ArtYang.jpeg' },
+  { src: josh, width: '100px', height: '100px', name: 'JoshPeng.png' },
+  { src: jeffrey, width: '100px', height: '100px', name: 'JeffreyLeung.pdf' },
+  { src: hilal, width: '100px', height: '100px', name: 'HilalAsmat.png' }
 ]
 
 const breakLine = (exec, idx) => {
