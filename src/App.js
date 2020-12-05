@@ -18,7 +18,7 @@ const App = () => {
       <Router>
         <Switch>
           <Route path="/">
-            <AllExecs />
+            <HomeToggle />
           </Route>
         </Switch>
       </Router>

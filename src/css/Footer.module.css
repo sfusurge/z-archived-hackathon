@@ -36,6 +36,19 @@
   color: var(--color-text-white);
 }
 
+.hyperLinkBtn {
+  border: none;
+  outline: none;
+  display: block;
+  background: none;
+  text-align: right;
+  text-decoration: underline;
+  cursor: pointer;
+  padding: 5px;
+  font: var(--font-body);
+  color: var(--color-text-white);
+}
+
 .themeButton {
   border: none;
   background: transparent;
