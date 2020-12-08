@@ -62,9 +62,7 @@ const execs = [
   { src: karren, width: '100px', height: '100px', name: 'KarrenSusanto.png' },
   {},
   { src: art, width: '100px', height: '100px', name: 'ArtYang.jpeg' },
-  { src: josh, width: '100px', height: '100px', name: 'JoshPeng.png' },
-  { src: jeffrey, width: '100px', height: '100px', name: 'JeffreyLeung.pdf' },
-  { src: hilal, width: '100px', height: '100px', name: 'HilalAsmat.png' }
+  { src: josh, width: '100px', height: '100px', name: 'JoshPeng.png' }
 ]
 
 const breakLine = (exec, idx) => {
