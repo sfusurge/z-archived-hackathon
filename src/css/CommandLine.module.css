@@ -18,6 +18,7 @@
   font: var(--font-body);
   color: var(--color-text-body);
 }
+
 .fontAnimated {
   font: var(--font-body);
   color: var(--color-text-body);

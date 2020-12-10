@@ -7,29 +7,10 @@ import mlhBanner from '../assets/mlh-banner.svg'
 import signUp from '../assets/sign-up-button.svg'
 import sparky from '../assets/sparky-wave.svg'
 import stormy from '../assets/stormy-laying.svg'
-import { useState } from 'react'
-import Modal from '../components/Modal'
-import CommandLine from '../components/CommandLine'
 
 const DesktopPromo = props => {
-  const [isOpen, setIsOpen] = useState(false)
-  const closeFile = () => {
-    setIsOpen(false)
-  }
-  const openFile = () => {
-    setIsOpen(true)
-    setTimeout(function () {
-      setIsOpen(false)
-    }, 6000)
-  }
-
   return (
     <div className={styles.container}>
-      {isOpen && (
-        <Modal title="C:\STORMHACKS\cmd.exe" onClose={closeFile}>
-          <CommandLine />
-        </Modal>
-      )}
       <div className={styles.banners}>
         <Banner
           width="207"
@@ -74,13 +55,7 @@ const DesktopPromo = props => {
               <input defaultValue="Subscribe" name="subscribe" />
               <input defaultValue="StormHacks" name="MMERGE3" />
             </div>
-            <button
-              className={styles.signUpButton}
-              onClick={() => {
-                openFile()
-              }}
-              type="submit"
-            >
+            <button className={styles.signUpButton} type="submit">
               <img
                 className={styles.signUpIcon}
                 src={signUp}
