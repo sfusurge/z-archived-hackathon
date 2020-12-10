@@ -1,6 +1,6 @@
-import { useState } from "react"
+import { useState } from 'react'
 
-import Modal from "../components/Modal"
+import Modal from '../components/Modal'
 
 import styles from '../css/DesktopFile.module.css'
 
@@ -9,6 +9,11 @@ const DesktopFile = ({ Content, ...props }) => {
 
   const openFile = () => {
     setIsOpen(!!Content)
+    if (props.text === 'Apply.exe') {
+      setTimeout(function () {
+        setIsOpen(false)
+      }, 3500)
+    }
   }
 
   const closeFile = () => {
@@ -17,9 +22,11 @@ const DesktopFile = ({ Content, ...props }) => {
 
   return (
     <>
-      {isOpen && <Modal title={props.text} onClose={closeFile}>
-        <Content />
-      </Modal>}
+      {isOpen && (
+        <Modal title={props.text} onClose={closeFile}>
+          <Content />
+        </Modal>
+      )}
       <div className={styles.container} onClick={openFile}>
         <img src={props.icon} alt="File icon" />
         <p className={styles.text}>{props.text}</p>
