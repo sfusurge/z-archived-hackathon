@@ -8,7 +8,6 @@
 .execContainer {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
   flex-wrap: wrap;
   width: 100%;
 }
@@ -20,7 +19,7 @@
 }
 
 .execs {
-  flex: 0 100%;
+  flex: 0 50%;
   padding-top: 10px;
 }
 
@@ -30,7 +29,7 @@
     margin: 112px auto 0;
   }
   .execs {
-    flex: 0 45%;
+    flex: 0 33%;
     padding-top: 10px;
   }
 }

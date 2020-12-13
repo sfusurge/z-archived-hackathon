@@ -9,3 +9,8 @@
   color: var(--color-text-body);
   font: var(--font-body);
 }
+
+.link {
+  cursor: pointer;
+  text-decoration: none;
+}
