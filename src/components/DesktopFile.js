@@ -9,11 +9,6 @@ const DesktopFile = ({ Content, ...props }) => {
 
   const openFile = () => {
     setIsOpen(!!Content)
-    if (props.text === 'Apply.exe') {
-      setTimeout(function () {
-        setIsOpen(false)
-      }, 3500)
-    }
   }
 
   const closeFile = () => {
@@ -24,7 +19,7 @@ const DesktopFile = ({ Content, ...props }) => {
     <>
       {isOpen && (
         <Modal title={props.text} onClose={closeFile}>
-          <Content />
+          <Content onClose={closeFile} />
         </Modal>
       )}
       <div className={styles.container} onClick={openFile}>

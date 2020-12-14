@@ -1,8 +1,15 @@
 import styles from '../css/CommandLine.module.css'
-import '../css/CommandLine.module.css'
 import Typist from 'react-typist'
 
-const CommandLine = props => {
+const CommandLine = ({ onClose }) => {
+
+  const redirect = () => {
+    setTimeout(() => {
+      // onClose()
+      // window.open('https://form.typeform.com/to/HHCYD0tv', '_blank')
+    }, 750)
+  }
+
   return (
     <div className={styles.container}>
       <p className={styles.noMargin}> Surge Windows [Version 1.1]</p>
@@ -17,11 +24,11 @@ const CommandLine = props => {
         cursor={{
           show: true,
           blink: false,
-
-          element: '_',
+          element: '▌',
           hideWhenDone: false,
           hideWhenDoneDelay: 1000
         }}
+        onTypingDone={redirect}
       >
         <span className={styles.fontAnimated}>
           Activating the registration for current User. Please wait...
@@ -42,7 +49,9 @@ const CommandLine = props => {
         <Typist.Delay ms={200} />
         <span className={styles.fontAnimated}> . </span>
         <br />
-        <span className={styles.fontAnimated}> Done! </span>
+        <span className={styles.fontAnimated}> Applications are not open until December 28th.</span>
+        <br />
+        <span className={styles.fontAnimated}> process exited with code 1</span>
       </Typist>
     </div>
   )
