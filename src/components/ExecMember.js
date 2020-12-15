@@ -1,8 +1,14 @@
 import styles from '../css/ExecMember.module.css'
-const ExecMember = ({ name, src, width, height, link }) => {
+const ExecMember = ({ name, src, width, height, link, customStyle }) => {
+  console.log(customStyle)
   return (
     <>
-      <a className={styles.link} target="_blank" href={link}>
+      <a
+        className={styles.link}
+        style={customStyle}
+        target="_blank"
+        href={link}
+      >
         <div className={styles.container}>
           <img
             className={styles.img}

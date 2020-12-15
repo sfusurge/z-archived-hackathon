@@ -1,160 +1,151 @@
-import praneer from '../assets/execs/praneer.svg'
-import grace from '../assets/execs/grace.svg'
-import noble from '../assets/execs/noble.svg'
-import vivian from '../assets/execs/vivian.svg'
-import naomi from '../assets/execs/naomi.svg'
-import isshan from '../assets/execs/isshan.svg'
-import david from '../assets/execs/david.svg'
-import revika from '../assets/execs/revika.svg'
-import nargis from '../assets/execs/nargis.svg'
-import harry from '../assets/execs/harry.svg'
-import shubham from '../assets/execs/shubham.svg'
-import emma from '../assets/execs/emma.svg'
-import ali from '../assets/execs/ali.svg'
-import fiona from '../assets/execs/fiona.svg'
-import steven from '../assets/execs/steven.svg'
-import jocelyn from '../assets/execs/jocelyn.svg'
-import michelle from '../assets/execs/michelle.svg'
-import lauren from '../assets/execs/lauren.svg'
-import nathan from '../assets/execs/nathan.svg'
-import karren from '../assets/execs/karren.svg'
-import josh from '../assets/execs/josh.svg'
-
 const execs = [
   {
-    src: praneer,
+    src: './praneer.png',
     width: '100px',
     height: '100px',
     name: 'Praneer.png',
     link: 'https://www.linkedin.com/in/praneershrest/'
   },
   {
-    src: grace,
+    src: './grace.png',
     width: '100px',
     height: '100px',
-    name: 'Grace.gif',
+    name: 'Grace.jpeg',
     link: 'https://www.linkedin.com/in/grace-lu0/'
   },
   {
-    src: noble,
+    src: './noble.png',
     width: '100px',
     height: '100px',
-    name: 'Noble.gif',
+    name: 'Noble.png',
     link: 'https://www.linkedin.com/in/nobletan/'
   },
   {
-    src: vivian,
+    src: './vivian.png',
     width: '100px',
     height: '100px',
     name: 'Vivian.tiff',
     link: 'https://www.linkedin.com/in/vivian-wong-114032164'
   },
   {
-    src: naomi,
+    src: './naomi.png',
     width: '100px',
     height: '100px',
-    name: 'Naomi.gif',
+    name: 'Naomi.png',
     link: 'https://www.linkedin.com/in/naomitran/'
   },
   {
-    src: isshan,
+    src: './isshan.png',
     width: '100px',
     height: '100px',
     name: 'Ishaan.png',
     link: 'https://www.linkedin.com/in/ishaanbedi2507/'
   },
-  { src: david, width: '100px', height: '100px', name: 'David.jpeg' },
   {
-    src: revika,
+    src: './david.png',
+    width: '100px',
+    height: '100px',
+    name: 'David.jpeg',
+    customStyle: { cursor: 'default' }
+  },
+  {
+    src: './revika.png',
     width: '100px',
     height: '100px',
     name: 'Revika.png',
     link: 'https://www.linkedin.com/in/revika-jain-182a5912b/'
   },
   {
-    src: nargis,
+    src: './nargis.png',
     width: '100px',
     height: '100px',
     name: 'Nargis.tiff',
     link: 'https://www.linkedin.com/in/nargis-ghiasi/'
   },
   {
-    src: harry,
+    src: './harry.png',
     width: '100px',
     height: '100px',
     name: 'Harry.png',
     link: 'https://www.linkedin.com/in/harry-preet-singh/'
   },
   {
-    src: shubham,
+    src: './shubham.png',
     width: '100px',
     height: '100px',
     name: 'Shubham.png',
     link: 'https://www.linkedin.com/in/shubhamnegi17/'
   },
   {
-    src: emma,
+    src: './emma.png',
     width: '100px',
     height: '100px',
     name: 'Emma.jpeg',
     link: 'https://www.linkedin.com/in/emma-wu-835b34187/'
   },
   {
-    src: ali,
+    src: './ali.png',
     width: '100px',
     height: '100px',
     name: 'Ali.png',
     link: 'https://www.linkedin.com/in/ali-khamesy/'
   },
   {
-    src: fiona,
+    src: './fiona.png',
     width: '100px',
     height: '100px',
     name: 'Fiona.png',
     link: 'https://www.linkedin.com/in/fwwu/'
   },
-  { src: steven, width: '100px', height: '100px', name: 'Steven.jpg' },
   {
-    src: jocelyn,
+    src: './steven.png',
+    width: '100px',
+    height: '100px',
+    name: 'Steven.jpeg',
+    customStyle: { cursor: 'default' }
+  },
+  {
+    src: './jocelyn.png',
     width: '100px',
     height: '100px',
     name: 'Jocelyn.png',
     link: 'https://www.linkedin.com/in/jocelyn-gau/'
   },
   {
-    src: michelle,
+    src: './michelle.png',
     width: '100px',
     height: '100px',
-    name: 'Michelle.svg',
+    name: 'Michelle.jpeg',
     link: 'https://www.linkedin.com/in/michelleswolfs/'
   },
   {
-    src: lauren,
+    src: './lauren.png',
     width: '100px',
     height: '100px',
-    name: 'Lauren.svg',
+    name: 'Lauren.png',
     link: 'https://www.linkedin.com/in/lauren-mok-0716631ba/'
   },
   {
-    src: nathan,
+    src: './nathan.png',
     width: '100px',
     height: '100px',
-    name: 'Nathan.svg',
+    name: 'Nathan.png',
     link: 'https://www.linkedin.com/in/nlew/'
   },
   {
-    src: karren,
+    src: './karren.png',
     width: '100px',
     height: '100px',
     name: 'Karren.png',
     link: 'https://www.linkedin.com/in/karrensusanto/'
   },
   {
-    src: josh,
+    src: './josh.png',
     width: '100px',
     height: '100px',
     name: 'Josh.png',
     link: 'https://www.linkedin.com/in/joshuapeng1999/'
   }
 ]
+
 export default execs

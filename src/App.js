@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import toggleTheme from './utils/toggleTheme'
 
 import HomeToggle from './components/HomeToggle'
-import AllExecs from './components/AllExecs'
 import styles from './css/App.module.css'
 
 const App = () => {

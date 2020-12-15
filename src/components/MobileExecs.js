@@ -1,6 +1,9 @@
 import ExecMember from './ExecMember'
 import styles from '../css/MobileExec.module.css'
-import execs from '../utils/ExecsList'
+import execs from '../utils/execList'
+
+const execResolver = require.context('../assets/execs', false, /.*\.png/)
+
 const MobileExecs = props => {
   return (
     <div className={styles.container}>
@@ -9,7 +12,7 @@ const MobileExecs = props => {
         {execs.map((exec, i) => (
           <div className={styles.execs}>
             <ExecMember
-              src={exec.src}
+              src={execResolver(exec.src).default}
               width={exec.width}
               height={exec.height}
               name={exec.name}
