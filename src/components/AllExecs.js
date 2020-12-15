@@ -5,7 +5,6 @@ import execs from '../utils/execList'
 const execResolver = require.context('../assets/execs', false, /.*\.png/)
 
 const breakLine = (exec, idx) => {
-  console.log(execResolver(exec.src))
   if (idx !== 0 && idx % 4 === 0) {
     return (
       <>
