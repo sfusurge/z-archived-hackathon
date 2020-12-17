@@ -30,7 +30,7 @@ const Footer = props => {
             className={styles.hyperLinks}
             href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf"
           >
-            MLH Code Of Product
+            MLH Code Of Conduct
           </a>
           <button
             className={styles.hyperLinkBtn}
