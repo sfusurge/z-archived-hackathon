@@ -61,7 +61,7 @@ const DesktopPromo = props => {
               <input defaultValue="Subscribe" name="subscribe" />
               <input defaultValue="StormHacks" name="MMERGE3" />
             </div>
-            <button className={styles.signUpButton} type-="submit">
+            <button className={styles.signUpButton} type="submit">
               <img
                 className={styles.signUpIcon}
                 src={signUp}

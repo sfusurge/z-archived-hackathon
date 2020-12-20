@@ -18,7 +18,11 @@ const FAQs1 = [
     answer:
       'Stormhacks welcomes students of all skill levels. Whether you’re a newcomer or a hackathon veteran, we’ll have talks, workshops and mentors to help you with your project throughout the event. All you need to bring is your eagerness to learn.'
   },
-  { question: 'What kind of activities will there be?', answer: '' },
+  {
+    question: 'What kind of activities will there be?',
+    answer:
+      'The hackathon will be packed with activities such as wellness workshops, games, trivia and more all throughout the event! You can even win some prizes through some of our mini contests.'
+  },
   {
     question: 'What platform will you be using to host the event?',
     answer:
