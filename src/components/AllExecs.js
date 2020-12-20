@@ -5,24 +5,9 @@ import execs from '../utils/execList'
 const execResolver = require.context('../assets/execs', false, /.*\.png/)
 
 const breakLine = (exec, idx) => {
-  if (idx !== 0 && idx % 4 === 0) {
-    return (
-      <>
-        <span className={styles.line} />
-        <div className={styles.execs}>
-          <ExecMember
-            src={execResolver(exec.src).default}
-            width={exec.width}
-            height={exec.height}
-            name={exec.name}
-            link={exec.link}
-            customStyle={exec.customStyle}
-          />
-        </div>
-      </>
-    )
-  } else {
-    return (
+  return (
+    <>
+      {(idx !== 0 && idx % 4 === 0) && <span className={styles.line} />}
       <div className={styles.execs}>
         <ExecMember
           src={execResolver(exec.src).default}
@@ -33,8 +18,8 @@ const breakLine = (exec, idx) => {
           customStyle={exec.customStyle}
         />
       </div>
-    )
-  }
+    </>
+  )
 }
 
 const AllExecs = props => {
