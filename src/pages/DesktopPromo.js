@@ -20,6 +20,12 @@ const DesktopPromo = props => {
             width: '84px',
             height: '164px'
           }}
+          mlh={{
+            src: mlhBanner,
+            alt: 'MLH Banner',
+            width: '93px',
+            height: '163px'
+          }}
         />
       </div>
       <div className={styles.contentContainer}>

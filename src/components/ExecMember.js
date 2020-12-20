@@ -6,7 +6,8 @@ const ExecMember = ({ name, src, width, height, link, customStyle }) => {
       <a
         className={styles.link}
         style={customStyle}
-        target="_blank"
+        target='_blank'
+        rel='noreferrer'
         href={link}
       >
         <div className={styles.container}>
