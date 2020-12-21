@@ -30,3 +30,5 @@ const sponsors = [
     link: ''
   }
 ]
+
+export default sponsors
