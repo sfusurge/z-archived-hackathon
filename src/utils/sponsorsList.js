@@ -1,32 +1,38 @@
 const sponsors = [
   {
-    src: './sponsors/sfss-logo.png',
+    src: './sfss-logo.png',
     name: 'SFSS',
+    width: '180px',
     link: ''
   },
   {
-    src: './sponsors/fair-trade-logo.png',
+    src: './fair-trade-logo.png',
     name: 'FairTrade',
+    width: '120px',
     link: ''
   },
   {
-    src: './sponsors/wics-logo.png',
+    src: './wics-logo.png',
     name: 'WICS',
+    width: '189px',
     link: ''
   },
   {
-    src: './sponsors/mlh-logo.png',
+    src: './mlh-logo.png',
     name: 'MLH',
+    width: '130px',
     link: ''
   },
   {
-    src: './sponsors/github-logo.png',
+    src: './github-logo.png',
     name: 'GitHub',
+    width: '120px',
     link: ''
   },
   {
-    src: './sponsors/sticker-mule-logo.png',
+    src: './sticker-mule-logo.png',
     name: 'StickerMule',
+    width: '120px',
     link: ''
   }
 ]
