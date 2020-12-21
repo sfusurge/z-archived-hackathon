@@ -11,14 +11,6 @@ const FooterMobile = props => {
       >
         MLH Code of Conduct
       </a>
-      <a
-        className={styles.link}
-        href="/sfusurge"
-        target="_blank"
-        rel="noreferrer"
-      >
-        Meet the Team Behind StormHacks
-      </a>
     </div>
   )
 }
