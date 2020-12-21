@@ -1,12 +1,11 @@
-import Banner from "../components/Banner"
-import Footer from "../components/Footer"
+import Banner from '../components/Banner'
+import Footer from '../components/Footer'
 import FileIconGroup from '../components/FileIconGroup.js'
 
+import styles from '../css/DesktopHome.module.css'
 
-import styles from "../css/DesktopHome.module.css"
-
-import surgeBanner from "../assets/surge-banner.svg"
-import mlhBanner from "../assets/mlh-banner.svg"
+import surgeBanner from '../assets/surge-banner.svg'
+import mlhBanner from '../assets/mlh-banner.svg'
 
 const DesktopHome = props => {
   return (
