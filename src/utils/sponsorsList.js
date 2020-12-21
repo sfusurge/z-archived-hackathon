@@ -21,7 +21,7 @@ const sponsors = [
   },
   {
     src: './sponsors/github-logo.png',
-    name: 'Github',
+    name: 'GitHub',
     link: ''
   },
   {
