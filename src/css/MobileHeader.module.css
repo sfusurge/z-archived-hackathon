@@ -77,6 +77,13 @@
   border: none;
 }
 
+.text {
+  margin: 20px 0 0;
+  font: var(--font-body);
+  color: var(--color-text-body);
+  line-height: 25px;
+}
+
 @media only screen and (min-width: 600px) {
   .backgroundContainer {
     height: 705px;

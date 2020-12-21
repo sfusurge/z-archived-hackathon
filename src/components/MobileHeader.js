@@ -1,3 +1,5 @@
+import { useState } from "react"
+
 import ToggleButton from "./ToggleButton"
 
 import styles from '../css/MobileHeader.module.css'
@@ -7,10 +9,12 @@ import surgeBanner from '../assets/surge-banner.svg'
 import mlhBanner from '../assets/mlh-banner.svg'
 
 const MobileHeader = props => {
+  const [err, setErr] = useState(null)
+
   return (
     <div className={styles.backgroundContainer}>
       <div className={styles.headerContainer}>
-        <ToggleButton/>
+        <ToggleButton />
         <div className={styles.banners}>
           <Banner
             width="110"
@@ -40,7 +44,8 @@ const MobileHeader = props => {
           Are you ready <br className={styles.breakLine} />
           to learn, create, and inspire?
         </p>
-        <button className={styles.applyButton}>APPLY NOW</button>
+        <button className={styles.applyButton} onClick={() => setErr(true)}>APPLY NOW</button>
+        {err && <p className={styles.text}>* Applications will open on December 28th</p>}
       </div>
     </div>
   )

@@ -1,7 +1,6 @@
 import { useEffect } from 'react'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import toggleTheme from './utils/toggleTheme'
-import WebToggle from './components/WebToggle'
 
 
 import HomeToggle from './components/HomeToggle'
@@ -18,9 +17,6 @@ const App = () => {
     <div id={styles.app}>
       <Router>
         <Switch>
-          <Route path="/20212021" >
-            <WebToggle />
-          </Route>
           <Route path="/">
             <HomeToggle />
           </Route>
