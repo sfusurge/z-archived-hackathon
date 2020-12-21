@@ -3,8 +3,17 @@ import Sponsor from './Sponsor'
 import styles from '../css/SponsorsContent.module.css'
 
 import sponsors from '../utils/sponsorsList'
+import getTheme from '../utils/getTheme'
 
 const sponsorResolver = require.context('../assets/sponsors', false, /.*\.png/)
+
+const getSrc = sponsor => {
+  if (getTheme() === 'dark' && sponsor.srcDark) {
+    return sponsor.srcDark
+  } else {
+    return sponsor.srcLight
+  }
+}
 
 const SponsorsContent = props => {
   return (
@@ -19,7 +28,7 @@ const SponsorsContent = props => {
             {i !== 0 && i % 4 === 0 && <span className={styles.line} />}
             <div className={styles.sponsors}>
               <Sponsor
-                src={sponsorResolver(sponsor.src).default}
+                src={sponsorResolver(getSrc(sponsor)).default}
                 name={sponsor.name}
                 width={sponsor.width}
               />
