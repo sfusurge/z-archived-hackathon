@@ -9,8 +9,8 @@ const MobileExecs = props => {
     <div className={styles.container}>
       <p className={styles.heading}>Meet The Execs</p>
       <div className={styles.execContainer}>
-        {execs.map((exec, i) => (
-          <div className={styles.execs}>
+        {execs.map(exec => (
+          <div className={styles.execs} key={exec.name}>
             <ExecMember
               src={execResolver(exec.src).default}
               width={exec.width}

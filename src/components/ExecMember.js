@@ -1,6 +1,6 @@
 import styles from '../css/ExecMember.module.css'
 const ExecMember = ({ name, src, width, height, link, customStyle }) => {
-  console.log(customStyle)
+  console.log(link)
   return (
     <>
       <a

@@ -4,7 +4,7 @@ import execs from '../utils/execList'
 
 const execResolver = require.context('../assets/execs', false, /.*\.png/)
 
-const breakLine = (exec, idx) => {
+const BreakLine = ({ exec, idx }) => {
   return (
     <>
       {(idx !== 0 && idx % 4 === 0) && <span className={styles.line} />}
@@ -26,7 +26,7 @@ const AllExecs = props => {
   return (
     <div className={styles.outerContainer}>
       <div className={styles.innerContainer}>
-        {execs.map((exec, i) => breakLine(exec, i))}
+        {execs.map((exec, i) => <BreakLine exec={exec} idx={i} key={exec.name} />)}
       </div>
     </div>
   )
