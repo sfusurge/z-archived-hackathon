@@ -1,12 +1,11 @@
-import Banner from "../components/Banner"
-import Footer from "../components/Footer"
+import Banner from '../components/Banner'
+import Footer from '../components/Footer'
 import FileIconGroup from '../components/FileIconGroup.js'
 
+import styles from '../css/DesktopHome.module.css'
 
-import styles from "../css/DesktopHome.module.css"
-
-import surgeBanner from "../assets/surge-banner.svg"
-import mlhBanner from "../assets/mlh-banner.svg"
+import surgeBanner from '../assets/surge-banner.svg'
+import mlhBanner from '../assets/mlh-banner.svg'
 
 const DesktopHome = props => {
   return (
@@ -24,7 +23,9 @@ const DesktopHome = props => {
             src: mlhBanner,
             alt: 'MLH Banner',
             width: '93px',
-            height: '163px'
+            height: '163px',
+            link:
+              'https://mlh.io/seasons/2021/events?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2021-season&utm_content=white'
           }}
         />
       </div>

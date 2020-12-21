@@ -13,13 +13,15 @@ const Banner = props => {
         />
       )}
       {props.mlh && (
-        <img
-          className={styles.bannerImage}
-          src={props.mlh.src}
-          alt={props.mlh.alt}
-          width={props.mlh.width}
-          height={props.mlh.height}
-        />
+        <a href={props.mlh.link}>
+          <img
+            className={styles.bannerImage}
+            src={props.mlh.src}
+            alt={props.mlh.alt}
+            width={props.mlh.width}
+            height={props.mlh.height}
+          />
+        </a>
       )}
     </div>
   )
