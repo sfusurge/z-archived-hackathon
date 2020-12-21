@@ -81,6 +81,7 @@
     padding-left: 6%;
     padding-right: 6%;
     padding-top: 32px;
+    background-color: var(--color-background-popup);
   }
 
   .otter {

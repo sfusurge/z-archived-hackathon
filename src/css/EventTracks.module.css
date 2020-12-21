@@ -2,7 +2,6 @@
   width: 62%;
   margin-left: 17%;
   margin-right: 17%;
-  background-color: var(--color-background-popup);
 }
 
 .descriptionsContainer {
@@ -81,5 +80,6 @@
     padding-right: 30px;
     margin: 0;
     height: 100%;
+    background-color: var(--color-background-popup);
   }
 }

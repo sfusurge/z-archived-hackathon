@@ -40,6 +40,8 @@ const Modal = ({ children, origin, title, onClose }) => {
 
     const { current: node } = container
 
+    if (!node) return
+
     const mouseDelta = {
       x: (event.clientX - mouseLocation.x),
       y: (event.clientY - mouseLocation.y)

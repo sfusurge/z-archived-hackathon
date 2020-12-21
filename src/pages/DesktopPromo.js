@@ -21,6 +21,12 @@ const DesktopPromo = props => {
             width: '84px',
             height: '164px'
           }}
+          mlh={{
+            src: mlhBanner,
+            alt: 'MLH Banner',
+            width: '93px',
+            height: '163px'
+          }}
         />
       </div>
       <div className={styles.contentContainer}>
@@ -56,7 +62,7 @@ const DesktopPromo = props => {
               <input defaultValue="Subscribe" name="subscribe" />
               <input defaultValue="StormHacks" name="MMERGE3" />
             </div>
-            <button className={styles.signUpButton} type-="submit">
+            <button className={styles.signUpButton} type="submit">
               <img
                 className={styles.signUpIcon}
                 src={signUp}

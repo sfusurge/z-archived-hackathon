@@ -1,11 +1,12 @@
 import DesktopFile from '../components/DesktopFile.js'
 
-import AboutContext from "./AboutContext"
-import EventTracks from "./EventTracks"
-import AllQuestions from "./AllQuestions"
-import SponsorsContent from "./SponsorsContent"
+import AboutContext from './AboutContext'
+import EventTracks from './EventTracks'
+import AllQuestions from './AllQuestions'
+import SponsorsContent from './SponsorsContent'
+import CommandLine from './CommandLine'
 
-import styles from "../css/FileIconGroup.module.css"
+import styles from '../css/FileIconGroup.module.css'
 
 import About from '../assets/aboutFileIcon.svg'
 import Tracks from '../assets/tracksFileIcon.svg'
@@ -16,10 +17,14 @@ import Faq from '../assets/faqFileIcon.svg'
 const FileIconGroup = () => {
   return (
     <div className={styles.container}>
-      <DesktopFile icon={About} Content={AboutContext} text="What is StormHacks" />
+      <DesktopFile
+        icon={About}
+        Content={AboutContext}
+        text="What is StormHacks"
+      />
       <DesktopFile icon={Tracks} Content={EventTracks} text="Event Tracks" />
       <DesktopFile icon={Sponsors} Content={SponsorsContent} text="Sponsors" />
-      <DesktopFile icon={Terminal} text="Apply.exe" />
+      <DesktopFile icon={Terminal} Content={CommandLine} text="Apply.exe" />
       <DesktopFile icon={Faq} Content={AllQuestions} text="FAQ" />
     </div>
   )
