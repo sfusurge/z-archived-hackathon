@@ -23,9 +23,7 @@ const DesktopHome = props => {
             src: mlhBanner,
             alt: 'MLH Banner',
             width: '93px',
-            height: '163px',
-            link:
-              'https://mlh.io/seasons/2021/events?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2021-season&utm_content=white'
+            height: '163px'
           }}
         />
       </div>

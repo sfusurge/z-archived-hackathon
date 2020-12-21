@@ -13,7 +13,11 @@ const Banner = props => {
         />
       )}
       {props.mlh && (
-        <a href={props.mlh.link}>
+        <a
+          href="https://mlh.io/seasons/2021/events?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2021-season&utm_content=white"
+          target="_blank"
+          rel="noreferrer"
+        >
           <img
             className={styles.bannerImage}
             src={props.mlh.src}
