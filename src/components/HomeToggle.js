@@ -42,13 +42,8 @@ const Home = props => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
-<<<<<<< HEAD
-  if (mode === 'mobile' || mode === "tablet") {
-    return <MobilePromo {...props} />
-=======
   if (mode === 'mobile' || mode === 'tablet') {
     return <MobileHome {...props} />
->>>>>>> dev
     // return <MobileHome {...props} />
     // } else if (mode === 'tablet') {
     //   return <TabletHome {...props} />
