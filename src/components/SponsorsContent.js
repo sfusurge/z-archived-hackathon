@@ -12,8 +12,8 @@ const SponsorsContent = props => {
       <p className={styles.heading}>
         This event wouldn’t be possible without all of the community support!
       </p>
-      <span className={styles.line} />
       <div className={styles.innerContainer}>
+        <span className={styles.line} />
         {sponsors.map((sponsor, i) => (
           <>
             {i !== 0 && i % 4 === 0 && <span className={styles.line} />}
@@ -26,6 +26,7 @@ const SponsorsContent = props => {
             </div>
           </>
         ))}
+        <span className={styles.line} />
       </div>
     </div>
   )
