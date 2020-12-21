@@ -64,7 +64,7 @@ const FAQs2 = [
   {
     question: '404: Questions not found?',
     answer:
-      "Contact us at <placeholder>@stormhacks.com with your question and we'll get back to you as soon as we can!"
+      "Contact us at info@stormhacks.com with your question and we'll get back to you as soon as we can!"
   }
 ]
 
