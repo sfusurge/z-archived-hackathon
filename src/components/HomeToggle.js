@@ -43,7 +43,7 @@ const Home = props => {
   }, [])
 
   if (mode === 'mobile' || mode === 'tablet') {
-    return <MobilePromo {...props} />
+    return <MobileHome {...props} />
     // return <MobileHome {...props} />
     // } else if (mode === 'tablet') {
     //   return <TabletHome {...props} />

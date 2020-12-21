@@ -14,7 +14,7 @@ const ExecMember = ({ name, src, width, height, link, customStyle }) => {
           src={src}
           width={width}
           height={height}
-          alt={`Image of ${name}`}
+          alt={`${name}`}
         />
         <p className={styles.name}>{name}</p>
       </div>
