@@ -9,13 +9,13 @@ const sponsors = [
     srcLight: './fair-trade-logo-light.png',
     srcDark: './fair-trade-logo-dark.png',
     name: 'SFU FairTrade',
-    width: '150px',
+    width: '200px',
     link: 'http://www.sfu.ca/fairtrade.html'
   },
   {
     srcLight: './wics-logo.png',
     name: 'SFU Women in Computing Science',
-    width: '205px',
+    width: '300px',
     link: 'https://www.sfu.ca/computing/wics.html'
   },
   {
@@ -47,25 +47,24 @@ const sponsors = [
     link: ''
   },
   {
-    srcLight: './hedgehog-logo.png',
-    srcDark: '',
+    srcLight: './hedgehog-logo-light.png',
+    srcDark: './hedgehog-logo-dark.png',
     name: 'Hedgehog technologies',
     width: '200px',
     link: ''
+  },
+  {
+    srcLight: './github-logo.png',
+    name: 'GitHub',
+    width: '150px',
+    link: 'https://github.com/'
+  },
+  {
+    srcLight: './sticker-mule-logo.png',
+    name: 'StickerMule',
+    width: '230px',
+    link: 'https://www.stickermule.com/ca'
   }
-
-  // {
-  //   srcLight: './github-logo.png',
-  //   name: 'GitHub',
-  //   width: '150px',
-  //   link: 'https://github.com/'
-  // }
-  // {
-  //   srcLight: './sticker-mule-logo.png',
-  //   name: 'StickerMule',
-  //   width: '230px',
-  //   link: 'https://www.stickermule.com/ca'
-  // }
 ]
 
 export default sponsors
