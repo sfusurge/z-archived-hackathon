@@ -2,7 +2,7 @@ const sponsors = [
   {
     srcLight: './sfss-logo.png',
     name: 'Simon Fraser Student Society',
-    width: '250px',
+    width: '300px',
     link: 'https://sfss.ca/'
   },
   {
