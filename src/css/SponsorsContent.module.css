@@ -1,5 +1,7 @@
 .container {
   width: 884px;
+  height: 100%;
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -21,20 +23,13 @@
 
 .sponsors {
   border-top: 1px solid var(--color-lines);
+  padding: 5px;
   flex-grow: 1;
-  width: 33%;
-  padding: 10px 0;
 }
 
 .innerContainer {
   width: 95%;
   display: flex;
   flex-flow: row wrap;
-  align-items: center;
-}
-
-.expand {
-  border-top: 1px solid var(--color-lines);
-  flex-grow: 10;
-  padding: 10px 0;
+  align-items: stretch;
 }

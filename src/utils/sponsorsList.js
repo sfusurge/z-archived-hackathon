@@ -15,7 +15,7 @@ const sponsors = [
   {
     srcLight: './wics-logo.png',
     name: 'SFU Women in Computing Science',
-    width: '300px',
+    width: '280px',
     link: 'https://www.sfu.ca/computing/wics.html'
   },
   {
@@ -56,13 +56,13 @@ const sponsors = [
   {
     srcLight: './github-logo.png',
     name: 'GitHub',
-    width: '150px',
+    width: '130px',
     link: 'https://github.com/'
   },
   {
     srcLight: './sticker-mule-logo.png',
     name: 'StickerMule',
-    width: '230px',
+    width: '200px',
     link: 'https://www.stickermule.com/ca'
   }
 ]

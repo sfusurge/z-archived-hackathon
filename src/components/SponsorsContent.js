@@ -23,13 +23,19 @@ const SponsorsContent = props => {
       </p>
       <div className={styles.innerContainer}>
         {sponsors.map((sponsor, i) => (
-          <div className={styles.sponsors}>
-            <Sponsor
-              src={sponsorResolver(getSrc(sponsor)).default}
-              name={sponsor.name}
-              width={sponsor.width}
-            />
-          </div>
+          <>
+            {sponsor.srcLight ? (
+              <div className={styles.sponsors}>
+                <Sponsor
+                  src={sponsorResolver(getSrc(sponsor)).default}
+                  name={sponsor.name}
+                  width={sponsor.width}
+                />
+              </div>
+            ) : (
+              <div className={styles.expand}></div>
+            )}
+          </>
         ))}
       </div>
     </div>
