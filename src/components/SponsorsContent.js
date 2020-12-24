@@ -22,20 +22,15 @@ const SponsorsContent = props => {
         This event wouldn’t be possible without all of the community support!
       </p>
       <div className={styles.innerContainer}>
-        <span className={styles.line} />
         {sponsors.map((sponsor, i) => (
-          <>
-            {i !== 0 && i % 4 === 0 && <span className={styles.line} />}
-            <div className={styles.sponsors}>
-              <Sponsor
-                src={sponsorResolver(getSrc(sponsor)).default}
-                name={sponsor.name}
-                width={sponsor.width}
-              />
-            </div>
-          </>
+          <div className={styles.sponsors}>
+            <Sponsor
+              src={sponsorResolver(getSrc(sponsor)).default}
+              name={sponsor.name}
+              width={sponsor.width}
+            />
+          </div>
         ))}
-        <span className={styles.line} />
       </div>
     </div>
   )

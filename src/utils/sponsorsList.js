@@ -2,7 +2,7 @@ const sponsors = [
   {
     srcLight: './sfss-logo.png',
     name: 'Simon Fraser Student Society',
-    width: '200px',
+    width: '250px',
     link: 'https://sfss.ca/'
   },
   {
@@ -31,13 +31,35 @@ const sponsors = [
     name: 'Major League Hacking',
     width: '130px',
     link: 'https://mlh.io/'
+  },
+  {
+    srcLight: './chang-institute-logo.png',
+    srcDark: '',
+    name: 'Chang institute',
+    width: '200px',
+    link: ''
+  },
+  {
+    srcLight: './compass-program-logo-light.png',
+    srcDark: './compass-program-logo-dark.png',
+    name: 'Compass Program',
+    width: '130px',
+    link: ''
+  },
+  {
+    srcLight: './hedgehog-logo.png',
+    srcDark: '',
+    name: 'Hedgehog technologies',
+    width: '200px',
+    link: ''
   }
+
   // {
   //   srcLight: './github-logo.png',
   //   name: 'GitHub',
   //   width: '150px',
   //   link: 'https://github.com/'
-  // },
+  // }
   // {
   //   srcLight: './sticker-mule-logo.png',
   //   name: 'StickerMule',
