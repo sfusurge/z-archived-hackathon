@@ -1,17 +1,19 @@
 import styles from '../css/Sponsor.module.css'
 
-const SponsorsContent = ({ name, src, width, height }) => {
+const Sponsor = ({ name, src, width, height, link }) => {
   return (
-    <div className={styles.container}>
-      <img
-        className={styles.img}
-        src={src}
-        width={width}
-        height={height}
-        alt={`Logo of ${name}`}
-      />
-    </div>
+    <a href={link} target="_blank" rel="noreferrer">
+      <div className={styles.container}>
+        <img
+          className={styles.img}
+          src={src}
+          width={width}
+          height={height}
+          alt={`Logo of ${name}`}
+        />
+      </div>
+    </a>
   )
 }
 
-export default SponsorsContent
+export default Sponsor

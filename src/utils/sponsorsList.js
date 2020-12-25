@@ -33,25 +33,26 @@ const sponsors = [
     link: 'https://mlh.io/'
   },
   {
-    srcLight: './chang-institute-logo.png',
-    srcDark: '',
+    srcLight: './chang-institute-logo-light.png',
+    srcDark: './chang-institute-logo-dark.png',
     name: 'Chang institute',
     width: '200px',
-    link: ''
+    link: 'https://www.sfu.ca/changinstitute.html'
   },
   {
     srcLight: './compass-program-logo-light.png',
     srcDark: './compass-program-logo-dark.png',
     name: 'Compass Program',
     width: '130px',
-    link: ''
+    link:
+      'https://www.sfu.ca/changinstitute/events---outreach/compass-program0.html'
   },
   {
     srcLight: './hedgehog-logo-light.png',
     srcDark: './hedgehog-logo-dark.png',
     name: 'Hedgehog technologies',
     width: '200px',
-    link: ''
+    link: 'https://www.hedgehogtech.com/'
   },
   {
     srcLight: './github-logo.png',

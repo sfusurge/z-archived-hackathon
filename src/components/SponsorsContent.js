@@ -22,7 +22,7 @@ const SponsorsContent = props => {
         This event wouldn’t be possible without all of the community support!
       </p>
       <div className={styles.innerContainer}>
-        {sponsors.map((sponsor, i) => (
+        {sponsors.map(sponsor => (
           <>
             {sponsor.srcLight ? (
               <div className={styles.sponsors}>
@@ -30,6 +30,7 @@ const SponsorsContent = props => {
                   src={sponsorResolver(getSrc(sponsor)).default}
                   name={sponsor.name}
                   width={sponsor.width}
+                  link={sponsor.link}
                 />
               </div>
             ) : (

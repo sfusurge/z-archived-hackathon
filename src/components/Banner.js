@@ -4,13 +4,19 @@ const Banner = props => {
   return (
     <div className={styles.container} style={{ width: `${props.width}px` }}>
       {props.surge && (
-        <img
-          className={styles.bannerImage}
-          src={props.surge.src}
-          alt={props.surge.alt}
-          width={props.surge.width}
-          height={props.surge.height}
-        />
+        <a
+          href="https://www.facebook.com/sfusurge/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <img
+            className={styles.bannerImage}
+            src={props.surge.src}
+            alt={props.surge.alt}
+            width={props.surge.width}
+            height={props.surge.height}
+          />
+        </a>
       )}
       {props.mlh && (
         <a
