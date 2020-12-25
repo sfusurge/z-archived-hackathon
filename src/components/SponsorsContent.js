@@ -2,10 +2,18 @@ import Sponsor from './Sponsor'
 
 import styles from '../css/SponsorsContent.module.css'
 
-import sfssLogo from '../assets/sfss-logo.png'
+import sponsors from '../utils/sponsorsList'
+import getTheme from '../utils/getTheme'
 
-// TODO: make array and use map
-// const sponsors = []
+const sponsorResolver = require.context('../assets/sponsors', false, /.*\.png/)
+
+const getSrc = sponsor => {
+  if (getTheme() === 'dark' && sponsor.srcDark) {
+    return sponsor.srcDark
+  } else {
+    return sponsor.srcLight
+  }
+}
 
 const SponsorsContent = props => {
   return (
@@ -13,16 +21,21 @@ const SponsorsContent = props => {
       <p className={styles.heading}>
         This event wouldn’t be possible without all of the community support!
       </p>
-      <span className={styles.line} />
-      <div className={styles.sponsors}>
-        <Sponsor src={sfssLogo} name="SFSS.png" width="180px" height="62px" />
+      <div className={styles.innerContainer}>
+        {sponsors.map(
+          sponsor =>
+            sponsor.srcLight && (
+              <div className={styles.sponsors}>
+                <Sponsor
+                  src={sponsorResolver(getSrc(sponsor)).default}
+                  name={sponsor.name}
+                  width={sponsor.width}
+                  link={sponsor.link}
+                />
+              </div>
+            )
+        )}
       </div>
-      <span className={styles.line} />
-      <div className={styles.sponsors}></div>
-      <span className={styles.line} />
-      <div className={styles.sponsors}></div>
-      <span className={styles.line} />
-      <div className={styles.sponsors}></div>
     </div>
   )
 }

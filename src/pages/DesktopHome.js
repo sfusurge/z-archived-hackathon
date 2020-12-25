@@ -1,3 +1,5 @@
+import { useTheme } from '../utils/toggleTheme'
+
 import Banner from '../components/Banner'
 import Footer from '../components/Footer'
 import FileIconGroup from '../components/FileIconGroup.js'
@@ -8,6 +10,8 @@ import surgeBanner from '../assets/surge-banner.svg'
 import mlhBanner from '../assets/mlh-banner.svg'
 
 const DesktopHome = props => {
+  // eslint-disable-next-line no-unused-vars
+  const theme = useTheme()
   return (
     <div className={styles.container}>
       <div className={styles.banners}>

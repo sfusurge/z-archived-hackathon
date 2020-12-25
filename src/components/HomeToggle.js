@@ -6,7 +6,6 @@ import DesktopHome from '../pages/DesktopHome'
 import DesktopPromo from '../pages/DesktopPromo'
 import MobilePromo from '../pages/MobilePromo'
 import TabletHome from '../pages/TabletHome'
-import CommandLine from './CommandLine'
 
 const tabletbreakpoint = 600
 const desktopBreakpoint = 900
