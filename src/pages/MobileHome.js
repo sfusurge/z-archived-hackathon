@@ -1,3 +1,5 @@
+import { useTheme } from '../utils/toggleTheme'
+
 import MobileHeader from '../components/MobileHeader'
 import MobileSponsors from '../components/MobileSponsors'
 import MobileTracks from '../components/MobileTracks'
@@ -9,6 +11,8 @@ import FooterMobile from '../components/FooterMobile'
 import styles from '../css/MobileHome.module.css'
 
 const MobileHome = props => {
+  // eslint-disable-next-line no-unused-vars
+  const theme = useTheme()
   return (
     <div className={styles.container}>
       <MobileHeader />
