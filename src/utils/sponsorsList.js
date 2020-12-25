@@ -2,20 +2,20 @@ const sponsors = [
   {
     srcLight: './sfss-logo.png',
     name: 'Simon Fraser Student Society',
-    width: '300px',
+    width: '250px',
     link: 'https://sfss.ca/'
   },
   {
     srcLight: './fair-trade-logo-light.png',
     srcDark: './fair-trade-logo-dark.png',
     name: 'SFU FairTrade',
-    width: '200px',
+    width: '150px',
     link: 'http://www.sfu.ca/fairtrade.html'
   },
   {
     srcLight: './wics-logo.png',
     name: 'SFU Women in Computing Science',
-    width: '280px',
+    width: '250px',
     link: 'https://www.sfu.ca/computing/wics.html'
   },
   {
