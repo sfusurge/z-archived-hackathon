@@ -20,9 +20,9 @@ const MobileSponsors = props => {
     <div className={styles.container}>
       <p className={styles.heading}>Sponsors</p>
       <div className={styles.sponsorContainer}>
-        {sponsors.map(sponsor => (
-          <>
-            {sponsor.srcLight ? (
+        {sponsors.map(
+          sponsor =>
+            sponsor.srcLight && (
               <div className={styles.sponsors}>
                 <Sponsor
                   src={sponsorResolver(getSrc(sponsor)).default}
@@ -31,11 +31,8 @@ const MobileSponsors = props => {
                   link={sponsor.link}
                 />
               </div>
-            ) : (
-              <div className={styles.expand}></div>
-            )}
-          </>
-        ))}
+            )
+        )}
       </div>
     </div>
   )
