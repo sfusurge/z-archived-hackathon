@@ -22,9 +22,9 @@ const SponsorsContent = props => {
         This event wouldn’t be possible without all of the community support!
       </p>
       <div className={styles.innerContainer}>
-        {sponsors.map(sponsor => (
-          <>
-            {sponsor.srcLight ? (
+        {sponsors.map(
+          sponsor =>
+            sponsor.srcLight && (
               <div className={styles.sponsors}>
                 <Sponsor
                   src={sponsorResolver(getSrc(sponsor)).default}
@@ -33,11 +33,8 @@ const SponsorsContent = props => {
                   link={sponsor.link}
                 />
               </div>
-            ) : (
-              <div className={styles.expand}></div>
-            )}
-          </>
-        ))}
+            )
+        )}
       </div>
     </div>
   )
