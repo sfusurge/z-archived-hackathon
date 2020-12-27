@@ -2,12 +2,11 @@ import styles from '../css/CommandLine.module.css'
 import Typist from 'react-typist'
 
 const CommandLine = ({ onClose }) => {
-
   const redirect = () => {
     setTimeout(() => {
-      // onClose()
-      // window.open('https://form.typeform.com/to/HHCYD0tv', '_blank')
-    }, 750)
+      onClose()
+      window.open('https://stormhacks.typeform.com/to/GWfDap3w', '_blank')
+    }, 1000)
   }
 
   return (
@@ -49,9 +48,15 @@ const CommandLine = ({ onClose }) => {
         <Typist.Delay ms={200} />
         <span className={styles.fontAnimated}> . </span>
         <br />
-        <span className={styles.fontAnimated}> Applications are not open until December 28th.</span>
-        <br />
-        <span className={styles.fontAnimated}> process exited with code 1</span>
+        <span className={styles.fontAnimated}>Opening application</span>
+        <Typist.Delay ms={200} />
+        <span className={styles.fontAnimated}> . </span>
+        <Typist.Delay ms={200} />
+        <span className={styles.fontAnimated}> . </span>
+        <Typist.Delay ms={200} />
+        <span className={styles.fontAnimated}> . </span>
+        <Typist.Delay ms={200} />
+        <span className={styles.fontAnimated}> . </span>
       </Typist>
     </div>
   )

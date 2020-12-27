@@ -66,7 +66,7 @@
   color: var(--color-text-body);
 }
 
-.applyButton {
+.apply {
   width: 100%;
   display: block;
   margin: 33px auto 0;
@@ -75,6 +75,9 @@
   color: var(--color-text-white);
   font: var(--font-sub-header);
   border: none;
+  text-decoration: none;
+  text-align: center;
+  line-height: 50px;
 }
 
 .text {
@@ -128,8 +131,9 @@
     display: none;
   }
 
-  .applyButton {
+  .apply {
     height: 94px;
+    line-height: 94px;
     margin-top: 66px;
   }
 }
