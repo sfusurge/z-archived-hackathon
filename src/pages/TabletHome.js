@@ -1,3 +1,5 @@
+import { useTheme } from '../utils/toggleTheme'
+
 import MobileHeader from '../components/MobileHeader'
 import AboutContext from '../components/AboutContext'
 import EventTracks from '../components/EventTracks'
@@ -9,6 +11,8 @@ import FooterMobile from '../components/FooterMobile'
 import styles from '../css/TabletHome.module.css'
 
 const TabletHome = props => {
+  // eslint-disable-next-line no-unused-vars
+  const theme = useTheme()
   return (
     <div className={styles.container}>
       <MobileHeader />

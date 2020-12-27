@@ -18,7 +18,7 @@ const AboutContext = props => {
       <p className={styles.body2}>
         On February 20 - 21, 2021, innovative individuals will come together to
         embrace their passion for technology - all in the span of 24 hours.
-        Together they will face insurrmountable challenges as they design ideas
+        Together they will face insurmountable challenges as they design ideas
         and create impactful projects.
       </p>
       <p className={styles.footer}>We hope to see you at StormHacks!</p>

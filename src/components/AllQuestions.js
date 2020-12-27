@@ -39,7 +39,7 @@ const FAQs2 = [
   {
     question: 'Who can participate?',
     answer:
-      'Students of any education level are able to apply to StormHacks, as long as they are still enrolled when the virtual event takes place in February'
+      'Students of any education level are able to apply to StormHacks, as long as they are still enrolled when the virtual event takes place in February.'
   },
   {
     question: 'How much does it cost to attend StormHacks?',
@@ -54,7 +54,7 @@ const FAQs2 = [
   {
     question: 'How will communication work during the event?',
     answer:
-      'All pre-event communications will occur via email, so sign up for the StormHacks mailing list! During the event, we’ll be using our Discord server to communicate important information and updates to all attendees'
+      'All pre-event communications will occur via email, so sign up for the StormHacks mailing list! During the event, we’ll be using our Discord server to communicate important information and updates to all attendees.'
   },
   {
     question: 'When do hacker applications open?',
