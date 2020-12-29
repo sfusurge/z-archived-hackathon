@@ -1,0 +1,16 @@
+.container {
+  width: 335px;
+  height: 773px;
+  background-color: var(--color-background-popup);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  width: 85%;
+}
+.title {
+  font: var(--font-header);
+  color: var(--color-text-body);
+}

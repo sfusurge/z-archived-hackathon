@@ -7,6 +7,8 @@ import DesktopPromo from '../pages/DesktopPromo'
 import MobilePromo from '../pages/MobilePromo'
 import TabletHome from '../pages/TabletHome'
 
+import SideBar from '../components/SideBar'
+
 const tabletbreakpoint = 600
 const desktopBreakpoint = 900
 const Home = props => {
@@ -47,7 +49,7 @@ const Home = props => {
     // } else if (mode === 'tablet') {
     //   return <TabletHome {...props} />
   } else {
-    return <DesktopHome {...props} />
+    return <SideBar {...props} />
   }
 }
 

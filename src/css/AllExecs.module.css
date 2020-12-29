@@ -17,11 +17,11 @@
 .execs {
   flex: 0 25%;
   padding-top: 10px;
+  margin: 0;
 }
 
 .line {
-  height: 1px;
-  width: 100%;
   background-color: var(--color-lines);
-  justify-content: center;
+  height: 1px;
+  width: 95%;
 }
