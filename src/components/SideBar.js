@@ -7,6 +7,19 @@ const SideBar = () => {
         <p className={styles.title}>Schedule</p>
       </div>
       <SideBarEvent date={'Day 1: February 20th, 2021'} />
+      <SideBarEvent date={'Day 1: February 20th, 2021'} />
+      <SideBarEvent date={'Day 1: February 20th, 2021'} />
+      <SideBarEvent date={'Day 1: February 20th, 2021'} />
+      <SideBarEvent date={'Day 1: February 20th, 2021'} />
+      <SideBarEvent date={'Day 1: February 20th, 2021'} />
+      <SideBarEvent date={'Day 1: February 20th, 2021'} />
+      <SideBarEvent date={'Day 1: February 20th, 2021'} />
+      <SideBarEvent date={'Day 1: February 20th, 2021'} />
+      <SideBarEvent date={'Day 1: February 20th, 2021'} />
+      <SideBarEvent date={'Day 1: February 20th, 2021'} />
+      <SideBarEvent date={'Day 1: February 20th, 2021'} />
+      <SideBarEvent date={'Day 1: February 20th, 2021'} />
+      <SideBarEvent date={'Day 1: February 20th, 2021'} />
     </div>
   )
 }

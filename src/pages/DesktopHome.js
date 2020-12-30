@@ -1,8 +1,10 @@
 import { useTheme } from '../utils/toggleTheme'
+import { useState } from 'react'
 
 import Banner from '../components/Banner'
 import Footer from '../components/Footer'
 import FileIconGroup from '../components/FileIconGroup.js'
+import SideBar from '../components/SideBar'
 
 import styles from '../css/DesktopHome.module.css'
 
@@ -10,6 +12,7 @@ import surgeBanner from '../assets/surge-banner.svg'
 import mlhBanner from '../assets/mlh-banner.svg'
 
 const DesktopHome = props => {
+  const [sideBar, setSideBar] = useState()
   // eslint-disable-next-line no-unused-vars
   const theme = useTheme()
   return (
@@ -33,6 +36,9 @@ const DesktopHome = props => {
       </div>
       <div className={styles.splash}>
         <div className={styles.splashImg}></div>
+      </div>
+      <div className={sideBar ? styles.sideBarActive : styles.sideBar}>
+        <SideBar />
       </div>
       <div className={styles.footer}>
         <Footer />

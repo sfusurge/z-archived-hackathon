@@ -49,7 +49,7 @@ const Home = props => {
     // } else if (mode === 'tablet') {
     //   return <TabletHome {...props} />
   } else {
-    return <SideBar {...props} />
+    return <DesktopHome {...props} />
   }
 }
 

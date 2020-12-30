@@ -77,6 +77,7 @@
   background: transparent;
   margin: 0;
   padding: 0;
+  cursor: pointer;
 }
 
 .notificationButton:focus {
@@ -87,4 +88,18 @@
   height: 34px;
   width: 36px;
   background-image: url('../assets/notifications-icon.svg');
+}
+
+.sideBar {
+  position: fixed;
+  bottom: 70px;
+  right: -40%;
+  transition: 850ms;
+}
+
+.sideBarActive {
+  position: fixed;
+  bottom: 70px;
+  right: 0;
+  transition: 350ms;
 }

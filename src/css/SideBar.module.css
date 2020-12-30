@@ -1,7 +1,8 @@
 .container {
   width: 335px;
-  height: 773px;
-  background-color: var(--color-background-popup);
+  height: 70vh;
+  overflow-y: scroll;
+  background-color: rgba(66, 67, 73, 0.9);
   display: flex;
   flex-direction: column;
   align-items: center;
