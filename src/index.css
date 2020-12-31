@@ -6,6 +6,7 @@
   --color-lines: #d3d3d3;
   --color-modal: #ffffff;
   --color-modal-accent: #f0f0f0;
+
   --color-scroll: #f0f0f0;
   --color-scroll-arrows: #c4c4c4;
   --color-text-body: #282828;
@@ -21,6 +22,7 @@
   --font-email-placeholder: 500 12px Barlow;
   --font-header: 600 24px Poppins;
   --font-sub-header: 700 20px Poppins;
+  --font-events-header: 600 18px Poppins;
   --font-title: 700 54px Poppins;
 }
 

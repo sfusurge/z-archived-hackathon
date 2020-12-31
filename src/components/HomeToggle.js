@@ -6,6 +6,7 @@ import DesktopHome from '../pages/DesktopHome'
 import DesktopPromo from '../pages/DesktopPromo'
 import MobilePromo from '../pages/MobilePromo'
 import TabletHome from '../pages/TabletHome'
+import PastEvents from './PastEvents'
 
 const tabletbreakpoint = 600
 const desktopBreakpoint = 900
@@ -47,7 +48,7 @@ const Home = props => {
     // } else if (mode === 'tablet') {
     //   return <TabletHome {...props} />
   } else {
-    return <DesktopHome {...props} />
+    return <PastEvents {...props} />
   }
 }
 
