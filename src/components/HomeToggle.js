@@ -48,7 +48,7 @@ const Home = props => {
     // } else if (mode === 'tablet') {
     //   return <TabletHome {...props} />
   } else {
-    return <PastEvents {...props} />
+    return <DesktopHome {...props} />
   }
 }
 

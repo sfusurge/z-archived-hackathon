@@ -22,31 +22,36 @@
 }
 
 .body {
-  width: 84%;
+  width: 86%;
 }
 
 .gridBtn {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
   width: 26px;
 }
 
 .gridIcon {
   width: 100%;
   height: 26px;
-  background-image: url('../assets/dark/photoGrid.svg');
+  background-image: url('../assets/light/photoGrid-light.svg');
 }
 
+[data-theme='dark'] .gridIcon {
+  background-image: url('../assets/dark/photoGrid-dark.svg');
+}
 .orangeOutline {
-  padding-top: 7px;
+  margin-top: 7px;
   height: 2px;
   width: 92%;
-  color: var(--color-text-header);
+  background-color: var(--color-text-header);
 }
 
 .menu {
   width: 100%;
+  margin-top: 35px;
+  margin-bottom: 37px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -58,8 +63,17 @@
   color: var(--color-text-header);
 }
 
+.subHeaderText {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 210px;
+}
+
 .viewBy {
   margin: 0;
+  font: var(--font-events-header);
+  color: var(--color-text-body);
 }
 
 .images2020 {

@@ -15,8 +15,18 @@ const PastEvents = props => {
         </p>
       </div>
       <div className={styles.body}>
+        <div>
+          <p className={styles.headerText}>
+            SFU Surge has held 25 events since it’s inception in September 2019,
+            engaging 700+ students interested in tech. We hope to continue this
+            mission with StormHacks 2021!
+          </p>
+        </div>
         <div className={styles.menu}>
-          <p className={styles.viewBy}>View by: Date taken</p>
+          <div className={styles.subHeaderText}>
+            <p className={styles.viewBy}>View by:</p>
+            <p className={styles.viewBy}> Date taken</p>
+          </div>
           <div className={styles.gridBtn}>
             <div className={styles.gridIcon} />
             <span className={styles.orangeOutline}></span>
