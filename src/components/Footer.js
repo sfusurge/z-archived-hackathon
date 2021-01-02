@@ -9,7 +9,7 @@ import SideBar from '../components/SideBar'
 
 const Footer = props => {
   const [isOpen, setIsOpen] = useState(false)
-  const [sideBar, setSideBar] = useState(true)
+  const [sideBar, setSideBar] = useState(false)
 
   const openFile = () => {
     setIsOpen(true)
