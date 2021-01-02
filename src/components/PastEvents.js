@@ -7,21 +7,12 @@ const imageResolver = require.context(
 const PastEvents = props => {
   return (
     <div className={styles.container}>
-      <div className={styles.header}>
+      <div className={styles.body}>
         <p className={styles.headerText}>
           SFU Surge has held 25 events since it’s inception in September 2019,
           engaging 700+ students interested in tech. We hope to continue this
           mission with StormHacks 2021!
         </p>
-      </div>
-      <div className={styles.body}>
-        <div>
-          <p className={styles.headerText}>
-            SFU Surge has held 25 events since it’s inception in September 2019,
-            engaging 700+ students interested in tech. We hope to continue this
-            mission with StormHacks 2021!
-          </p>
-        </div>
         <div className={styles.menu}>
           <div className={styles.subHeaderText}>
             <p className={styles.viewBy}>View by:</p>

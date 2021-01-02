@@ -7,16 +7,9 @@
   background-color: var(--color-background-popup);
 }
 
-.header {
-  width: 100%;
-  background-color: var(--color-background-main);
-}
-
 .headerText {
   margin-top: 23px;
   margin-bottom: 28px;
-  padding-left: 3%;
-  padding-right: 6%;
   color: var(--color-text-body);
   font: var(--font-events-header);
 }
@@ -72,7 +65,7 @@
 
 .viewBy {
   margin: 0;
-  font: var(--font-events-header);
+  font: var(--font-date-header);
   color: var(--color-text-body);
 }
 
