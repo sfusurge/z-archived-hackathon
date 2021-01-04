@@ -105,6 +105,7 @@
 }
 
 .images2019 {
+  padding-bottom: 25px;
   display: grid;
   column-gap: 9px;
   row-gap: 9px;
