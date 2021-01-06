@@ -84,3 +84,41 @@
 [data-theme='dark'] .github:hover {
   background-image: url('../assets/dark/github-dark-hover.svg');
 }
+
+@media only screen and (max-width: 900px) {
+  .container {
+    flex-direction: row;
+    width: 170px;
+    height: 100%;
+    justify-content: space-between;
+  }
+  .instagram {
+    background-image: url('../assets/light/instagram-light-hover.svg');
+  }
+  [data-theme='dark'] .instagram {
+    background-image: url('../assets/dark/instagram-dark-hover.svg');
+  }
+
+  .facebook {
+    background-image: url('../assets/light/facebook-light-hover.svg');
+  }
+  [data-theme='dark'] .facebook {
+    background-image: url('../assets/dark/facebook-dark-hover.svg');
+  }
+
+  .linkedin {
+    background-image: url('../assets/light/linkedin-light-hover.svg');
+  }
+
+  [data-theme='dark'] .linkedin {
+    background-image: url('../assets/dark/linkedin-dark-hover.svg');
+  }
+
+  .github {
+    background-image: url('../assets/light/github-light-hover.svg');
+  }
+
+  [data-theme='dark'] .github {
+    background-image: url('../assets/dark/github-dark-hover.svg');
+  }
+}
