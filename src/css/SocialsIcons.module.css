@@ -71,8 +71,16 @@
   background-image: url('../assets/light/github-light.svg');
 }
 
+[data-theme='dark'] .github {
+  background-image: url('../assets/dark/github-dark.svg');
+}
+
 .github:hover {
   width: 36px;
   height: 36px;
   background-image: url('../assets/light/github-light-hover.svg');
+}
+
+[data-theme='dark'] .github:hover {
+  background-image: url('../assets/dark/github-dark-hover.svg');
 }
