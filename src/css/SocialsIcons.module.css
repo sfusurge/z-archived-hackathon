@@ -1,0 +1,53 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 180px;
+}
+
+.instagram {
+  width: 36px;
+  height: 36px;
+  background-image: url('../assets/light/instagram-light.svg');
+}
+
+.instagram:hover {
+  width: 36px;
+  height: 36px;
+  background-image: url('../assets/light/instagram-light-hover.svg');
+}
+
+.facebook {
+  width: 36px;
+  height: 36px;
+  background-image: url('../assets/light/facebook-light.svg');
+}
+
+.facebook:hover {
+  width: 36px;
+  height: 36px;
+  background-image: url('../assets/light/facebook-light-hover.svg');
+}
+
+.linkedin {
+  width: 36px;
+  height: 36px;
+  background-image: url('../assets/light/linkedin-light.svg');
+}
+.linkedin:hover {
+  width: 36px;
+  height: 36px;
+  background-image: url('../assets/light/linkedin-light-hover.svg');
+}
+
+.github {
+  width: 36px;
+  height: 36px;
+  background-image: url('../assets/light/github-light.svg');
+}
+.github:hover {
+  width: 36px;
+  height: 36px;
+  background-image: url('../assets/light/github-light-hover.svg');
+}

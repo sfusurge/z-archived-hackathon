@@ -12,14 +12,14 @@
 
 .splash {
   position: absolute;
-  background: url("../assets/light/desktop-splash.svg") no-repeat;
+  background: url('../assets/light/desktop-splash.svg') no-repeat;
   width: 738px;
   height: 378px;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  margin-left: auto; 
-  margin-right: auto; 
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media only screen and (min-width: 1300px) {
@@ -28,8 +28,8 @@
   }
 }
 
-[data-theme="dark"] .splash {
-  background-image: url("../assets/dark/desktop-splash.svg");
+[data-theme='dark'] .splash {
+  background-image: url('../assets/dark/desktop-splash.svg');
 }
 
 .footer {
@@ -43,4 +43,10 @@
   height: 100%;
   left: 3%;
   z-index: 1;
+}
+
+.socials {
+  position: absolute;
+  right: 15px;
+  bottom: 10vh;
 }
