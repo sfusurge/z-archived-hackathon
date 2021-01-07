@@ -11,7 +11,9 @@ const FooterMobile = props => {
       >
         MLH Code of Conduct
       </a>
-      <SocialsIcons />
+      <div className={styles.socials}>
+        <SocialsIcons />
+      </div>
     </div>
   )
 }
