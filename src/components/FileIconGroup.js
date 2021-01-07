@@ -14,7 +14,7 @@ import Tracks from '../assets/tracksFileIcon.svg'
 import Sponsors from '../assets/sponsorsFileIcon.svg'
 import Terminal from '../assets/terminalFileIcon.svg'
 import Faq from '../assets/faqFileIcon.svg'
-import pastEvents from '../assets/pastEventsFileIcon.svg'
+import Events from '../assets/pastEventsFileIcon.svg'
 
 const FileIconGroup = () => {
   return (
@@ -28,7 +28,7 @@ const FileIconGroup = () => {
       <DesktopFile icon={Sponsors} Content={SponsorsContent} text="Sponsors" />
       <DesktopFile icon={Terminal} Content={CommandLine} text="Apply.exe" />
       <DesktopFile icon={Faq} Content={AllQuestions} text="FAQ" />
-      <DesktopFile icon={pastEvents} Content={PastEvents} text="Past Events" />
+      <DesktopFile icon={Events} Content={PastEvents} text="Past Events" />
     </div>
   )
 }
