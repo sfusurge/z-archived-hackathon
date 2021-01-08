@@ -44,8 +44,9 @@ const PastEvents = props => {
         <div className={styles.images2020}>
           {imgs2020.map((pic, i) => (
             <img
+              key={pic}
               className={styles[`img${i + 1}`]}
-              src={imageResolver(imgs2020[i]).default}
+              src={imageResolver(pic).default}
               alt={`Surge pictures ${i + 1}_2020`}
             />
           ))}
@@ -54,8 +55,9 @@ const PastEvents = props => {
         <div className={styles.images2019}>
           {imgs2019.map((pic, i) => (
             <img
+              key={pic}
               className={styles[`img${i + 1}_19`]}
-              src={imageResolver(imgs2019[i]).default}
+              src={imageResolver(pic).default}
               alt={`Surge pictures ${i + 1}_2019`}
             />
           ))}
