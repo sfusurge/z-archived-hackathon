@@ -48,5 +48,5 @@
 .socials {
   position: absolute;
   right: 15px;
-  bottom: max(10vh, 80px);
+  bottom: max(11vh, 80px);
 }

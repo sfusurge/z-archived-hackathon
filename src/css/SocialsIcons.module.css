@@ -2,8 +2,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
-  height: 180px;
+  justify-content: space-between;
+  height: 175px;
 }
 
 .instagram {

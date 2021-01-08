@@ -1,40 +1,24 @@
 import styles from '../css/SocialsIcons.module.css'
-
+const socials = [
+  { link: 'https://github.com/sfusurge', className: 'github' },
+  { link: 'https://www.instagram.com/sfusurge/', className: 'instagram' },
+  { link: 'https://www.facebook.com/sfusurge', className: 'facebook' },
+  { link: 'https://www.linkedin.com/company/sfu-surge/', className: 'linkedin' }
+]
 const SocialsIcons = props => {
   return (
     <div className={styles.container}>
-      <a
-        href="https://github.com/sfusurge"
-        target="_blank"
-        rel="noreferrer"
-        className={styles.iconLink}
-      >
-        <div className={styles.github} />
-      </a>
-      <a
-        href="https://www.instagram.com/sfusurge/"
-        target="_blank"
-        rel="noreferrer"
-        className={styles.iconLink}
-      >
-        <div className={styles.instagram} />
-      </a>
-      <a
-        href="https://www.facebook.com/sfusurge"
-        target="_blank"
-        rel="noreferrer"
-        className={styles.iconLink}
-      >
-        <div className={styles.facebook} />
-      </a>
-      <a
-        href="https://www.linkedin.com/company/sfu-surge/"
-        target="_blank"
-        rel="noreferrer"
-        className={styles.iconLink}
-      >
-        <div className={styles.linkedin} />
-      </a>
+      {socials.map(social => (
+        <a
+          key={social.link}
+          href={social.link}
+          target="_blank"
+          rel="noreferrer"
+          className={styles.iconLink}
+        >
+          <div className={styles[social.className]} />
+        </a>
+      ))}
     </div>
   )
 }
