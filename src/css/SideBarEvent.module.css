@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   width: 85%;
+  margin-bottom: 15px;
 }
 
 .title {
@@ -12,6 +13,7 @@
 .date {
   color: var(--color-text-body);
   font: var(--font-body-bold);
+  margin-top: 0px;
   margin-bottom: 11px;
 }
 
@@ -19,4 +21,81 @@
   height: 1px;
   width: 100%;
   background-color: var(--color-lines);
+}
+
+.innerContainer {
+  margin-top: 15px;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.eventDescription {
+  padding-left: 12px;
+}
+
+.eventText {
+  margin: 0;
+  font: var(--font-body-schedule);
+  color: var(--color-text-body);
+}
+.stormyFace {
+  width: 40px;
+  height: 100%;
+  background-image: url('../assets/light/stormy-face.svg');
+}
+
+[data-theme='dark'] .stormyFace {
+  background-image: url('../assets/dark/sparky-face.svg');
+}
+
+.github {
+  width: 40px;
+  height: 100%;
+  background-image: url('../assets/light/github-schedule-light.svg');
+}
+
+[data-theme='dark'] .github {
+  background-image: url('../assets/dark/github-schedule-dark.svg');
+}
+
+.design {
+  width: 40px;
+  height: 100%;
+  background-image: url('../assets/light/pen-light.svg');
+}
+
+[data-theme='dark'] .design {
+  background-image: url('../assets/dark/pen-dark.svg');
+}
+
+.webDev {
+  width: 40px;
+  height: 100%;
+  background-image: url('../assets/light/webdev-light.svg');
+}
+
+[data-theme='dark'] .webDev {
+  background-image: url('../assets/dark/webdev-dark.svg');
+}
+
+.react {
+  width: 40px;
+  height: 100%;
+  background-image: url('../assets/light/react-light.svg');
+}
+
+[data-theme='dark'] .react {
+  background-image: url('../assets/dark/react-dark.svg');
+}
+
+.android {
+  width: 40px;
+  height: 100%;
+  background-image: url('../assets/light/android-light.svg');
+}
+
+[data-theme='dark'] .android {
+  background-image: url('../assets/dark/android-dark.svg');
 }

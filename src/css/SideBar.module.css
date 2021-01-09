@@ -12,6 +12,9 @@
   width: 85%;
 }
 .title {
+  margin: 0;
+  margin-top: 28px;
+  margin-bottom: 35px;
   font: var(--font-header);
   color: var(--color-text-body);
 }
