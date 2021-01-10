@@ -140,11 +140,39 @@ const execs = [
     link: 'https://www.linkedin.com/in/karrensusanto/'
   },
   {
+    src: './alice.png',
+    width: '100px',
+    height: '100px',
+    name: 'Alice.tiff',
+    customStyle: { cursor: 'default' }
+  },
+  {
+    src: './jeanette.png',
+    width: '100px',
+    height: '100px',
+    name: 'Jeanette.png',
+    customStyle: { cursor: 'default' }
+  },
+  {
+    src: './jackie.png',
+    width: '100px',
+    height: '100px',
+    name: 'Jackie.png',
+    customStyle: { cursor: 'default' }
+  },
+  {
     src: './josh.png',
     width: '100px',
     height: '100px',
     name: 'Josh.png',
     link: 'https://www.linkedin.com/in/joshuapeng1999/'
+  },
+  {
+    src: './bianca.png',
+    width: '100px',
+    height: '100px',
+    name: 'Bianca.png',
+    customStyle: { cursor: 'default' }
   }
 ]
 
