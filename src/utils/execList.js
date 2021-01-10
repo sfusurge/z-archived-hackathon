@@ -144,7 +144,7 @@ const execs = [
     width: '100px',
     height: '100px',
     name: 'Alice.tiff',
-    customStyle: { cursor: 'default' }
+    link: 'https://www.linkedin.com/in/alice-shmyk/?originalSubdomain=ca'
   },
   {
     src: './jeanette.png',
