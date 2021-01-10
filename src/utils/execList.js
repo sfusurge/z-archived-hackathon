@@ -150,15 +150,15 @@ const execs = [
     src: './jeanette.png',
     width: '100px',
     height: '100px',
-    name: 'Jeanette.png',
-    customStyle: { cursor: 'default' }
+    name: 'Jeanette.tiff',
+    link: 'https://www.linkedin.com/in/jeanette-andrews/'
   },
   {
     src: './jackie.png',
     width: '100px',
     height: '100px',
     name: 'Jackie.png',
-    customStyle: { cursor: 'default' }
+    link: 'https://www.linkedin.com/in/jackie-liao-a33094159/'
   },
   {
     src: './josh.png',
@@ -171,8 +171,8 @@ const execs = [
     src: './bianca.png',
     width: '100px',
     height: '100px',
-    name: 'Bianca.png',
-    customStyle: { cursor: 'default' }
+    name: 'Bianca.jpeg',
+    link: 'https://www.linkedin.com/in/biancachow/'
   }
 ]
 
