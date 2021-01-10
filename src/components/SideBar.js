@@ -8,20 +8,31 @@ const workshops = [
       {
         img: 'stormyFace',
         eventName: 'Hack 101',
-        eventTime: 'Zoom @ 5:30p-7:00p'
+        eventTime: 'Zoom @ 5:30p-7:00p',
+        link: 'https://lu.ma/wmvm1ny4'
       }
     ]
   },
   {
     date: 'January 29th 2021',
     events: [
-      { img: 'github', eventName: 'GIT', eventTime: 'Zoom @ 5:30p-7:00p' }
+      {
+        img: 'github',
+        eventName: 'GEAR 201',
+        eventTime: 'Zoom @ 5:30p-7:00p',
+        customStyle: { cursor: 'default' }
+      }
     ]
   },
   {
     date: 'February 3rd 2021',
     events: [
-      { img: 'design', eventName: 'Design', eventTime: 'Zoom @ 5:30p-7:00p' }
+      {
+        img: 'design',
+        eventName: 'Create 101',
+        eventTime: 'Zoom @ 5:30p-7:00p',
+        customStyle: { cursor: 'default' }
+      }
     ]
   },
   {
@@ -30,7 +41,8 @@ const workshops = [
       {
         img: 'webDev',
         eventName: 'Intro to Web Dev',
-        eventTime: 'Zoom @ 5:30p-7:00p'
+        eventTime: 'Zoom @ 5:30p-7:00p',
+        customStyle: { cursor: 'default' }
       }
     ]
   },
@@ -40,7 +52,8 @@ const workshops = [
       {
         img: 'react',
         eventName: 'Intro to React and Hooks',
-        eventTime: 'Zoom @ 5:30p-7:00p'
+        eventTime: 'Zoom @ 5:30p-7:00p',
+        customStyle: { cursor: 'default' }
       }
     ]
   },
@@ -50,7 +63,8 @@ const workshops = [
       {
         img: 'android',
         eventName: 'Intro to Android Studio',
-        eventTime: 'Zoom @ 5:30p-7:00p'
+        eventTime: 'Zoom @ 5:30p-7:00p',
+        customStyle: { cursor: 'default' }
       }
     ]
   }

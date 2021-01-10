@@ -6,13 +6,21 @@ const SideBarEvents = props => {
       <p className={styles.date}>{props.date}</p>
       <span className={styles.line} />
       {props.events.map(event => (
-        <div className={styles.innerContainer}>
-          <div className={styles[event.img]} />
-          <div className={styles.eventDescription}>
-            <p className={styles.eventText}>{event.eventName}</p>
-            <p className={styles.eventText}>{event.eventTime}</p>
+        <a
+          href={event.link}
+          target="_blank"
+          rel="noreferrer"
+          style={event.customStyle}
+          className={styles.links}
+        >
+          <div className={styles.innerContainer}>
+            <div className={styles[event.img]} />
+            <div className={styles.eventDescription}>
+              <p className={styles.eventText}>{event.eventName}</p>
+              <p className={styles.eventText}>{event.eventTime}</p>
+            </div>
           </div>
-        </div>
+        </a>
       ))}
     </div>
   )
