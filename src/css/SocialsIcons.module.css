@@ -3,7 +3,25 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  height: 175px;
+  height: min(65vh, 200px);
+}
+
+.mail {
+  width: 36px;
+  height: 36px;
+  background-image: url('../assets/light/mail-light.svg');
+}
+
+[data-theme='dark'] .mail {
+  background-image: url('../assets/dark/mail-dark.svg');
+}
+
+.mail:hover {
+  background-image: url('../assets/light/mail-light-hover.svg');
+}
+
+[data-theme='dark'] .mail:hover {
+  background-image: url('../assets/dark/mail-dark-hover.svg');
 }
 
 .instagram {
@@ -80,13 +98,23 @@
 @media only screen and (max-width: 900px) {
   .container {
     flex-direction: row;
-    width: 170px;
+    width: 200px;
     height: 100%;
     justify-content: space-between;
   }
+
+  .mail {
+    background-image: url('../assets/light/mail-light-hover.svg');
+  }
+
+  [data-theme='dark'] .mail {
+    background-image: url('../assets/dark/mail-dark-hover.svg');
+  }
+
   .instagram {
     background-image: url('../assets/light/instagram-light-hover.svg');
   }
+
   [data-theme='dark'] .instagram {
     background-image: url('../assets/dark/instagram-dark-hover.svg');
   }

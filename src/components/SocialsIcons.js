@@ -1,5 +1,6 @@
 import styles from '../css/SocialsIcons.module.css'
 const socials = [
+  { link: 'mailto:info@stormhacks.com', className: 'mail' },
   { link: 'https://github.com/sfusurge', className: 'github' },
   { link: 'https://www.instagram.com/sfusurge/', className: 'instagram' },
   { link: 'https://www.facebook.com/sfusurge', className: 'facebook' },
