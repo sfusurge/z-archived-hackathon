@@ -19,7 +19,7 @@ const DesktopFile = ({ Content, ...props }) => {
     <>
       {isOpen && (
         <Modal title={props.text} onClose={closeFile}>
-          <Content onClose={closeFile} />
+          <Content />
         </Modal>
       )}
       <div className={styles.container} onClick={openFile}>
