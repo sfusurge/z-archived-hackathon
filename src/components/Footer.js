@@ -5,9 +5,11 @@ import styles from '../css/Footer.module.css'
 
 import Modal from '../components/Modal'
 import AllExecs from '../components/AllExecs'
+import SideBar from '../components/SideBar'
 
 const Footer = props => {
   const [isOpen, setIsOpen] = useState(false)
+  const [sideBar, setSideBar] = useState(false)
 
   const openFile = () => {
     setIsOpen(true)
@@ -16,6 +18,11 @@ const Footer = props => {
   const closeFile = () => {
     setIsOpen(false)
   }
+
+  const toggleSideBar = () => {
+    sideBar ? setSideBar(false) : setSideBar(true)
+  }
+
   return (
     <div className={styles.container}>
       {isOpen && (
@@ -23,7 +30,10 @@ const Footer = props => {
           <AllExecs />
         </Modal>
       )}
-      <div id={styles.logoPad}></div>
+      <div className={sideBar ? styles.sideBarActive : styles.sideBar}>
+        <SideBar />
+      </div>
+      <a id={styles.logoPad} href='https://www.facebook.com/sfusurge/' target='_blank' rel="noreferrer">&nbsp;</a>
       <div className={styles.innerContainer}>
         <div>
           <a
@@ -46,7 +56,10 @@ const Footer = props => {
         <button className={styles.themeButton} onClick={toggleTheme}>
           <div className={styles.themeToggle}></div>
         </button>
-        <button className={styles.notificationButton}>
+        <button
+          className={styles.notificationButton}
+          onClick={toggleSideBar}
+        >
           <div className={styles.notificationIcon}></div>
         </button>
       </div>

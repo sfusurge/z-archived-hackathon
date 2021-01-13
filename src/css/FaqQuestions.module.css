@@ -4,6 +4,7 @@
     flex-direction: column;
     margin-left: 2.5%; */
   font: var(--font-body);
+  cursor: pointer;
 }
 
 .question {
@@ -40,6 +41,8 @@
 }
 
 .answer {
+  padding-top:25px;
+  padding-bottom: 25px;
   padding-left: 3%;
   padding-right: 11.5%;
   background-color: var(--color-scroll);

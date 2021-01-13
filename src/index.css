@@ -1,6 +1,7 @@
 :root {
   --color-background-main: #f8f8f8;
   --color-background-popup: #ffffff;
+  --color-popup-opaque: rgba(255, 255, 255, 0.8);
   --color-date-header: #a1abff;
   --color-footer: #5a60f3;
   --color-lines: #d3d3d3;
@@ -15,7 +16,9 @@
   --color-sign-up-background: var(--color-modal);
   --font-body: 500 16px Barlow;
   --font-body-bold: 700 16px Barlow;
+  --font-body-schedule: 500 15px Barlow;
   --font-date-header: 600 16px Poppins;
+  --font-events-header: 600 17px Poppins;
   --font-email-header: 600 24px Poppins;
   --font-email-sub-header: 400 20px Poppins;
   --font-email-placeholder: 500 12px Barlow;
@@ -41,6 +44,7 @@
 [data-theme='dark'] {
   --color-background-main: #323232;
   --color-background-popup: #424349;
+  --color-popup-opaque: rgba(66, 67, 73, 0.9);
   --color-date-header: #f4f4f4;
   --color-footer: #282828;
   --color-lines: #616161;

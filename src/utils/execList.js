@@ -102,7 +102,7 @@ const execs = [
     width: '100px',
     height: '100px',
     name: 'Steven.jpeg',
-    customStyle: { cursor: 'default' }
+    link: 'https://www.linkedin.com/in/steven-zhu-320044203/'
   },
   {
     src: './jocelyn.png',
@@ -140,11 +140,39 @@ const execs = [
     link: 'https://www.linkedin.com/in/karrensusanto/'
   },
   {
+    src: './alice.png',
+    width: '100px',
+    height: '100px',
+    name: 'Alice.tiff',
+    link: 'https://www.linkedin.com/in/alice-shmyk/?originalSubdomain=ca'
+  },
+  {
+    src: './jeanette.png',
+    width: '100px',
+    height: '100px',
+    name: 'Jeanette.tiff',
+    link: 'https://www.linkedin.com/in/jeanette-andrews/'
+  },
+  {
+    src: './jackie.png',
+    width: '100px',
+    height: '100px',
+    name: 'Jackie.png',
+    link: 'https://www.linkedin.com/in/jackie-liao-a33094159/'
+  },
+  {
     src: './josh.png',
     width: '100px',
     height: '100px',
     name: 'Josh.png',
     link: 'https://www.linkedin.com/in/joshuapeng1999/'
+  },
+  {
+    src: './bianca.png',
+    width: '100px',
+    height: '100px',
+    name: 'Bianca.jpeg',
+    link: 'https://www.linkedin.com/in/biancachow/'
   }
 ]
 
