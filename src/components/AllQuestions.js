@@ -16,7 +16,7 @@ const FAQs1 = [
   {
     question: 'What if I’ve never been to a hackathon?',
     answer:
-      'Stormhacks welcomes students of all skill levels. Whether you’re a newcomer or a hackathon veteran, we’ll have talks, workshops and mentors to help you with your project throughout the event. All you need to bring is your eagerness to learn.'
+      'StormHacks welcomes students of all skill levels. Whether you’re a newcomer or a hackathon veteran, we’ll have talks, workshops and mentors to help you with your project throughout the event. All you need to bring is your eagerness to learn.'
   },
   {
     question: 'What kind of activities will there be?',
@@ -26,10 +26,10 @@ const FAQs1 = [
   {
     question: 'What platform will you be using to host the event?',
     answer:
-      'We will be hosting the event on Discord. Opening/closing ceremnies and workshops will take place on Youtube Premiere or Zoom.'
+      'We will be hosting the event on Discord. Opening/closing ceremonies and workshops will take place on Youtube Premiere or Zoom.'
   },
   {
-    question: 'How will we recieve swag?',
+    question: 'How will we receive swag?',
     answer:
       'Swag will be shipped out to the address you provide during registration!'
   }
@@ -39,12 +39,12 @@ const FAQs2 = [
   {
     question: 'Who can participate?',
     answer:
-      'Students of any education level are able to apply to Stormhacks, as long as they are still enrolled when the virtual event takes place in February'
+      'Students of any education level are able to apply to StormHacks, as long as they are still enrolled when the virtual event takes place in February.'
   },
   {
-    question: 'How much does it cost to attend Stormhacks?',
+    question: 'How much does it cost to attend StormHacks?',
     answer:
-      'Admission to Stormhacks is completely free for those that are eligible. We will provide all resources and mentorships our hackers need to build incredible and impactful projects.'
+      'Admission to StormHacks is completely free for those that are eligible. We will provide all resources and mentorships our hackers need to build incredible and impactful projects.'
   },
   {
     question: 'How many people can be on a team?',
@@ -54,7 +54,7 @@ const FAQs2 = [
   {
     question: 'How will communication work during the event?',
     answer:
-      'All pre-event communications will occur via email, so sign up for the StormHacks mailing list! During the event, we’ll be using our Discord server to communicate important information and updates to all attendees'
+      'All pre-event communications will occur via email, so sign up for the StormHacks mailing list! During the event, we’ll be using our Discord server to communicate important information and updates to all attendees.'
   },
   {
     question: 'When do hacker applications open?',

@@ -1,4 +1,4 @@
-import toggleTheme from '../utils/toggleTheme'
+import ToggleButton from './ToggleButton'
 
 import styles from '../css/MobileHeader.module.css'
 
@@ -10,9 +10,7 @@ const MobileHeader = props => {
   return (
     <div className={styles.backgroundContainer}>
       <div className={styles.headerContainer}>
-        <button className={styles.themeButton} onClick={toggleTheme}>
-          <div className={styles.themeToggle} />
-        </button>
+        <ToggleButton />
         <div className={styles.banners}>
           <Banner
             width="110"
@@ -42,7 +40,14 @@ const MobileHeader = props => {
           Are you ready <br className={styles.breakLine} />
           to learn, create, and inspire?
         </p>
-        <button className={styles.applyButton}>APPLY NOW</button>
+        <a
+          className={styles.apply}
+          href="https://stormhacks.typeform.com/to/GWfDap3w"
+          target="_blank"
+          rel="noreferrer"
+        >
+          APPLY NOW
+        </a>
       </div>
     </div>
   )

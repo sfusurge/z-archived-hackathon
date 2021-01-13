@@ -22,6 +22,7 @@ const Footer = props => {
   const toggleSideBar = () => {
     sideBar ? setSideBar(false) : setSideBar(true)
   }
+
   return (
     <div className={styles.container}>
       {isOpen && (
@@ -32,7 +33,7 @@ const Footer = props => {
       <div className={sideBar ? styles.sideBarActive : styles.sideBar}>
         <SideBar />
       </div>
-      <div id={styles.logoPad}></div>
+      <a id={styles.logoPad} href='https://www.facebook.com/sfusurge/' target='_blank' rel="noreferrer">&nbsp;</a>
       <div className={styles.innerContainer}>
         <div>
           <a

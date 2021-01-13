@@ -102,3 +102,9 @@
   margin-right: 10px;
   cursor: pointer;
 }
+
+.toggleWrapper {
+  position: absolute;
+  right: 2vw;
+  bottom: 3vh;
+}

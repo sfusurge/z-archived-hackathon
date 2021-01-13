@@ -1,7 +1,7 @@
 :root {
   --color-background-main: #f8f8f8;
   --color-background-popup: #ffffff;
-  --color-popup-opaque: rgba(255, 255, 255, 0.9);
+  --color-popup-opaque: rgba(255, 255, 255, 0.8);
   --color-date-header: #a1abff;
   --color-footer: #5a60f3;
   --color-lines: #d3d3d3;

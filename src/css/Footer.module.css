@@ -19,6 +19,8 @@
   height: 34px;
   width: 34px;
   background-image: url('../assets/light/surgeIcon-light.svg');
+  /* content: none; */
+  text-decoration: none;
 }
 
 [data-theme='dark'] #logoPad {

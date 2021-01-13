@@ -1,9 +1,10 @@
 import Banner from '../components/Banner'
+import ToggleButton from "../components/ToggleButton"
 
 import styles from '../css/DesktopPromo.module.css'
 
 import surgeBanner from '../assets/surge-banner.svg'
-import mlhBanner from '../assets/mlh-banner.svg'
+// import mlhBanner from '../assets/mlh-banner.svg'
 import signUp from '../assets/sign-up-button.svg'
 import sparky from '../assets/sparky-wave.svg'
 import stormy from '../assets/stormy-laying.svg'
@@ -70,6 +71,9 @@ const DesktopPromo = props => {
             </button>
           </form>
         </div>
+      </div>
+      <div className={styles.toggleWrapper}>
+        <ToggleButton />
       </div>
     </div>
   )
