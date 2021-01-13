@@ -24,6 +24,11 @@
   color: var(--color-text-body);
 }
 
+.linkAnimated {
+  font: var(--font-body);
+  color: var(--color-text-body);
+}
+
 .typist span {
   color: var(--color-text-body);
 }
