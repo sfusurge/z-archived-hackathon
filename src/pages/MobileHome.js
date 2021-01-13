@@ -1,8 +1,28 @@
+import { useTheme } from '../utils/toggleTheme'
+
+import MobileHeader from '../components/MobileHeader'
+import MobileSponsors from '../components/MobileSponsors'
+import MobileTracks from '../components/MobileTracks'
+import MobileIntroduction from '../components/MobileIntroduction'
+import FaqMobile from '../components/FaqMobile'
+import MobileExec from '../components/MobileExecs'
+import FooterMobile from '../components/FooterMobile'
+
+import styles from '../css/MobileHome.module.css'
+
 const MobileHome = props => {
+  // eslint-disable-next-line no-unused-vars
+  const theme = useTheme()
   return (
-    <>
-      Mobile
-    </>
+    <div className={styles.container}>
+      <MobileHeader />
+      <MobileIntroduction />
+      <MobileTracks />
+      <FaqMobile />
+      <MobileSponsors />
+      <MobileExec />
+      <FooterMobile />
+    </div>
   )
 }
 
