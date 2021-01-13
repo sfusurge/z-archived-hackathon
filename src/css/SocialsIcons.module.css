@@ -6,93 +6,66 @@
   height: min(65vh, 210px);
 }
 
-.mail {
+.iconLink:hover {
+  opacity: 0.95;
+}
+
+.img {
   width: 36px;
   height: 36px;
+  opacity: 0.5;
+}
+
+.img:hover {
+  opacity: 1;
+}
+
+[data-theme='dark'] .img {
+  opacity: 1;
+}
+
+[data-theme='dark'] .img:hover {
+  opacity: 0.9;
+}
+
+#mail {
   background-image: url('../assets/light/mail-light.svg');
 }
 
-[data-theme='dark'] .mail {
+[data-theme='dark'] #mail {
   background-image: url('../assets/dark/mail-dark.svg');
 }
 
-.mail:hover {
-  background-image: url('../assets/light/mail-light-hover.svg');
-}
-
-[data-theme='dark'] .mail:hover {
-  background-image: url('../assets/dark/mail-dark-hover.svg');
-}
-
-.instagram {
-  width: 36px;
-  height: 36px;
+#instagram {
   background-image: url('../assets/light/instagram-light.svg');
 }
 
-[data-theme='dark'] .instagram {
+[data-theme='dark'] #instagram {
   background-image: url('../assets/dark/instagram-dark.svg');
 }
 
-.instagram:hover {
-  background-image: url('../assets/light/instagram-light-hover.svg');
-}
-
-[data-theme='dark'] .instagram:hover {
-  background-image: url('../assets/dark/instagram-dark-hover.svg');
-}
-
-.facebook {
-  width: 36px;
-  height: 36px;
+#facebook {
   background-image: url('../assets/light/facebook-light.svg');
 }
-[data-theme='dark'] .facebook {
+
+[data-theme='dark'] #facebook {
   background-image: url('../assets/dark/facebook-dark.svg');
 }
 
-.facebook:hover {
-  background-image: url('../assets/light/facebook-light-hover.svg');
-}
-
-[data-theme='dark'] .facebook:hover {
-  background-image: url('../assets/dark/facebook-dark-hover.svg');
-}
-
-.linkedin {
-  width: 36px;
-  height: 36px;
+#linkedin {
   background-image: url('../assets/light/linkedin-light.svg');
 }
 
-[data-theme='dark'] .linkedin {
+[data-theme='dark'] #linkedin {
   background-image: url('../assets/dark/linkedin-dark.svg');
 }
 
-.linkedin:hover {
-  background-image: url('../assets/light/linkedin-light-hover.svg');
-}
-
-[data-theme='dark'] .linkedin:hover {
-  background-image: url('../assets/dark/linkedin-dark-hover.svg');
-}
-
-.github {
-  width: 36px;
-  height: 36px;
+#github {
   background-image: url('../assets/light/github-light.svg');
 }
 
-[data-theme='dark'] .github {
+[data-theme='dark'] #github {
   background-image: url('../assets/dark/github-dark.svg');
-}
-
-.github:hover {
-  background-image: url('../assets/light/github-light-hover.svg');
-}
-
-[data-theme='dark'] .github:hover {
-  background-image: url('../assets/dark/github-dark-hover.svg');
 }
 
 @media only screen and (max-width: 900px) {
@@ -103,42 +76,7 @@
     justify-content: space-between;
   }
 
-  .mail {
-    background-image: url('../assets/light/mail-light-hover.svg');
-  }
-
-  [data-theme='dark'] .mail {
-    background-image: url('../assets/dark/mail-dark-hover.svg');
-  }
-
-  .instagram {
-    background-image: url('../assets/light/instagram-light-hover.svg');
-  }
-
-  [data-theme='dark'] .instagram {
-    background-image: url('../assets/dark/instagram-dark-hover.svg');
-  }
-
-  .facebook {
-    background-image: url('../assets/light/facebook-light-hover.svg');
-  }
-  [data-theme='dark'] .facebook {
-    background-image: url('../assets/dark/facebook-dark-hover.svg');
-  }
-
-  .linkedin {
-    background-image: url('../assets/light/linkedin-light-hover.svg');
-  }
-
-  [data-theme='dark'] .linkedin {
-    background-image: url('../assets/dark/linkedin-dark-hover.svg');
-  }
-
-  .github {
-    background-image: url('../assets/light/github-light-hover.svg');
-  }
-
-  [data-theme='dark'] .github {
-    background-image: url('../assets/dark/github-dark-hover.svg');
+  .img {
+    opacity: 1;
   }
 }

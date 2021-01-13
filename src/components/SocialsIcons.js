@@ -1,23 +1,23 @@
 import styles from '../css/SocialsIcons.module.css'
 const socials = [
-  { link: 'mailto:info@stormhacks.com', className: 'mail' },
-  { link: 'https://github.com/sfusurge', className: 'github' },
-  { link: 'https://www.instagram.com/sfusurge/', className: 'instagram' },
-  { link: 'https://www.facebook.com/sfusurge', className: 'facebook' },
-  { link: 'https://www.linkedin.com/company/sfu-surge/', className: 'linkedin' }
+  { link: 'mailto:info@stormhacks.com', id: 'mail' },
+  { link: 'https://github.com/sfusurge', id: 'github' },
+  { link: 'https://www.instagram.com/sfusurge/', id: 'instagram' },
+  { link: 'https://www.facebook.com/sfusurge', id: 'facebook' },
+  { link: 'https://www.linkedin.com/company/sfu-surge/', id: 'linkedin' }
 ]
 const SocialsIcons = props => {
   return (
     <div className={styles.container}>
-      {socials.map(social => (
+      {socials.map(({ link, id }) => (
         <a
-          key={social.link}
-          href={social.link}
+          key={link}
+          href={link}
           target="_blank"
           rel="noreferrer"
           className={styles.iconLink}
         >
-          <div className={styles[social.className]} />
+          <div className={styles.img} id={styles[id]} />
         </a>
       ))}
     </div>
