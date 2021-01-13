@@ -57,9 +57,7 @@ const Footer = props => {
         </button>
         <button
           className={styles.notificationButton}
-          onClick={() => {
-            toggleSideBar()
-          }}
+          onClick={toggleSideBar}
         >
           <div className={styles.notificationIcon}></div>
         </button>

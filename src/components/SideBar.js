@@ -7,8 +7,8 @@ const workshops = [
     events: [
       {
         img: 'stormyFace',
-        eventName: 'Hack 101',
-        eventTime: 'Zoom @ 5:30p-7:00p',
+        eventName: 'HACK 101: Introduction to Hackathons',
+        eventTime: 'Zoom @ 5:30-7:00pm',
         link: 'https://lu.ma/wmvm1ny4'
       }
     ]
@@ -18,56 +18,56 @@ const workshops = [
     events: [
       {
         img: 'github',
-        eventName: 'GEAR 201',
-        eventTime: 'Zoom @ 5:30p-7:00p',
+        eventName: 'GEAR 201: Git Ready for Success',
+        eventTime: 'Zoom @ 5:30-7:00pm',
         customStyle: { cursor: 'default' }
       }
     ]
   },
-  {
-    date: 'February 3rd 2021',
-    events: [
-      {
-        img: 'design',
-        eventName: 'Create 101',
-        eventTime: 'Zoom @ 5:30p-7:00p',
-        customStyle: { cursor: 'default' }
-      }
-    ]
-  },
-  {
-    date: 'February 5th 2021',
-    events: [
-      {
-        img: 'webDev',
-        eventName: 'Intro to Web Dev',
-        eventTime: 'Zoom @ 5:30p-7:00p',
-        customStyle: { cursor: 'default' }
-      }
-    ]
-  },
-  {
-    date: 'February 10th 2021',
-    events: [
-      {
-        img: 'react',
-        eventName: 'Intro to React and Hooks',
-        eventTime: 'Zoom @ 5:30p-7:00p',
-        customStyle: { cursor: 'default' }
-      }
-    ]
-  },
-  {
-    date: 'February 12th 2021',
-    events: [
-      {
-        img: 'android',
-        eventName: 'Intro to Android Studio',
-        eventTime: 'Zoom @ 5:30p-7:00p',
-        customStyle: { cursor: 'default' }
-      }
-    ]
-  }
+  // {
+  //   date: 'February 3rd 2021',
+  //   events: [
+  //     {
+  //       img: 'design',
+  //       eventName: 'Create 101',
+  //       eventTime: 'Zoom @ 5:30p-7:00p',
+  //       customStyle: { cursor: 'default' }
+  //     }
+  //   ]
+  // },
+  // {
+  //   date: 'February 5th 2021',
+  //   events: [
+  //     {
+  //       img: 'webDev',
+  //       eventName: 'Intro to Web Dev',
+  //       eventTime: 'Zoom @ 5:30p-7:00p',
+  //       customStyle: { cursor: 'default' }
+  //     }
+  //   ]
+  // },
+  // {
+  //   date: 'February 10th 2021',
+  //   events: [
+  //     {
+  //       img: 'react',
+  //       eventName: 'Intro to React and Hooks',
+  //       eventTime: 'Zoom @ 5:30p-7:00p',
+  //       customStyle: { cursor: 'default' }
+  //     }
+  //   ]
+  // },
+  // {
+  //   date: 'February 12th 2021',
+  //   events: [
+  //     {
+  //       img: 'android',
+  //       eventName: 'Intro to Android Studio',
+  //       eventTime: 'Zoom @ 5:30p-7:00p',
+  //       customStyle: { cursor: 'default' }
+  //     }
+  //   ]
+  // }
 ]
 
 const SideBar = () => {
@@ -76,8 +76,8 @@ const SideBar = () => {
       <div className={styles.header}>
         <p className={styles.title}>Schedule</p>
       </div>
-      {workshops.map(details => (
-        <SideBarEvent date={details.date} events={details.events} />
+      {workshops.map(({ date, events }) => (
+        <SideBarEvent key={date} date={date} events={events} />
       ))}
     </div>
   )
