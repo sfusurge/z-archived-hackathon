@@ -102,7 +102,7 @@ const execs = [
     width: '100px',
     height: '100px',
     name: 'Steven.jpeg',
-    customStyle: { cursor: 'default' }
+    link: 'https://www.linkedin.com/in/steven-zhu-320044203/'
   },
   {
     src: './jocelyn.png',

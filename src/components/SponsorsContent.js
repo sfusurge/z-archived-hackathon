@@ -25,7 +25,7 @@ const SponsorsContent = props => {
         {sponsors.map(
           sponsor =>
             sponsor.srcLight && (
-              <div className={styles.sponsors}>
+              <div key={sponsor.name} className={styles.sponsors}>
                 <Sponsor
                   src={sponsorResolver(getSrc(sponsor)).default}
                   name={sponsor.name}
