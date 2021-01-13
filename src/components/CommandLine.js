@@ -76,7 +76,7 @@ const CommandLine = () => {
             <Typist.Delay ms={500} />
             <span className={styles.fontAnimated}>
               If the application form has not appeared, please make sure that
-              popups are enabled or click the following link:
+              pop-ups are enabled or click the following link:
           </span>
             <br />
             <a
