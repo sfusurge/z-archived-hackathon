@@ -2,7 +2,8 @@ import { useTheme } from '../utils/toggleTheme'
 
 import Banner from '../components/Banner'
 import Footer from '../components/Footer'
-import FileIconGroup from '../components/FileIconGroup.js'
+import FileIconGroup from '../components/FileIconGroup'
+import SocialsIcons from '../components/SocialsIcons'
 
 import styles from '../css/DesktopHome.module.css'
 
@@ -33,6 +34,9 @@ const DesktopHome = props => {
       </div>
       <div className={styles.splash}>
         <div className={styles.splashImg}></div>
+      </div>
+      <div className={styles.socials}>
+        <SocialsIcons />
       </div>
       <div className={styles.footer}>
         <Footer />
