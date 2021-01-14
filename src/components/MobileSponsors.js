@@ -3,19 +3,17 @@ import Sponsor from './Sponsor'
 import styles from '../css/MobileSponsors.module.css'
 
 import sponsors from '../utils/sponsorsList'
-import getTheme from '../utils/getTheme'
+import { useTheme } from '../utils/theme'
 
 const sponsorResolver = require.context('../assets/sponsors', false, /.*\.png/)
 
-const getSrc = sponsor => {
-  if (getTheme() === 'dark' && sponsor.srcDark) {
-    return sponsor.srcDark
-  } else {
-    return sponsor.srcLight
-  }
-}
 
 const MobileSponsors = props => {
+
+  const theme = useTheme()
+
+  const getSrc = sponsor => theme === 'dark' && sponsor.srcDark ? sponsor.srcDark : sponsor.srcLight
+
   return (
     <div className={styles.container}>
       <p className={styles.heading}>Sponsors</p>
