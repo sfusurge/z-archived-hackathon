@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-import toggleTheme from '../utils/toggleTheme'
+import toggleTheme from '../utils/theme'
 import styles from '../css/Footer.module.css'
 
 import Modal from '../components/Modal'

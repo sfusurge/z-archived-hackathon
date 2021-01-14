@@ -1,6 +1,6 @@
 import { useEffect } from 'react'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
-import toggleTheme from './utils/toggleTheme'
+import toggleTheme from './utils/theme'
 
 
 import HomeToggle from './components/HomeToggle'
