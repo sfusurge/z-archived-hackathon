@@ -1,4 +1,4 @@
-import toggleTheme from '../utils/toggleTheme'
+import toggleTheme from '../utils/theme'
 
 import styles from '../css/ToggleButton.module.css'
 

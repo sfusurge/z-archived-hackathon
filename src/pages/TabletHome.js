@@ -1,4 +1,4 @@
-import { useTheme } from '../utils/toggleTheme'
+import { useTheme } from '../utils/theme'
 
 import MobileHeader from '../components/MobileHeader'
 import AboutContext from '../components/AboutContext'
