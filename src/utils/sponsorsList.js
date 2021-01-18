@@ -6,6 +6,13 @@ const sponsors = [
     link: 'https://sfss.ca/'
   },
   {
+    srcLight: './mlh-logo-light.png',
+    srcDark: './mlh-logo-dark.png',
+    name: 'Major League Hacking',
+    width: '160px',
+    link: 'https://mlh.io/'
+  },
+  {
     srcLight: './fair-trade-logo-light.png',
     srcDark: './fair-trade-logo-dark.png',
     name: 'SFU FairTrade',
@@ -15,7 +22,7 @@ const sponsors = [
   {
     srcLight: './wics-logo.png',
     name: 'SFU Women in Computing Science',
-    width: '250px',
+    width: '180px',
     link: 'https://www.sfu.ca/computing/wics.html'
   },
   {
@@ -24,13 +31,6 @@ const sponsors = [
     name: 'SFU Software Systems Student Society',
     width: '130px',
     link: 'https://ssss-sfu.github.io/'
-  },
-  {
-    srcLight: './mlh-logo-light.png',
-    srcDark: './mlh-logo-dark.png',
-    name: 'Major League Hacking',
-    width: '130px',
-    link: 'https://mlh.io/'
   },
   {
     srcLight: './chang-institute-logo-light.png',
@@ -64,7 +64,7 @@ const sponsors = [
     srcLight: './sticker-mule-logo.png',
     name: 'StickerMule',
     width: '200px',
-    link: 'https://www.stickermule.com/ca'
+    link: 'http://hackp.ac/mlh-stickermule-hackathons'
   }
 ]
 
