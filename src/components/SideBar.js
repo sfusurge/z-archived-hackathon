@@ -19,7 +19,7 @@ const workshops = [
       {
         img: 'design',
         eventName: 'CREATE 101: Intro to Figma',
-        eventTime: 'Zoom @ 5:30p-7:00p',
+        eventTime: 'Zoom @ 5:30-7:00pm',
         customStyle: { cursor: 'default' }
       }
     ]
@@ -30,7 +30,7 @@ const workshops = [
       {
         img: 'webDev',
         eventName: 'DEV101W: Intro to Web Dev',
-        eventTime: 'Zoom @ 5:30p-7:00p',
+        eventTime: 'Zoom @ 5:30-7:00pm',
         customStyle: { cursor: 'default' }
       }
     ]
@@ -41,7 +41,7 @@ const workshops = [
       {
         img: 'react',
         eventName: 'REACT201: Intro to React and Hooks',
-        eventTime: 'Zoom @ 5:30p-7:00p',
+        eventTime: 'Zoom @ 5:30-7:00pm',
         customStyle: { cursor: 'default' }
       }
     ]
@@ -52,7 +52,7 @@ const workshops = [
       {
         img: 'android',
         eventName: 'DEV101M: Intro to Android Studio',
-        eventTime: 'Zoom @ 5:30p-7:00p',
+        eventTime: 'Zoom @ 5:30-7:00pm',
         customStyle: { cursor: 'default' }
       }
     ]
