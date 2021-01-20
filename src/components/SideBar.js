@@ -1,4 +1,5 @@
 import styles from '../css/SideBar.module.css'
+import CountdownTimer from './CountdownTimer'
 import SideBarEvent from './SideBarEvent'
 
 const workshops = [
@@ -9,7 +10,7 @@ const workshops = [
         img: 'github',
         eventName: 'GEAR 201: Git Ready for Success',
         eventTime: 'Zoom @ 5:30-7:00pm',
-        customStyle: { cursor: 'default' }
+        link: 'https://lu.ma/skwobbnd'
       }
     ]
   },
@@ -65,6 +66,7 @@ const SideBar = () => {
       <div className={styles.header}>
         <p className={styles.title}>Schedule</p>
       </div>
+      <CountdownTimer dueDate="01/24/2021" title="Applications close in:" />
       {workshops.map(({ date, events }) => (
         <SideBarEvent key={date} date={date} events={events} />
       ))}
