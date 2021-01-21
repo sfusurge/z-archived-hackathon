@@ -3,12 +3,7 @@ import styles from '../css/CountdownTimer.module.css'
 
 const calculateTimeLeft = dueDate => {
   let difference = +new Date(`${dueDate}`) - +new Date()
-  let timeLeft = {
-    days: '00',
-    hours: '00',
-    minutes: '00',
-    seconds: '00'
-  }
+  let timeLeft = null
 
   if (difference > 0) {
     timeLeft = {
@@ -50,15 +45,25 @@ const CountdownTimer = ({ dueDate, title }) => {
   return (
     <div className={styles.container}>
       <div className={styles.countdown}>
-        <p className={styles.title}>{title}</p>
-        <p className={styles.days}>
-          {timeLeft.days} {timeLeft.days === 1 ? `day` : `days`}
-        </p>
-        <p className={styles.timer}>
-          {timeLeft.hours} {timeLeft.hours === '01' ? `hr` : `hrs`},{' '}
-          {timeLeft.minutes} {timeLeft.minutes === '01' ? `min` : `mins`},{' '}
-          {timeLeft.seconds} s
-        </p>
+        {timeLeft ? (
+          <>
+            <p className={styles.title}>Applications close in:</p>
+            <p className={styles.days}>
+              {timeLeft.days} {timeLeft.days === 1 ? `day` : `days`}
+            </p>
+            <p className={styles.timer}>
+              {timeLeft.hours} {timeLeft.hours === '01' ? `hr` : `hrs`},{' '}
+              {timeLeft.minutes} {timeLeft.minutes === '01' ? `min` : `mins`},{' '}
+              {timeLeft.seconds} s
+            </p>
+          </>
+        ) : (
+          <>
+            <p className={styles.title}>Applications are now</p>
+            <p className={styles.days}>CLOSED</p>
+            <p className={styles.timer}>Acceptances out Feb 5th</p>
+          </>
+        )}
       </div>
     </div>
   )
