@@ -32,7 +32,7 @@ const calculateTimeLeft = dueDate => {
   return timeLeft
 }
 
-const CountdownTimer = ({ dueDate, title }) => {
+const CountdownTimer = ({ dueDate }) => {
   const [timeLeft, setTimeLeft] = useState(calculateTimeLeft(dueDate))
 
   useEffect(() => {
