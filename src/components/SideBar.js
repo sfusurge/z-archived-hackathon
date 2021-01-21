@@ -66,7 +66,7 @@ const SideBar = () => {
       <div className={styles.header}>
         <p className={styles.title}>Schedule</p>
       </div>
-      <CountdownTimer dueDate="01/24/2021" />
+      <CountdownTimer dueDate="01/25/2021" />
       {workshops.map(({ date, events }) => (
         <SideBarEvent key={date} date={date} events={events} />
       ))}
