@@ -20,7 +20,7 @@ const ApplicationTimer = () => {
 
   useEffect(() => {
     const timer = setInterval(() => {
-      setTimeLeft(calculateTimeLeft(dueDate))
+      setTimeLeft(getTime(dueDate))
     }, 1000)
     return () => clearInterval(timer)
   })

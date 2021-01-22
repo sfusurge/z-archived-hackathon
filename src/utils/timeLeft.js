@@ -15,8 +15,5 @@ export const calculateTimeLeft = dueDate => {
 }
 
 export const formatDoubleDigitTime = time => {
-  return time.toLocaleString('en-US', {
-    minimumIntegerDigits: 2,
-    useGrouping: false
-  })
+  return time.toString().padStart(2, '0')
 }
