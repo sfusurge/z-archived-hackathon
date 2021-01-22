@@ -1,5 +1,5 @@
 import styles from '../css/SideBar.module.css'
-import CountdownTimer from './CountdownTimer'
+import ApplicationTimer from './ApplicationTimer'
 import SideBarEvent from './SideBarEvent'
 
 const workshops = [
@@ -66,7 +66,7 @@ const SideBar = () => {
       <div className={styles.header}>
         <p className={styles.title}>Schedule</p>
       </div>
-      <CountdownTimer dueDate="01/25/2021" />
+      <ApplicationTimer dueDate="01/25/2021" />
       {workshops.map(({ date, events }) => (
         <SideBarEvent key={date} date={date} events={events} />
       ))}

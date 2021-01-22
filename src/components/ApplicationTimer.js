@@ -32,7 +32,7 @@ const calculateTimeLeft = dueDate => {
   return timeLeft
 }
 
-const CountdownTimer = ({ dueDate }) => {
+const ApplicationTimer = ({ dueDate }) => {
   const [timeLeft, setTimeLeft] = useState(calculateTimeLeft(dueDate))
 
   useEffect(() => {
@@ -69,4 +69,4 @@ const CountdownTimer = ({ dueDate }) => {
   )
 }
 
-export default CountdownTimer
+export default ApplicationTimer
