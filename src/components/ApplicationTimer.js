@@ -23,7 +23,7 @@ const ApplicationTimer = () => {
       setTimeLeft(getTime(dueDate))
     }, 1000)
     return () => clearInterval(timer)
-  })
+  }, [])
 
   return (
     <div className={styles.container}>
