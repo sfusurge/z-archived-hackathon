@@ -14,6 +14,4 @@ export const calculateTimeLeft = dueDate => {
   return timeLeft
 }
 
-export const formatDoubleDigitTime = time => {
-  return time.toString().padStart(2, '0')
-}
+export const formatDoubleDigitTime = time => time.toString().padStart(2, '0')
