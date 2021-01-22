@@ -1,39 +1,22 @@
 import { useState, useEffect } from 'react'
+import { calculateTimeLeft, formatDoubleDigitTime } from '../utils/timer'
 import styles from '../css/CountdownTimer.module.css'
 
-const calculateTimeLeft = dueDate => {
-  let difference = +new Date(`${dueDate}`) - +new Date()
-  let timeLeft = null
+const getTime = dueDate => {
+  const timeLeft = calculateTimeLeft(dueDate)
 
-  if (difference > 0) {
-    timeLeft = {
-      days: Math.floor(difference / (1000 * 60 * 60 * 24)),
-      hours: Math.floor((difference / (1000 * 60 * 60)) % 24).toLocaleString(
-        'en-US',
-        {
-          minimumIntegerDigits: 2,
-          useGrouping: false
-        }
-      ),
-      minutes: Math.floor((difference / 1000 / 60) % 60).toLocaleString(
-        'en-US',
-        {
-          minimumIntegerDigits: 2,
-          useGrouping: false
-        }
-      ),
-      seconds: Math.floor((difference / 1000) % 60).toLocaleString('en-US', {
-        minimumIntegerDigits: 2,
-        useGrouping: false
-      })
-    }
+  if (timeLeft) {
+    timeLeft.hours = formatDoubleDigitTime(timeLeft.hours)
+    timeLeft.minutes = formatDoubleDigitTime(timeLeft.minutes)
+    timeLeft.seconds = formatDoubleDigitTime(timeLeft.seconds)
   }
 
   return timeLeft
 }
 
-const ApplicationTimer = ({ dueDate }) => {
-  const [timeLeft, setTimeLeft] = useState(calculateTimeLeft(dueDate))
+const ApplicationTimer = () => {
+  const dueDate = '01/25/2021'
+  const [timeLeft, setTimeLeft] = useState(getTime(dueDate))
 
   useEffect(() => {
     const timer = setTimeout(() => {
