@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { calculateTimeLeft, formatDoubleDigitTime } from '../utils/timer'
+import { calculateTimeLeft, formatDoubleDigitTime } from '../utils/timeLeft'
 import styles from '../css/CountdownTimer.module.css'
 
 const getTime = dueDate => {
@@ -19,10 +19,10 @@ const ApplicationTimer = () => {
   const [timeLeft, setTimeLeft] = useState(getTime(dueDate))
 
   useEffect(() => {
-    const timer = setTimeout(() => {
+    const timer = setInterval(() => {
       setTimeLeft(calculateTimeLeft(dueDate))
     }, 1000)
-    return () => clearTimeout(timer)
+    return () => clearInterval(timer)
   })
 
   return (
