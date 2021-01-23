@@ -63,13 +63,15 @@ const workshops = [
 const SideBar = () => {
   return (
     <div className={styles.container}>
-      <div className={styles.header}>
-        <p className={styles.title}>Schedule</p>
+      <div className={styles.innerContainer}>
+        <div className={styles.header}>
+          <p className={styles.title}>Schedule</p>
+        </div>
+        <ApplicationTimer />
+        {workshops.map(({ date, events }) => (
+          <SideBarEvent key={date} date={date} events={events} />
+        ))}
       </div>
-      <ApplicationTimer />
-      {workshops.map(({ date, events }) => (
-        <SideBarEvent key={date} date={date} events={events} />
-      ))}
     </div>
   )
 }
