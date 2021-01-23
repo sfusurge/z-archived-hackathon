@@ -1,4 +1,5 @@
 import styles from '../css/SideBar.module.css'
+import ApplicationTimer from './ApplicationTimer'
 import SideBarEvent from './SideBarEvent'
 
 const workshops = [
@@ -9,7 +10,7 @@ const workshops = [
         img: 'github',
         eventName: 'GEAR 201: Git Ready for Success',
         eventTime: 'Zoom @ 5:30-7:00pm',
-        customStyle: { cursor: 'default' }
+        link: 'https://lu.ma/skwobbnd'
       }
     ]
   },
@@ -65,6 +66,7 @@ const SideBar = () => {
       <div className={styles.header}>
         <p className={styles.title}>Schedule</p>
       </div>
+      <ApplicationTimer />
       {workshops.map(({ date, events }) => (
         <SideBarEvent key={date} date={date} events={events} />
       ))}
