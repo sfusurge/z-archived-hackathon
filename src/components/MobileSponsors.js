@@ -7,21 +7,23 @@ import { useTheme } from '../utils/theme'
 
 const sponsorResolver = require.context('../assets/sponsors', false, /.*\.png/)
 
-
 const MobileSponsors = props => {
-
   const theme = useTheme()
 
-  const getSrc = sponsor => theme === 'dark' && sponsor.srcDark ? sponsor.srcDark : sponsor.srcLight
+  const getSrc = sponsor =>
+    theme === 'dark' && sponsor.srcDark ? sponsor.srcDark : sponsor.srcLight
 
   return (
     <div className={styles.container}>
       <p className={styles.heading}>Sponsors</p>
       <div className={styles.sponsorContainer}>
         {sponsors.map(
-          sponsor =>
+          (sponsor, idx) =>
             sponsor.srcLight && (
-              <div key={sponsor.name} className={styles.sponsors}>
+              <div
+                key={sponsor.name}
+                className={idx < 2 ? styles.goldSponsors : styles.sponsors}
+              >
                 <Sponsor
                   src={sponsorResolver(getSrc(sponsor)).default}
                   name={sponsor.name}
