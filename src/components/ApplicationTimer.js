@@ -15,7 +15,7 @@ const getTime = dueDate => {
 }
 
 const ApplicationTimer = () => {
-  const dueDate = '2021-02-25T08:00:00Z'
+  const dueDate = '2021-01-25T08:00:00Z'
   const [timeLeft, setTimeLeft] = useState(getTime(dueDate))
 
   useEffect(() => {

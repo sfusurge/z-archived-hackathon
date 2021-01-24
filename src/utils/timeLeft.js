@@ -1,4 +1,5 @@
 export const calculateTimeLeft = dueDate => {
+  console.log(new Date(`${dueDate}`))
   let difference = +new Date(`${dueDate}`) - +new Date()
   let timeLeft = null
 
