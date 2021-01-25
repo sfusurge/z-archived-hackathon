@@ -55,6 +55,20 @@ const sponsors = [
     link: 'https://www.hedgehogtech.com/'
   },
   {
+    srcLight: './echoAR-logo-light.png',
+    srcDark: './echoAR-logo-dark.png',
+    name: 'echoAR',
+    width: '180px',
+    link: 'https://www.echoar.xyz/'
+  },
+  {
+    srcLight: './fluttervalsad-logo-light.png',
+    srcDark: './fluttervalsad-logo-dark.png',
+    name: 'Flutter Valsad',
+    width: '180px',
+    link: 'https://fluttervalsad.com/'
+  },
+  {
     srcLight: './github-logo.png',
     name: 'GitHub',
     width: '130px',
