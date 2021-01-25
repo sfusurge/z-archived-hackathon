@@ -15,7 +15,7 @@ const getTime = dueDate => {
 }
 
 const ApplicationTimer = () => {
-  const dueDate = '01/25/2021'
+  const dueDate = '2021-01-25T08:00:00Z'
   const [timeLeft, setTimeLeft] = useState(getTime(dueDate))
 
   useEffect(() => {
@@ -41,12 +41,12 @@ const ApplicationTimer = () => {
             </p>
           </>
         ) : (
-          <>
-            <p className={styles.title}>Applications are now</p>
-            <p className={styles.days}>CLOSED</p>
-            <p className={styles.timer}>Acceptances out Feb 5th</p>
-          </>
-        )}
+            <>
+              <p className={styles.title}>Applications are now</p>
+              <p className={styles.days}>CLOSED</p>
+              <p className={styles.timer}>Acceptances out Feb 5th</p>
+            </>
+          )}
       </div>
     </div>
   )

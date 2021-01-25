@@ -1,5 +1,5 @@
 import ToggleButton from './ToggleButton'
-
+import { calculateTimeLeft } from '../utils/timeLeft'
 import styles from '../css/MobileHeader.module.css'
 
 import Banner from '../components/Banner'
@@ -7,6 +7,7 @@ import surgeBanner from '../assets/surge-banner.svg'
 import mlhBanner from '../assets/mlh-banner.svg'
 
 const MobileHeader = props => {
+  const beforeDeadline = calculateTimeLeft('2021-01-25T08:00:00Z')
   return (
     <div className={styles.backgroundContainer}>
       <div className={styles.headerContainer}>
@@ -40,14 +41,18 @@ const MobileHeader = props => {
           Are you ready <br className={styles.breakLine} />
           to learn, create, and inspire?
         </p>
-        <a
-          className={styles.apply}
-          href="https://stormhacks.typeform.com/to/GWfDap3w"
-          target="_blank"
-          rel="noreferrer"
-        >
-          APPLY NOW
-        </a>
+        {beforeDeadline ? (
+          <a
+            className={styles.apply}
+            href="https://stormhacks.typeform.com/to/GWfDap3w"
+            target="_blank"
+            rel="noreferrer"
+          >
+            APPLY NOW
+          </a>
+        ) : (
+          <div className={styles.apply}> APPLICATIONS CLOSED </div>
+        )}
       </div>
     </div>
   )
