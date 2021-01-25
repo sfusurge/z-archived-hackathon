@@ -3,6 +3,8 @@
   height: 70vh;
   overflow-y: scroll;
   background-color: var(--color-popup-opaque);
+}
+.innerContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
