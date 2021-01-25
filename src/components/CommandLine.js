@@ -4,7 +4,7 @@ import styles from '../css/CommandLine.module.css'
 import Typist from 'react-typist'
 
 const CommandLine = () => {
-  const pastDeadline = calculateTimeLeft('01/25/2021')
+  const beforeDeadline = calculateTimeLeft('2021-01-25T08:00:00Z')
   const [secondMsg, setMsg] = useState(false)
   const redirect = () => {
     window.open('https://stormhacks.typeform.com/to/GWfDap3w', '_blank')
@@ -18,7 +18,7 @@ const CommandLine = () => {
       <p className={styles.noMargin}>
         C:\Users\Developer: Surge Activate Developer
       </p>
-      {!pastDeadline ? (
+      {beforeDeadline ? (
         <>
           <Typist
             className={styles.typist}
@@ -136,8 +136,13 @@ const CommandLine = () => {
             <span className={styles.fontAnimated}> . </span>
             <Typist.Delay ms={200} />
             <span className={styles.fontAnimated}> . </span>
+            <br />
             <span className={styles.fontAnimated}>
-              Sorry applications closed on 24 January at 11:59 PM PST. Please email info@stormhacks.com for more information.
+              Sorry applications closed on 24 January at 11:59 PM PST.
+        </span>
+            <br />
+            <span className={styles.fontAnimated}>
+              Please email info@stormhacks.com for more information.
         </span>
           </Typist>
         )}
