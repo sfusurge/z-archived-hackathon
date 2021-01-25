@@ -2,8 +2,8 @@ import styles from '../css/Sponsor.module.css'
 
 const Sponsor = ({ name, src, width, height, link }) => {
   return (
-    <a href={link} target="_blank" rel="noreferrer">
-      <div className={styles.container}>
+    <div className={styles.container}>
+      <a href={link} target="_blank" rel="noreferrer">
         <img
           className={styles.img}
           src={src}
@@ -11,8 +11,8 @@ const Sponsor = ({ name, src, width, height, link }) => {
           height={height}
           alt={`Logo of ${name}`}
         />
-      </div>
-    </a>
+      </a>
+    </div>
   )
 }
 
