@@ -4,24 +4,13 @@ import SideBarEvent from './SideBarEvent'
 
 const workshops = [
   {
-    date: 'January 29th 2021',
-    events: [
-      {
-        img: 'github',
-        eventName: 'GEAR 201: Git Ready for Success',
-        eventTime: 'Zoom @ 5:30-7:00pm',
-        link: 'https://lu.ma/skwobbnd'
-      }
-    ]
-  },
-  {
     date: 'February 3rd 2021',
     events: [
       {
         img: 'design',
         eventName: 'CREATE 101: Intro to Figma',
         eventTime: 'Zoom @ 5:30-7:00pm',
-        customStyle: { cursor: 'default' }
+        link: 'https://lu.ma/r5va5kld'
       }
     ]
   },
@@ -32,7 +21,7 @@ const workshops = [
         img: 'webDev',
         eventName: 'DEV101W: Intro to Web Dev',
         eventTime: 'Zoom @ 5:30-7:00pm',
-        customStyle: { cursor: 'default' }
+        link: 'https://lu.ma/r5va5kld'
       }
     ]
   },
@@ -43,7 +32,7 @@ const workshops = [
         img: 'react',
         eventName: 'REACT201: Intro to React and Hooks',
         eventTime: 'Zoom @ 5:30-7:00pm',
-        customStyle: { cursor: 'default' }
+        link: 'https://lu.ma/wk8cwah3'
       }
     ]
   },
@@ -54,7 +43,7 @@ const workshops = [
         img: 'android',
         eventName: 'DEV101M: Intro to Android Studio',
         eventTime: 'Zoom @ 5:30-7:00pm',
-        customStyle: { cursor: 'default' }
+        link: 'https://lu.ma/bmcnugtm'
       }
     ]
   }
