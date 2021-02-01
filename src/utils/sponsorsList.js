@@ -22,20 +22,20 @@ const sponsors = [
     link: 'https://mlh.io/'
   },
   {
-    srcLight: './mlh-logo-light.png',
-    srcDark: './mlh-logo-dark.png',
-    name: 'Major League Hacking',
-    title: 'silverSponsors',
-    width: '200px',
-    link: 'https://mlh.io/'
-  },
-  {
     srcLight: './fair-trade-logo-light.png',
     srcDark: './fair-trade-logo-dark.png',
     name: 'SFU FairTrade',
     title: 'bronzeSponsors',
     width: '120px',
     link: 'http://www.sfu.ca/fairtrade.html'
+  },
+  {
+    srcLight: './mlh-logo-light.png',
+    srcDark: './mlh-logo-dark.png',
+    name: 'Major League Hacking',
+    title: 'silverSponsors',
+    width: '230px',
+    link: 'https://mlh.io/'
   },
   {
     srcLight: './guusto-logo-light.png',
