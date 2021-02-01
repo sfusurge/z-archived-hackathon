@@ -2,14 +2,14 @@ const sponsors = [
   {
     srcLight: './sfss-logo.png',
     name: 'Simon Fraser Student Society',
-    width: '250px',
+    width: '500px',
     link: 'https://sfss.ca/'
   },
   {
     srcLight: './mlh-logo-light.png',
     srcDark: './mlh-logo-dark.png',
     name: 'Major League Hacking',
-    width: '160px',
+    width: '250px',
     link: 'https://mlh.io/'
   },
   {
