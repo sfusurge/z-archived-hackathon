@@ -33,7 +33,7 @@ const sponsors = [
     srcLight: './fair-trade-logo-light.png',
     srcDark: './fair-trade-logo-dark.png',
     name: 'SFU FairTrade',
-    title: 'silverSponsors',
+    title: 'bronzeSponsors',
     width: '120px',
     link: 'http://www.sfu.ca/fairtrade.html'
   },
@@ -41,7 +41,7 @@ const sponsors = [
     srcLight: './guusto-logo-light.png',
     srcDark: './guusto-logo-dark.png',
     name: 'Guusto',
-    title: 'silverSponsors',
+    title: 'bronzeSponsors',
     width: '150px',
     link: 'http://www.sfu.ca/fairtrade.html'
   },
@@ -49,7 +49,7 @@ const sponsors = [
     srcLight: './wics-logo.png',
     name: 'SFU Women in Computing Science',
     width: '160px',
-    title: 'silverSponsors',
+    title: 'bronzeSponsors',
     link: 'https://www.sfu.ca/computing/wics.html'
   },
   {
