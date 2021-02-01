@@ -22,7 +22,7 @@ const MobileSponsors = props => {
             sponsor.srcLight && (
               <div
                 key={sponsor.name}
-                className={idx < 3 ? styles.goldSponsors : styles.sponsors}
+                className={idx < 4 ? styles.goldSponsors : styles.sponsors}
               >
                 <Sponsor
                   src={sponsorResolver(getSrc(sponsor)).default}
