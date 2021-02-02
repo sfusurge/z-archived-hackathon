@@ -13,7 +13,7 @@ const sponsors = [
     title: 'silverSponsors',
     width: 325,
     mobileWidth: 250,
-    link: 'https://mlh.io/'
+    link: 'https://www.sfu.ca/alumni.html'
   },
   {
     srcLight: './fortisBC-logo-light.png',
@@ -22,7 +22,7 @@ const sponsors = [
     title: 'silverSponsors',
     width: 325,
     mobileWidth: 250,
-    link: 'https://mlh.io/'
+    link: 'https://www.fortisbc.com/'
   },
   {
     srcLight: './mlh-logo-light.png',
@@ -47,7 +47,7 @@ const sponsors = [
     name: 'Guusto',
     title: 'bronzeSponsors',
     width: 180,
-    link: 'http://www.sfu.ca/fairtrade.html'
+    link: 'https://guusto.com/'
   },
   {
     srcLight: './wics-logo.png',
@@ -87,7 +87,7 @@ const sponsors = [
     name: 'The Codex',
     width: 180,
     title: 'bronzeSponsors',
-    link: 'https://www.echoar.xyz/'
+    link: 'https://thecodex.me/'
   },
   {
     srcLight: './fluttervalsad-logo-light.png',
@@ -103,7 +103,7 @@ const sponsors = [
     name: 'Hackhub',
     title: 'silverSponsors',
     width: 150,
-    link: 'http://www.sfu.ca/fairtrade.html'
+    link: 'https://www.hackhub.com/'
   },
   {
     srcLight: './chang-institute-logo-light.png',
