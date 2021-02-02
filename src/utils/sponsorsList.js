@@ -3,6 +3,7 @@ const sponsors = [
     srcLight: './sfss-logo.png',
     name: 'Simon Fraser Student Society',
     width: 500,
+    mobileWidth: 250,
     title: 'goldSponsors',
     link: 'https://sfss.ca/'
   },
@@ -11,6 +12,7 @@ const sponsors = [
     name: 'SFU Alumni Association',
     title: 'silverSponsors',
     width: 325,
+    mobileWidth: 250,
     link: 'https://mlh.io/'
   },
   {
@@ -19,6 +21,16 @@ const sponsors = [
     name: 'Fortis BC',
     title: 'silverSponsors',
     width: 325,
+    mobileWidth: 250,
+    link: 'https://mlh.io/'
+  },
+  {
+    srcLight: './mlh-logo-light.png',
+    srcDark: './mlh-logo-dark.png',
+    name: 'Major League Hacking',
+    title: 'silverSponsors',
+    width: 230,
+    mobileWidth: 175,
     link: 'https://mlh.io/'
   },
   {
@@ -28,14 +40,6 @@ const sponsors = [
     title: 'bronzeSponsors',
     width: 125,
     link: 'http://www.sfu.ca/fairtrade.html'
-  },
-  {
-    srcLight: './mlh-logo-light.png',
-    srcDark: './mlh-logo-dark.png',
-    name: 'Major League Hacking',
-    title: 'silverSponsors',
-    width: 230,
-    link: 'https://mlh.io/'
   },
   {
     srcLight: './guusto-logo-light.png',
