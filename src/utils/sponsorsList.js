@@ -8,10 +8,11 @@ const sponsors = [
     link: 'https://sfss.ca/'
   },
   {
-    srcLight: './sfualumni-logo.png',
+    srcLight: './sfualumni-logo-light.png',
+    srcDark: './sfualumni-logo-dark.png',
     name: 'SFU Alumni Association',
     title: 'silverSponsors',
-    width: 325,
+    width: 340,
     mobileWidth: 250,
     link: 'https://www.sfu.ca/alumni.html'
   },
@@ -29,7 +30,7 @@ const sponsors = [
     srcDark: './mlh-logo-dark.png',
     name: 'Major League Hacking',
     title: 'silverSponsors',
-    width: 230,
+    width: 180,
     mobileWidth: 175,
     link: 'https://mlh.io/'
   },
@@ -38,21 +39,13 @@ const sponsors = [
     srcDark: './fair-trade-logo-dark.png',
     name: 'SFU FairTrade',
     title: 'bronzeSponsors',
-    width: 125,
+    width: 140,
     link: 'http://www.sfu.ca/fairtrade.html'
-  },
-  {
-    srcLight: './guusto-logo-light.png',
-    srcDark: './guusto-logo-dark.png',
-    name: 'Guusto',
-    title: 'bronzeSponsors',
-    width: 180,
-    link: 'https://guusto.com/'
   },
   {
     srcLight: './wics-logo.png',
     name: 'SFU Women in Computing Science',
-    width: 200,
+    width: 220,
     title: 'bronzeSponsors',
     link: 'https://www.sfu.ca/computing/wics.html'
   },
@@ -64,36 +57,27 @@ const sponsors = [
     title: 'bronzeSponsors',
     link: 'https://ssss-sfu.github.io/'
   },
-
   {
-    srcLight: './hedgehog-logo-light.png',
-    srcDark: './hedgehog-logo-dark.png',
-    name: 'Hedgehog technologies',
-    width: 170,
+    srcLight: './guusto-logo-light.png',
+    srcDark: './guusto-logo-dark.png',
+    name: 'Guusto',
     title: 'bronzeSponsors',
-    link: 'https://www.hedgehogtech.com/'
+    width: 180,
+    link: 'https://guusto.com/'
   },
   {
     srcLight: './echoAR-logo-light.png',
     srcDark: './echoAR-logo-dark.png',
     name: 'echoAR',
-    width: 170,
+    width: 200,
     title: 'bronzeSponsors',
     link: 'https://www.echoar.xyz/'
-  },
-  {
-    srcLight: './codex-logo-light.png',
-    srcDark: './codex-logo-dark.png',
-    name: 'The Codex',
-    width: 180,
-    title: 'bronzeSponsors',
-    link: 'https://thecodex.me/'
   },
   {
     srcLight: './fluttervalsad-logo-light.png',
     srcDark: './fluttervalsad-logo-dark.png',
     name: 'Flutter Valsad',
-    width: 180,
+    width: 220,
     title: 'bronzeSponsors',
     link: 'https://fluttervalsad.com/'
   },
@@ -102,8 +86,38 @@ const sponsors = [
     srcDark: './hackhub-logo-dark.png',
     name: 'Hackhub',
     title: 'silverSponsors',
-    width: 150,
+    width: 200,
     link: 'https://www.hackhub.com/'
+  },
+  {
+    srcLight: './hedgehog-logo-light.png',
+    srcDark: './hedgehog-logo-dark.png',
+    name: 'Hedgehog technologies',
+    width: 200,
+    title: 'bronzeSponsors',
+    link: 'https://www.hedgehogtech.com/'
+  },
+  {
+    srcLight: './codex-logo-light.png',
+    srcDark: './codex-logo-dark.png',
+    name: 'The Codex',
+    width: 200,
+    title: 'bronzeSponsors',
+    link: 'https://thecodex.me/'
+  },
+  {
+    srcLight: './github-logo.png',
+    name: 'GitHub',
+    width: 110,
+    title: 'bronzeSponsors',
+    link: 'https://github.com/'
+  },
+  {
+    srcLight: './sticker-mule-logo.png',
+    name: 'StickerMule',
+    width: 200,
+    title: 'bronzeSponsors',
+    link: 'http://hackp.ac/mlh-stickermule-hackathons'
   },
   {
     srcLight: './chang-institute-logo-light.png',
@@ -121,20 +135,6 @@ const sponsors = [
     title: 'bronzeSponsors',
     link:
       'https://www.sfu.ca/changinstitute/events---outreach/compass-program0.html'
-  },
-  {
-    srcLight: './github-logo.png',
-    name: 'GitHub',
-    width: 110,
-    title: 'bronzeSponsors',
-    link: 'https://github.com/'
-  },
-  {
-    srcLight: './sticker-mule-logo.png',
-    name: 'StickerMule',
-    width: 200,
-    title: 'bronzeSponsors',
-    link: 'http://hackp.ac/mlh-stickermule-hackathons'
   }
 ]
 
