@@ -42,7 +42,7 @@ const workshops = [
       {
         img: 'android',
         eventName: 'DEV101M: Intro to Android Studio',
-        eventTime: 'Zoom @ 5:30-7:00pm',
+        eventTime: 'Zoom @ 1:00-2:30pm',
         link: 'https://lu.ma/bmcnugtm'
       }
     ]
