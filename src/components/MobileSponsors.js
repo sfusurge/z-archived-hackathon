@@ -27,7 +27,7 @@ const MobileSponsors = props => {
                 <Sponsor
                   src={sponsorResolver(getSrc(sponsor)).default}
                   name={sponsor.name}
-                  width={sponsor.width}
+                  width={sponsor.width >= 500 ? '400px' : sponsor.width + 'px'}
                   link={sponsor.link}
                 />
               </div>

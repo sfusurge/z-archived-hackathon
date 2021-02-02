@@ -30,7 +30,7 @@ const SponsorsContent = props => {
                 <Sponsor
                   src={sponsorResolver(getSrc(sponsor)).default}
                   name={sponsor.name}
-                  width={sponsor.width}
+                  width={sponsor.width + 'px'}
                   link={sponsor.link}
                 />
               </div>
