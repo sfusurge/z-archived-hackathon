@@ -31,7 +31,7 @@ const FAQs1 = [
   {
     question: 'How will we receive swag?',
     answer:
-      'Swag will be shipped out to the address you provide during registration!'
+      'Swag will be shipped out to the address you provide during registration! Please note that some swag is limited to hackers in Canada.'
   }
 ]
 
