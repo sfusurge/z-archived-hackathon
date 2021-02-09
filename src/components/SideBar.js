@@ -4,28 +4,6 @@ import SideBarEvent from './SideBarEvent'
 
 const workshops = [
   {
-    date: 'February 3rd 2021',
-    events: [
-      {
-        img: 'design',
-        eventName: 'CREATE 101: Intro to Figma',
-        eventTime: 'Zoom @ 5:30-7:00pm',
-        link: 'https://lu.ma/r5va5kld'
-      }
-    ]
-  },
-  {
-    date: 'February 4th 2021',
-    events: [
-      {
-        img: 'webDev',
-        eventName: 'DEV101W: Intro to Web Dev',
-        eventTime: 'Zoom @ 5:30-7:00pm',
-        link: 'https://lu.ma/r5va5kld'
-      }
-    ]
-  },
-  {
     date: 'February 9th 2021',
     events: [
       {
@@ -39,6 +17,12 @@ const workshops = [
   {
     date: 'February 13th 2021',
     events: [
+      {
+        img: 'echo',
+        eventName: 'Echo',
+        eventTime: 'YouTube @ 10:00-2:30pm',
+        link: 'https://www.youtube.com/watch?v=Uo2z8oKzNGk&ab_channel=echoAR'
+      },
       {
         img: 'android',
         eventName: 'DEV101M: Intro to Android Studio',
