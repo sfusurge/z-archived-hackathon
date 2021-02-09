@@ -15,7 +15,7 @@ const getTime = dueDate => {
 }
 
 const ApplicationTimer = () => {
-  const dueDate = '2021-01-25T08:00:00Z'
+  const dueDate = '2021-02-20T20:00:00Z'
   const [timeLeft, setTimeLeft] = useState(getTime(dueDate))
 
   useEffect(() => {
@@ -28,25 +28,17 @@ const ApplicationTimer = () => {
   return (
     <div className={styles.container}>
       <div className={styles.countdown}>
-        {timeLeft ? (
-          <>
-            <p className={styles.title}>Applications close in:</p>
-            <p className={styles.days}>
-              {timeLeft.days} {timeLeft.days === 1 ? `day` : `days`}
-            </p>
-            <p className={styles.timer}>
-              {timeLeft.hours} {timeLeft.hours === '01' ? `hr` : `hrs`},{' '}
-              {timeLeft.minutes} {timeLeft.minutes === '01' ? `min` : `mins`},{' '}
-              {timeLeft.seconds} s
-            </p>
-          </>
-        ) : (
-            <>
-              <p className={styles.title}>Applications are now</p>
-              <p className={styles.days}>CLOSED</p>
-              <p className={styles.timer}>Acceptances out Feb 5th</p>
-            </>
-          )}
+        <>
+          <p className={styles.title}>Countdown to StormHacks:</p>
+          <p className={styles.days}>
+            {timeLeft.days} {timeLeft.days === 1 ? `day` : `days`}
+          </p>
+          <p className={styles.timer}>
+            {timeLeft.hours} {timeLeft.hours === '01' ? `hr` : `hrs`},{' '}
+            {timeLeft.minutes} {timeLeft.minutes === '01' ? `min` : `mins`},{' '}
+            {timeLeft.seconds} s
+          </p>
+        </>
       </div>
     </div>
   )

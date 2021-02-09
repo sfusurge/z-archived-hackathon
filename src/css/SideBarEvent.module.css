@@ -32,6 +32,7 @@
 }
 
 .eventDescription {
+  width: 80%;
   padding-left: 12px;
 }
 
@@ -60,30 +61,6 @@
   background-image: url('../assets/dark/sparky-face.svg');
 }
 
-#github {
-  background-image: url('../assets/light/github-schedule-light.svg');
-}
-
-[data-theme='dark'] #github {
-  background-image: url('../assets/dark/github-schedule-dark.svg');
-}
-
-#design {
-  background-image: url('../assets/light/pen-light.svg');
-}
-
-[data-theme='dark'] #design {
-  background-image: url('../assets/dark/pen-dark.svg');
-}
-
-#webDev {
-  background-image: url('../assets/light/webdev-light.svg');
-}
-
-[data-theme='dark'] #webDev {
-  background-image: url('../assets/dark/webdev-dark.svg');
-}
-
 #react {
   background-image: url('../assets/light/react-light.svg');
 }
@@ -98,4 +75,12 @@
 
 [data-theme='dark'] #android {
   background-image: url('../assets/dark/android-dark.svg');
+}
+
+#echo {
+  background-image: url('../assets/light/echoAR-light.svg');
+}
+
+[data-theme='dark'] #echo {
+  background-image: url('../assets/dark/echoAR-dark.svg');
 }
