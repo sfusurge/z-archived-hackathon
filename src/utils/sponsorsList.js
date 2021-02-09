@@ -8,8 +8,8 @@ const sponsors = [
     link: 'https://sfss.ca/'
   },
   {
-    srcLight: './sfualumni-logo-light.png',
-    srcDark: './sfualumni-logo-dark.png',
+    srcLight: './sfu-alumni-logo-light.png',
+    srcDark: './sfu-alumni-logo-dark.png',
     name: 'SFU Alumni Association',
     title: 'silverSponsors',
     width: 340,
@@ -106,20 +106,6 @@ const sponsors = [
     link: 'https://thecodex.me/'
   },
   {
-    srcLight: './github-logo.png',
-    name: 'GitHub',
-    width: 110,
-    title: 'bronzeSponsors',
-    link: 'https://github.com/'
-  },
-  {
-    srcLight: './sticker-mule-logo.png',
-    name: 'StickerMule',
-    width: 200,
-    title: 'bronzeSponsors',
-    link: 'http://hackp.ac/mlh-stickermule-hackathons'
-  },
-  {
     srcLight: './chang-institute-logo-light.png',
     srcDark: './chang-institute-logo-dark.png',
     name: 'Chang institute',
@@ -135,6 +121,27 @@ const sponsors = [
     title: 'bronzeSponsors',
     link:
       'https://www.sfu.ca/changinstitute/events---outreach/compass-program0.html'
+  },
+  {
+    srcLight: './sfu-rec-logo.png',
+    name: 'SFU Rec',
+    width: 125,
+    title: 'bronzeSponsors',
+    link: 'https://www.sfu.ca/students/recreation/'
+  },
+  {
+    srcLight: './github-logo.png',
+    name: 'GitHub',
+    width: 110,
+    title: 'bronzeSponsors',
+    link: 'https://github.com/'
+  },
+  {
+    srcLight: './sticker-mule-logo.png',
+    name: 'StickerMule',
+    width: 200,
+    title: 'bronzeSponsors',
+    link: 'http://hackp.ac/mlh-stickermule-hackathons'
   }
 ]
 
