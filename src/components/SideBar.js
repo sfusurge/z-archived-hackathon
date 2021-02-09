@@ -19,8 +19,8 @@ const workshops = [
     events: [
       {
         img: 'echo',
-        eventName: 'Echo',
-        eventTime: 'YouTube @ 10:00-2:30pm',
+        eventName: 'How to Build a Cloud-Connected AR/VR App',
+        eventTime: 'YouTube @ 10:00-10:45am',
         link: 'https://www.youtube.com/watch?v=Uo2z8oKzNGk&ab_channel=echoAR'
       },
       {
