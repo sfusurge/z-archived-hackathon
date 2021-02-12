@@ -142,6 +142,13 @@ const sponsors = [
     width: 200,
     title: 'bronzeSponsors',
     link: 'http://hackp.ac/mlh-stickermule-hackathons'
+  },
+  {
+    srcLight: './sticker-mule-logo.png',
+    name: 'StickerMule',
+    width: 200,
+    title: 'bronzeSponsors',
+    link: 'http://hackp.ac/mlh-stickermule-hackathons'
   }
 ]
 
