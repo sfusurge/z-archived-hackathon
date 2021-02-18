@@ -21,9 +21,17 @@ const sponsors = [
     srcDark: './fortisBC-logo-dark.png',
     name: 'Fortis BC',
     title: 'silverSponsors',
-    width: 325,
-    mobileWidth: 250,
+    width: 280,
+    mobileWidth: 270,
     link: 'https://www.fortisbc.com/'
+  },
+  {
+    srcLight: './digital-health-circle-logo.png',
+    name: 'Digital Health Circle',
+    title: 'silverSponsors',
+    width: 320,
+    mobileWidth: 250,
+    link: 'https://www.digitalhealthcircle.ca/'
   },
   {
     srcLight: './mlh-logo-light.png',
@@ -135,6 +143,20 @@ const sponsors = [
     title: 'bronzeSponsors',
     link:
       'https://www.sfu.ca/changinstitute/events---outreach/compass-program0.html'
+  },
+  {
+    srcLight: './sfu-rec-logo.png',
+    name: 'Simon Fraser Recreation',
+    width: 110,
+    title: 'bronzeSponsors',
+    link: 'https://www.sfu.ca/students/recreation.html'
+  },
+  {
+    srcLight: './sap-logo.png',
+    name: 'SAP',
+    width: 110,
+    title: 'bronzeSponsors',
+    link: 'https://www.sap.com/canada/index.html'
   }
 ]
 
