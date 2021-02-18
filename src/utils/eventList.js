@@ -116,8 +116,9 @@ const itinerary = [
           srcDark: './flutter-dark.svg'
         },
         eventName: 'Flutter Valsad: Gettign Started with Flutter',
-        eventTime: 'Discord @ 8:00-9:00pm PST',
-        link: 'https://discord.gg/stormhacks2021'
+        eventTime: 'Zoom @ 8:00-9:00pm PST',
+        link:
+          'https://us05web.zoom.us/j/83406296951?pwd=SmNOVzZCeFloUXZzOGlZa2d6a0dGUT09'
       },
       {
         image: {
