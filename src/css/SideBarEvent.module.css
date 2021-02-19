@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   width: 85%;
-  margin-bottom: 35px;
+  margin-bottom: 30px;
 }
 
 .title {
@@ -21,10 +21,11 @@
   height: 1px;
   width: 100%;
   background-color: var(--color-lines);
+  margin-bottom: 15px;
 }
 
 .innerContainer {
-  margin-top: 15px;
+  margin-bottom: 20px;
   height: 40px;
   display: flex;
   flex-direction: row;
@@ -47,40 +48,10 @@
   text-decoration: none;
 }
 
-.img {
-  width: 40px;
-  height: 100%;
-  background-position-x: center;
-}
-
 #stormyFace {
   background-image: url('../assets/light/stormy-face.svg');
 }
 
 [data-theme='dark'] #stormyFace {
   background-image: url('../assets/dark/sparky-face.svg');
-}
-
-#react {
-  background-image: url('../assets/light/react-light.svg');
-}
-
-[data-theme='dark'] #react {
-  background-image: url('../assets/dark/react-dark.svg');
-}
-
-#android {
-  background-image: url('../assets/light/android-light.svg');
-}
-
-[data-theme='dark'] #android {
-  background-image: url('../assets/dark/android-dark.svg');
-}
-
-#echo {
-  background-image: url('../assets/light/echoAR-light.svg');
-}
-
-[data-theme='dark'] #echo {
-  background-image: url('../assets/dark/echoAR-dark.svg');
 }

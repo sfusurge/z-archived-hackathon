@@ -46,7 +46,7 @@ const execs = [
     width: '100px',
     height: '100px',
     name: 'David.jpeg',
-    customStyle: { cursor: 'default' }
+    link: 'https://www.linkedin.com/in/davidrlowe/'
   },
   {
     src: './revika.png',
