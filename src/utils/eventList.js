@@ -87,7 +87,7 @@ const itinerary = [
           srcDark: './healthcircle-dark.svg'
         },
         eventName: 'Digital Health Circle: Creating Health Products',
-        eventTime: 'Zoom @ 4:00-5:00pm PST',
+        eventTime: 'Zoom @ 3:00-4:00pm PST',
         link:
           'https://sfu.zoom.us/j/68512076787?pwd=K0lFeW93cGhzTXI2dk10WXNRaFdOZz09'
       },
@@ -140,7 +140,7 @@ const itinerary = [
           srcDark: './hackhubsetup-dark.svg'
         },
         eventName: 'How to submit projects on HackHub',
-        eventTime: 'Discord @ 11:00pm PST',
+        eventTime: 'Discord @ 9:00am PST',
         link: 'https://discord.gg/stormhacks2021'
       },
       {
