@@ -112,16 +112,6 @@ const itinerary = [
       },
       {
         image: {
-          srcLight: './flutter-light.svg',
-          srcDark: './flutter-dark.svg'
-        },
-        eventName: 'Flutter Valsad: Gettign Started with Flutter',
-        eventTime: 'Zoom @ 8:00-9:00pm PST',
-        link:
-          'https://us05web.zoom.us/j/83406296951?pwd=SmNOVzZCeFloUXZzOGlZa2d6a0dGUT09'
-      },
-      {
-        image: {
           srcLight: './midnightgames-light.svg',
           srcDark: './midnightgames-dark.svg'
         },
