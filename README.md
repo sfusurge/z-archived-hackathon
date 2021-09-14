@@ -1,4 +1,4 @@
-# <img src="./assets/logo.svg" width="40px" alt="SFU Surge logo" /> SFU Surge: StormHacks Website
+# <img src="./readme-img/logo.svg" width="40px" alt="SFU Surge logo" /> SFU Surge: StormHacks Website
 
 React website for the annual StormHacks hackathon.
 
