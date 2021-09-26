@@ -25,9 +25,17 @@ const Footer = props => {
 
   return (
     <div className={styles.container}>
+      {isOpen && (
+        <Modal title={'Meet The Execs'} onClose={closeFile}>
+          <AllExecs />
+        </Modal>
+      )}
+      <div className={sideBar ? styles.sideBarActive : styles.sideBar}>
+        <SideBar />
+      </div>
       <a
         id={styles.logoPad}
-        href="https://www.facebook.com/sfusurge/"
+        href="https://www.sfusurge.com/"
         target="_blank"
         rel="noreferrer"
       >

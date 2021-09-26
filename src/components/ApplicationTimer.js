@@ -15,12 +15,17 @@ const getTime = dueDate => {
 }
 
 const ApplicationTimer = () => {
-  const dueDate = '2021-02-20T20:00:00Z'
+  const dueDate = '2021-02-20T21:00:00Z'
+  const secondDueDate = '2021-02-21T21:00:00Z'
   const [timeLeft, setTimeLeft] = useState(getTime(dueDate))
+  const [submissionTimeLeft, setSubmissionTimeLeft] = useState(
+    getTime(secondDueDate)
+  )
 
   useEffect(() => {
     const timer = setInterval(() => {
       setTimeLeft(getTime(dueDate))
+      setSubmissionTimeLeft(getTime(secondDueDate))
     }, 1000)
     return () => clearInterval(timer)
   }, [])
@@ -29,15 +34,44 @@ const ApplicationTimer = () => {
     <div className={styles.container}>
       <div className={styles.countdown}>
         <>
-          <p className={styles.title}>Countdown to StormHacks:</p>
-          <p className={styles.days}>
-            {timeLeft.days} {timeLeft.days === 1 ? `day` : `days`}
-          </p>
-          <p className={styles.timer}>
-            {timeLeft.hours} {timeLeft.hours === '01' ? `hr` : `hrs`},{' '}
-            {timeLeft.minutes} {timeLeft.minutes === '01' ? `min` : `mins`},{' '}
-            {timeLeft.seconds} s
-          </p>
+          {submissionTimeLeft ? (
+            timeLeft ? (
+              <>
+                <p className={styles.title}>Countdown to Hacking Begins:</p>
+                <p className={styles.days}>
+                  {timeLeft.days} {timeLeft.days === 1 ? `day` : `days`}
+                </p>
+                <p className={styles.timer}>
+                  {timeLeft.hours} {timeLeft.hours === '01' ? `hr` : `hrs`},{' '}
+                  {timeLeft.minutes}{' '}
+                  {timeLeft.minutes === '01' ? `min` : `mins`},{' '}
+                  {timeLeft.seconds}
+                </p>
+              </>
+            ) : (
+              <>
+                <p className={styles.title}>
+                  Countdown to Project Submissions:
+                </p>
+                <p className={styles.days}>
+                  {submissionTimeLeft.days}{' '}
+                  {submissionTimeLeft.days === 1 ? `day` : `days`}
+                </p>
+                <p className={styles.timer}>
+                  {submissionTimeLeft.hours}{' '}
+                  {submissionTimeLeft.hours === '01' ? `hr` : `hrs`},{' '}
+                  {submissionTimeLeft.minutes}{' '}
+                  {submissionTimeLeft.minutes === '01' ? `min` : `mins`},{' '}
+                  {submissionTimeLeft.seconds}
+                </p>
+              </>
+            )
+          ) : (
+            <>
+              <p className={styles.title}>Submissions are now</p>
+              <p className={styles.days}>CLOSED</p>
+            </>
+          )}
         </>
       </div>
     </div>
