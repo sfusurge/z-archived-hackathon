@@ -25,15 +25,14 @@ const Footer = props => {
 
   return (
     <div className={styles.container}>
-      {isOpen && (
-        <Modal title={'Meet The Execs'} onClose={closeFile}>
-          <AllExecs />
-        </Modal>
-      )}
-      <div className={sideBar ? styles.sideBarActive : styles.sideBar}>
-        <SideBar />
-      </div>
-      <a id={styles.logoPad} href='https://www.facebook.com/sfusurge/' target='_blank' rel="noreferrer">&nbsp;</a>
+      <a
+        id={styles.logoPad}
+        href="https://www.facebook.com/sfusurge/"
+        target="_blank"
+        rel="noreferrer"
+      >
+        &nbsp;
+      </a>
       <div className={styles.innerContainer}>
         <div>
           <a
@@ -56,10 +55,7 @@ const Footer = props => {
         <button className={styles.themeButton} onClick={toggleTheme}>
           <div className={styles.themeToggle}></div>
         </button>
-        <button
-          className={styles.notificationButton}
-          onClick={toggleSideBar}
-        >
+        <button className={styles.notificationButton} onClick={toggleSideBar}>
           <div className={styles.notificationIcon}></div>
         </button>
       </div>

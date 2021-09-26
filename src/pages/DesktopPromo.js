@@ -1,10 +1,10 @@
 import Banner from '../components/Banner'
-import ToggleButton from "../components/ToggleButton"
+import ToggleButton from '../components/ToggleButton'
 
 import styles from '../css/DesktopPromo.module.css'
 
 import surgeBanner from '../assets/surge-banner.svg'
-// import mlhBanner from '../assets/mlh-banner.svg'
+import mlhBanner from '../assets/mlh-banner.svg'
 import signUp from '../assets/sign-up-button.svg'
 import sparky from '../assets/sparky-wave.svg'
 import stormy from '../assets/stormy-laying.svg'
@@ -53,15 +53,7 @@ const DesktopPromo = props => {
               placeholder="Enter your email address to stay up to date!"
               noValidate
             />
-            <div style={{ display: 'none', tabindex: '-1' }} aria-hidden="true">
-              <input
-                type="text"
-                name="b_33345c9bc17f10bac6afdd0ac_736d801cb8"
-                defaultValue=""
-              />
-              <input defaultValue="Subscribe" name="subscribe" />
-              <input defaultValue="StormHacks" name="MMERGE3" />
-            </div>
+
             <button className={styles.signUpButton} type="submit">
               <img
                 className={styles.signUpIcon}
