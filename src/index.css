@@ -22,6 +22,8 @@
   --font-email-header: 600 24px Poppins;
   --font-email-sub-header: 400 20px Poppins;
   --font-email-placeholder: 500 12px Barlow;
+  --font-errorscreen: 500 18px Barlow;
+  --font-errorscreen-small: 500 14px Barlow;
   --font-header: 600 24px Poppins;
   --font-sub-header: 700 20px Poppins;
   --font-title: 700 54px Poppins;
@@ -33,6 +35,8 @@
     --font-email-header: 600 50px Poppins;
     --font-email-sub-header: 400 36px Poppins;
     --font-email-placeholder: 500 18px Barlow;
+    --font-errorscreen: 500 36px Barlow;
+    --font-errorscreen-small: 500 24px Barlow;
     --font-header: 600 25px Poppins;
     --font-sub-header: 700 20px Poppins;
     --font-subtitle: 600 36px Poppins;
