@@ -4,11 +4,7 @@ const Banner = props => {
   return (
     <div className={styles.container} style={{ width: `${props.width}px` }}>
       {props.surge && (
-        <a
-          href="https://www.facebook.com/sfusurge/"
-          target="_blank"
-          rel="noreferrer"
-        >
+        <a href="https://sfusurge.com/" target="_blank" rel="noreferrer">
           <img
             className={styles.bannerImage}
             src={props.surge.src}

@@ -1,0 +1,108 @@
+.container {
+  background-color: var(--color-text-header);
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+.innerContainer {
+  margin: 0 7%;
+  padding: 55px 0;
+  width: 85%;
+}
+
+.otterError {
+  width: 56%;
+}
+
+.text {
+  margin: 0;
+  font: var(--font-errorscreen);
+  color: var(--color-background-popup);
+}
+
+.smallText {
+  margin: 0;
+  font: var(--font-errorscreen-small);
+  color: var(--color-background-popup);
+}
+
+.mailListGroup {
+  width: 100%;
+}
+
+.signUpForm {
+  display: flex;
+  background-color: var(--color-text-header);
+  margin-top: 35px;
+}
+
+.signUpInput {
+  font: var(--font-email-placeholder);
+  border: 1px solid var(--color-sign-up-background);
+  background-color: transparent;
+  color: var(--color-sign-up-background);
+  width: 60%;
+  padding: 10px;
+}
+
+.signUpInput:focus,
+.signUpButton:focus {
+  outline: none;
+}
+
+.signUpInput::placeholder {
+  font: var(--font-errorscreen-small);
+  color: var(--color-sign-up-background);
+  opacity: 0.5;
+}
+
+.signUpButton {
+  width: 40%;
+  padding: 0;
+  border: none;
+  font: var(--font-errorscreen-small);
+  color: var(--color-text-header);
+  background-color: var(--color-sign-up-background);
+  cursor: pointer;
+}
+
+#headerText {
+  margin-top: 27px;
+  margin-bottom: 5px;
+}
+
+#percentageText {
+  margin-top: 24px;
+  margin-bottom: 20px;
+}
+
+@media only screen and (min-width: 900px) {
+  .innerContainer {
+    padding-top: 130px;
+    width: 59%;
+  }
+
+  .otterError {
+    width: 38%;
+  }
+
+  .mailListGroup {
+    width: 60%;
+  }
+
+  .signUpForm {
+    display: flex;
+    background-color: var(--color-text-header);
+    margin-top: 14px;
+  }
+
+  #headerText {
+    margin-top: 27px;
+    margin-bottom: 5px;
+  }
+
+  #percentageText {
+    margin-top: 44px;
+    margin-bottom: 27px;
+  }
+}
