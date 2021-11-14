@@ -13,7 +13,7 @@ const ErrorScreen = props => {
         ></img>
         <p className={styles.text} id={styles.headerText}>
           The StormHacks 2022 website construction is underway. When we're done
-          tinkering in the back-end, we'll restart this page for you
+          tinkering in the back-end, we'll restart this page for you.
         </p>
         <Link to="/stormhacks2021" className={styles.smallText}>
           To restore to a previous version, click here.
@@ -23,8 +23,8 @@ const ErrorScreen = props => {
         </p>
         <div className={styles.mailListGroup}>
           <p className={styles.smallText}>
-            For more information about this hackathon and event details, sign up
-            for our mailing list
+            If you want to be the first to know everything about StormHacks
+            2022, sign up for our mailing list below.
           </p>
           <form
             className={styles.signUpForm}
