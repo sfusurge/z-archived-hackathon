@@ -12,9 +12,8 @@ const ErrorScreen = props => {
           className={styles.otterError}
         ></img>
         <p className={styles.text} id={styles.headerText}>
-          The StormHacks website update ran into a problem and needs to restart.
-          We’re just collecting some error info, and then we’ll restart the page
-          for you.
+          The StormHacks 2022 website construction is underway. When we're done
+          tinkering in the back-end, we'll restart this page for you
         </p>
         <Link to="/stormhacks2021" className={styles.smallText}>
           To restore to a previous version, click here.
