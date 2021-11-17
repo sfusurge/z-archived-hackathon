@@ -12,19 +12,17 @@ const ErrorScreen = props => {
           className={styles.otterError}
         ></img>
         <p className={styles.text} id={styles.headerText}>
-          The StormHacks 2022 website construction is underway. When we're done
-          tinkering in the back-end, we'll restart this page for you.
+          StormHacks 2022 will be live from February, 18th to 20th, 2022. In the
+          meantime, we’ll be updating this page for you.
         </p>
         <Link to="/stormhacks2021" className={styles.smallText}>
           To restore to a previous version, click here.
         </Link>
-        <p className={styles.text} id={styles.percentageText}>
-          0% complete
-        </p>
+
         <div className={styles.mailListGroup}>
           <p className={styles.smallText}>
-            If you want to be the first to know everything about StormHacks
-            2022, sign up for our mailing list below.
+            To be the first to know everything about StormHacks 2022, including
+            when to apply, sign up for our mailing list below.
           </p>
           <form
             className={styles.signUpForm}
